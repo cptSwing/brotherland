@@ -42,12 +42,24 @@
         U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-.project-menu:active:after {
-    content: "<div class='project-menu-element'> lol </div>";
+.wrap-collapsible > input[type="checkbox"] {
+    @apply hidden;
 }
 
-.project-menu-element {
-    position: fixed;
-    width: 300px;
-    background-color: red;
+.collapsible-toggle-label {
+    @apply block cursor-pointer rounded-md bg-white px-4 py-2 text-center font-playfair-display text-2xl font-medium uppercase text-gray-700 hover:bg-gray-300;
+    transition: all 0.25s ease-out;
+}
+
+.collapsible-content .collapsible-content-inner {
+    @apply rounded-b-md bg-slate-100 pt-2 pb-1;
+}
+
+.collapsible-content {
+    @apply max-h-0 overflow-hidden;
+    transition: max-height 0.25s ease-in-out;
+}
+
+.collapsible-toggle:hover + .collapsible-toggle-label + .collapsible-content {
+    @apply max-h-fit;
 }
