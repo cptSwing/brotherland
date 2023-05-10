@@ -63,3 +63,7 @@
 .collapsible-toggle:hover + .collapsible-toggle-label + .collapsible-content {
     @apply max-h-fit;
 }
+
+.collapsible-content:hover {
+    @apply max-h-fit;
+}
