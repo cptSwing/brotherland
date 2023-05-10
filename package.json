@@ -5,11 +5,13 @@
     "build": "parcel build src/index.html"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "parcel": "^2.8.2",
-    "postcss": "^8.4.21",
-    "prettier": "^2.8.2",
-    "prettier-plugin-tailwindcss": "^0.2.1",
-    "tailwindcss": "^3.2.4"
+    "autoprefixer": "^10.4.14",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.23",
+    "posthtml-expressions": "^1.11.0",
+    "posthtml-modules": "^0.9.1",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.8",
+    "tailwindcss": "^3.3.2"
   }
 }
