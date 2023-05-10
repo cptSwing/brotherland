@@ -1,7 +1,9 @@
 {
     "plugins": {
-        "posthtml-expressions": {},
-        "posthtml-modules": {
+        "posthtml-expressions": {
+            "root": "./src"
+        },
+        "posthtml-include": {
             "root": "./src"
         }
     }

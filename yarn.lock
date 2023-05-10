@@ -1421,11 +1421,6 @@ lmdb@2.5.2:
     "@lmdb/lmdb-linux-x64" "2.5.2"
     "@lmdb/lmdb-win32-x64" "2.5.2"
 
-lodash@^4.17.21:
-  version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
-  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
-
 mdn-data@2.0.14:
   version "2.0.14"
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.14.tgz#7113fc4281917d63ce29b43446f701e68c25ba50"
@@ -1685,7 +1680,7 @@ postcss@^8.4.23:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-posthtml-expressions@^1.11.0:
+posthtml-expressions@^1.11.0, posthtml-expressions@^1.7.1:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/posthtml-expressions/-/posthtml-expressions-1.11.0.tgz#bac30b0fb1c87b25be39cf1a085332e38d7327e6"
   integrity sha512-Un7J/UugURkoxCuFJ+1UwzmXe19hPrfUBOYgrjf2ipkCyghSh8L3ldwKttgjs8GI+4aPPUFThAted0J2tpORnA==
@@ -1695,21 +1690,19 @@ posthtml-expressions@^1.11.0:
     posthtml-parser "^0.10.0"
     posthtml-render "^3.0.0"
 
-posthtml-match-helper@^1.0.1, posthtml-match-helper@^1.0.3:
+posthtml-include@^1.7.4:
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/posthtml-include/-/posthtml-include-1.7.4.tgz#45e7abd18395ce5a6e8af9dc5c5390f85cf6171c"
+  integrity sha512-GO5QzHiM6/fXq8DxLoLN+jEW4sH/6nuGF9z+NJmP1qi1A3J2zCC7WwXrEwaPL3T8LrH+FL4IedK+mIJHbn5ZEA==
+  dependencies:
+    posthtml "^0.16.6"
+    posthtml-expressions "^1.7.1"
+    posthtml-parser "^0.11.0"
+
+posthtml-match-helper@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/posthtml-match-helper/-/posthtml-match-helper-1.0.3.tgz#9308f0bdc66398735f7117441feca64f131956d5"
   integrity sha512-aeRAPvok2Fs6uzSm85665jdAk5UOd8US2QCkWtGU6yLPlKSwzWTSgZZuABc3UeNy3K1lVk/HV9bRkWJYN05Ymw==
-
-posthtml-modules@^0.9.1:
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/posthtml-modules/-/posthtml-modules-0.9.1.tgz#c136c8945ccc2ce425387d8ceab552c4f9774a0f"
-  integrity sha512-3QHfXRV9ZIxnOh9r8dRmg0ttJF8Tzr223g/kb0nM38Kle5b65HXbuWuZ7TZjSAFwdgkOdXJJ7TQws+w2D1RKQg==
-  dependencies:
-    is-json "^2.0.1"
-    lodash "^4.17.21"
-    posthtml-expressions "^1.11.0"
-    posthtml-match-helper "^1.0.3"
-    posthtml-render "^3.0.0"
 
 posthtml-parser@^0.10.0, posthtml-parser@^0.10.1:
   version "0.10.2"
@@ -1732,7 +1725,7 @@ posthtml-render@^3.0.0:
   dependencies:
     is-json "^2.0.1"
 
-posthtml@^0.16.4, posthtml@^0.16.5:
+posthtml@^0.16.4, posthtml@^0.16.5, posthtml@^0.16.6:
   version "0.16.6"
   resolved "https://registry.yarnpkg.com/posthtml/-/posthtml-0.16.6.tgz#e2fc407f67a64d2fa3567afe770409ffdadafe59"
   integrity sha512-JcEmHlyLK/o0uGAlj65vgg+7LIms0xKXe60lcDOTU7oVX/3LuEuLwrQpW3VJ7de5TaFKiW4kWkaIpJL42FEgxQ==

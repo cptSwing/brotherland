@@ -9,7 +9,7 @@
     "parcel": "^2.8.3",
     "postcss": "^8.4.23",
     "posthtml-expressions": "^1.11.0",
-    "posthtml-modules": "^0.9.1",
+    "posthtml-include": "^1.7.4",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.8",
     "tailwindcss": "^3.3.2"
