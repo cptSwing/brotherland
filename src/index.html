@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <include src="./partials/head.html" locals='{"pathPrefix": "./", "pageTitle": "Brotherland - Martina Zaninelli"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "./", "pageTitle": "Brotherland - Martina Zaninelli"}' />
     </head>
 
     <body class="absolute w-full bg-white pb-16 text-gray-700">
         <div class="flex flex-col items-center justify-between">
-            <div class="h-[75vh] w-[75vw] bg-orange-300"></div>
+            <div class="h-[75vh] w-[75vw] rounded-sm bg-gray-500"></div>
         </div>
-        <include src="./partials/nav.html" locals='{"pathPrefix": "./html"}' />
+        <div class="mb-2 h-4" />
+        <nav>
+            <include src="./partials/nav.html" locals='{"pathNavPrefix": "./html"}'></include>
+        </nav>
     </body>
 </html>

@@ -42,17 +42,30 @@
         U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+.cursor-ve {
+    @apply cursor-[url(../../public/images/75.jpg),_pointer];
+    /* cursor: url(../../public/images/75.jpg), auto; */
+}
+
+p {
+    @apply mb-4;
+}
+
+p:last-of-type {
+    @apply mb-0;
+}
+
 .wrap-collapsible > input[type="checkbox"] {
     @apply hidden;
 }
 
 .collapsible-toggle-label {
-    @apply block cursor-pointer rounded-md bg-white px-4 py-2 text-center font-playfair-display text-2xl font-medium uppercase text-gray-700 hover:bg-gray-300;
+    @apply block cursor-pointer rounded-md px-4 py-2 text-center font-playfair-display text-2xl font-medium uppercase text-gray-700 hover:bg-gray-300;
     transition: all 0.25s ease-out;
 }
 
 .collapsible-content .collapsible-content-inner {
-    @apply rounded-b-md bg-slate-100 pt-2 pb-1;
+    @apply rounded-b-md bg-slate-100 pb-1 pt-2;
 }
 
 .collapsible-content {
