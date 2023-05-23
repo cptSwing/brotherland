@@ -1,13 +1,13 @@
 {
     "plugins": {
         "posthtml-include": {
-            "posthtmlExpressionsOptions": {
-                "strictMode": true
-            },
+            "posthtmlExpressionsOptions": {},
             "root": "./src"
         },
         "posthtml-expressions": {
-            "root": "./src"
+            "root": "./src",
+            "removeScriptLocals": true,
+            "strictMode": true
         }
     }
 }
