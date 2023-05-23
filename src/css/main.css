@@ -61,7 +61,7 @@ p:last-of-type {
 
 .collapsible-toggle-label {
     @apply block cursor-pointer rounded-md px-4 py-2 text-center font-playfair-display text-2xl font-medium uppercase text-gray-700 hover:bg-gray-300;
-    transition: all 0.25s ease-out;
+    /* transition: all 0.25s ease-out; */
 }
 
 .collapsible-content .collapsible-content-inner {
@@ -69,9 +69,13 @@ p:last-of-type {
 }
 
 .collapsible-content {
-    @apply max-h-0 overflow-hidden;
-    transition: max-height 0.25s ease-in-out;
+    @apply absolute max-h-0 overflow-hidden;
+    transition: max-height 0.5s ease-in-out;
 }
+
+/* .collapsible-content-inner {
+    @apply absolute;
+} */
 
 .collapsible-toggle:hover + .collapsible-toggle-label + .collapsible-content {
     @apply max-h-fit;
