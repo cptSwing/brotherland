@@ -15,9 +15,11 @@
                     `In 2019 I was again in Hoyerswerda, there I participated in a meeting with my former neighbors. They told me, ‘We didn't see that!’ But I do not think it was so.`,
                 ],
                 author: "David Macou",
+                authorLink: "../bio/macou.html",
             },
         };
     </script>
+
     <head>
         <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - David Macou"}' />
     </head>
@@ -44,12 +46,15 @@
                         <br />
 
                         <!-- Audio -->
-                        <include src="./partials/interv_audio.html" locals='{"filePath": "/public/audio/DM_ 01.mp3"}'></include>
+                        <include
+                            src="./partials/interv_audio.html"
+                            locals='{"filePath": "/public/audio/DM_ 01.mp3", "title": "Like Theater"}'
+                        ></include>
                     </div>
                     <!-- Image -->
                     <include
                         src="./partials/interv_img.html"
-                        locals='{"filePath": "/public/images/s-l1600.jpg", "caption": "Postcard of Hoyerswerda, 70ies"}'
+                        locals='{"filePath": "/public/images/DM_ 01.jpg", "caption": "Postcard of Hoyerswerda, 70ies"}'
                     ></include>
                 </div>
             </div>
