@@ -1,9 +1,12 @@
 {
     "plugins": {
-        "posthtml-expressions": {
+        "posthtml-include": {
+            "posthtmlExpressionsOptions": {
+                "strictMode": true
+            },
             "root": "./src"
         },
-        "posthtml-include": {
+        "posthtml-expressions": {
             "root": "./src"
         }
     }
