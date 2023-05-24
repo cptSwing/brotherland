@@ -54,33 +54,3 @@ p {
 p:last-of-type {
     @apply mb-0;
 }
-
-.wrap-collapsible > input[type="checkbox"] {
-    @apply hidden;
-}
-
-.collapsible-toggle-label {
-    @apply block cursor-pointer rounded-md px-4 py-2 text-center font-playfair-display text-2xl font-medium uppercase text-gray-700 hover:bg-gray-300;
-    /* transition: all 0.25s ease-out; */
-}
-
-.collapsible-content .collapsible-content-inner {
-    @apply rounded-b-md bg-slate-100 pb-1 pt-2;
-}
-
-.collapsible-content {
-    @apply absolute max-h-0 overflow-hidden;
-    transition: max-height 0.5s ease-in-out;
-}
-
-/* .collapsible-content-inner {
-    @apply absolute;
-} */
-
-.collapsible-toggle:hover + .collapsible-toggle-label + .collapsible-content {
-    @apply max-h-fit;
-}
-
-.collapsible-content:hover {
-    @apply max-h-fit;
-}
