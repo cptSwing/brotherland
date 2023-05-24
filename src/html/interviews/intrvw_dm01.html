@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "Wie ein Theater beobachtet",
+                main: [
+                    `Ich glaube, unsere Nachbarn haben das alles wie ein Theaterstück
+                    beobachtet.`,
+                    `Wir erlebten keine Solidarität von unseren Nachbarn,
+                    die zwölf Jahre mit uns gelebt haben. Die haben nur durchs Fenster
+                    oder von weiter weg zugeguckt. Die haben versucht zu sehen, was
+                    da los war zwischen den Jugendlichen, die Parolen gerufen haben,
+                    und der Polizei, die mit Hunden da stand. Die waren nur Zuschauer.`,
+                    `2019 war ich wieder in Hoyerswerda, dort habe ich an einer Versammlung mit meinen ehemaligen Nachbarn teilgenommen. Die
+                    haben mir gesagt: „Wir haben das nicht gesehen!“ Aber ich glaube nicht, dass es so war.`,
+                ],
+                author: "David Macou",
+                authorLink: "../bio/macou.html",
+                audioFilePath: "/public/audio/DM_ 01.mp3",
+                imageFilePath: "/public/images/DM_ 01.jpg",
+                imageCaption: "Postcard of Hoyerswerda, 70ies",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - David Macou 1"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav_header.html" locals='{"pathPrefix": "../", "active": "intrvw_dm01"}'></include>
+        </header>
+
+        <!-- Main: -->
+        <main class="m-auto sm:w-full md:w-4/5">
+            <div id="top-container" class="pt-8 font-glegoo">
+                <!-- Macou1 -->
+                <div id="macou1" class="flex flex-row flex-wrap">
+                    <!-- Quote -->
+                    <scope with="text">
+                        <div class="basis-full">
+                            <include src="./partials/interv_quote.html"></include>
+                        </div>
+
+                        <!-- Interview Main -->
+                        <div class="interview-info flex h-full basis-1/2 flex-col items-center justify-start">
+                            <br />
+
+                            <!-- Text -->
+                            <include src="./partials/interv_text.html"></include>
+                        </div>
+                        <!-- Image -->
+                        <include src="./partials/interv_img.html"></include>
+                    </scope>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

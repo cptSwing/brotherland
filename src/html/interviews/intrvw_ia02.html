@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "Was guckst du",
+                main: [
+                    `Die Gesellschaft war nicht so interessiert.`,
+                    `Ein Interesse war schon
+da, aber das Problem war der Streit mit den Nachbarn. Die Nachbarn haben gefragt „Warum nehmt ihr den jetzt [mit nach Hause],
+ist das euer Kind jetzt oder wie ist das?“, wir waren noch jung. Es
+gab immer Ärger mit einigen Rechtsextremen […] und [die Kollegen] haben Angst gehabt, deswegen war der Kontakt [mit uns so].
+Wir waren nicht die Menschen, die Arbeitskollegen öfters mit nach
+Hause nehmen können. Man hatte mit den Nachbarn Ärger gekriegt und der Nachbar hat gefragt: „Kennst du nicht jemand der
+weiß ist, mit dem du dich beschäftigen kannst oder befreundet sein
+kannst? Du weißt nicht was die hier machen. Die haben es geschafft
+zu uns zu kommen, das alles irgendwie zu machen, aber wir können
+nirgendwo hinreisen. Und du nimmst die mit zu dir nach Hause.
+Spinnst du?“.`,
+                    `[...] Aber einige waren auch sehr interessiert, die sich
+gefreut haben. Und am Tierpark hatten wir schöne Zeiten hier. Nur
+solange die Gruppe nicht gekommen, die gegen uns waren, die angeblich Nachfolger von Hitler waren.`,
+                ],
+                author: "Ibraimo Alberto",
+                authorLink: "../bio/alberto.html",
+                audioFilePath: "/public/audio/IA_ 02.mp3",
+                imageFilePath: "/public/images/IA_ 02.jpg",
+                imageCaption: "Berlin-Friedrichsfelde. Postkarte der 80er Jahre",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Ibraimo Alberto 2"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav_header.html" locals='{"pathPrefix": "../", "active": "intrvw_ia02"}'></include>
+        </header>
+
+        <!-- Main: -->
+        <main class="m-auto sm:w-full md:w-4/5">
+            <div id="top-container" class="pt-8 font-glegoo">
+                <!-- Macou1 -->
+                <div id="macou1" class="flex flex-row flex-wrap">
+                    <!-- Quote -->
+                    <scope with="text">
+                        <div class="basis-full">
+                            <include src="./partials/interv_quote.html"></include>
+                        </div>
+
+                        <!-- Interview Main -->
+                        <div class="interview-info flex h-full basis-1/2 flex-col items-center justify-start">
+                            <br />
+
+                            <!-- Text -->
+                            <include src="./partials/interv_text.html"></include>
+                        </div>
+                        <!-- Image -->
+                        <include src="./partials/interv_img.html"></include>
+                    </scope>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

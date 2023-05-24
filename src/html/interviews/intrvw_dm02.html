@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "Besuch bekommen",
+                main: [
+                    `Im August 1989 haben wir mitbekommen, dass irgendwas nicht stimmt, im Oktober war dann diese Demos mit den DDR Bürgern. Wir hatten Angst und wir sind nicht zu der Demo gegangen.`,
+                    `1990 haben wir dann den ersten „Besuch“ bekommen von mehr als hundert Jugendlichen. Diese Jugendlichen, Neonazis, kamen dann zu
+                    unserem Wohnheim. Die haben dann alles kaputt gemacht, mit Steinen geworfen und so weiter. Die haben uns gesagt, dass sie wieder kommen. Dann war September 1991 und die Jugendlichen sind
+                    wieder gekommen. Und die haben wieder unser Wohnheim kaputt gemacht.`,
+                    `Das waren schlechte Erfahrungen, die ich in den letzten
+                    zwei Jahren da gemacht habe, nachdem ich zwölf Jahre dort gewohnt hatte. 1990 und 1991 war sehr sehr schlecht für mich. Bis
+                    heute vergesse ich diese Erfahrungen nicht, diese Aggressionen die ich gesehen und erlebt habe.`,
+                    `[…] Die haben gesungen: „Ausländer raus. Deutschland den Deutschen. Einpacken und nach Hause fliegen. Ihr seid nicht mehr erwünscht.“ so dass Deutschland ausländerfrei wird. Und natürlich
+                    hat der Betrieb darauf gehört und hat uns gesagt, dass wir einpacken und nach Hause müssen. Und wir sind dann nach Hause geflogen.`,
+                ],
+                author: "David Macou",
+                authorLink: "../bio/macou.html",
+                audioFilePath: "/public/audio/DM_ 02.mp3",
+                imageFilePath: "/public/images/DM_ 02.jpg",
+                imageCaption: "Hoyerswerda 1991 - Image Courtesy of Detlev Kennerth",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - David Macou"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav_header.html" locals='{"pathPrefix": "../", "active": "intrvw_dm02"}'></include>
+        </header>
+
+        <!-- Main: -->
+        <main class="m-auto sm:w-full md:w-4/5">
+            <div id="top-container" class="pt-8 font-glegoo">
+                <!-- Macou1 -->
+                <div id="macou1" class="flex flex-row flex-wrap">
+                    <!-- Quote -->
+                    <scope with="text">
+                        <div class="basis-full">
+                            <include src="./partials/interv_quote.html"></include>
+                        </div>
+
+                        <!-- Interview Main -->
+                        <div class="interview-info flex h-full basis-1/2 flex-col items-center justify-start">
+                            <br />
+
+                            <!-- Text -->
+                            <include src="./partials/interv_text.html"></include>
+                        </div>
+                        <!-- Image -->
+                        <include src="./partials/interv_img.html"></include>
+                    </scope>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
