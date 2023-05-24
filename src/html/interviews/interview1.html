@@ -28,13 +28,16 @@
 
         <!-- Main: -->
         <main class="m-auto sm:w-full md:w-4/5">
-            <div id="top-container" class="pt-12 font-glegoo">
+            <div id="top-container" class="pt-8 font-glegoo">
                 <!-- Macou1 -->
-                <div id="macou1" class="mb-32 flex flex-row">
-                    <div class="interview-info flex h-full basis-1/2 flex-col items-center justify-start">
-                        <!-- Quote -->
+                <div id="macou1" class="flex flex-row flex-wrap">
+                    <!-- Quote -->
+                    <div class="basis-full">
                         <include src="./partials/interv_quote.html" locals='{"quote": "Wie ein Theater beobachtet.."}'></include>
+                    </div>
 
+                    <!-- Interview Main -->
+                    <div class="interview-info flex h-full basis-1/3 flex-col items-center justify-start">
                         <!-- Text -->
                         <scope with="text">
                             <include src="./partials/interv_text.html"></include>

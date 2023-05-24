@@ -1,7 +1,12 @@
-<div class="mt-6">
+<div class="">
     <each loop="item, index in main">
-        <p>{{ item }}</p>
+        <p class="font-crimson-text font-semibold text-gray-950">{{ item }}</p>
     </each>
     <br />
-    <a href="{{ authorLink }}"> {{ author }} </a>
+    <a
+        href="{{ authorLink }}"
+        class="rounded-sm bg-gray-800 p-1 font-crimson-text font-semibold text-gray-100 hover:bg-gray-500 hover:text-gray-800"
+    >
+        {{ author }}
+    </a>
 </div>

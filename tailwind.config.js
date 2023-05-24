@@ -5,6 +5,7 @@ module.exports = {
             fontFamily: {
                 "playfair-display": ['"Playfair Display"'],
                 glegoo: ["Glegoo"],
+                "crimson-text": ['"Crimson Text"'],
             },
         },
     },
