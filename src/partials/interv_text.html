@@ -1,18 +1,17 @@
 <div class="flex flex-col items-center justify-between">
-    <div>
-        <each loop="item, index in main">
-            <p class="font-crimson-text text-lg font-semibold tracking-tight text-gray-950">{{ item }}</p>
-        </each>
-    </div>
-    <br />
-
     <!-- Audio -->
     <include src="./partials/interv_audio.html" locals='{"audioFilePath": "{{ audioFilePath }}", "title": "{{ title }}"}'> </include>
 
-    <br />
+    <div class="mt-10">
+        <each loop="item, index in main">
+            <p class="font-crimson-text text-lg font-semibold text-gray-950">{{ item }}</p>
+        </each>
+    </div>
+    <div class="mt-10" />
+
     <a
         href="{{ authorLink }}"
-        class="w-max justify-self-end rounded-sm bg-gray-800 p-1 font-crimson-text font-semibold text-gray-100 hover:bg-gray-500 hover:text-gray-800"
+        class="w-max justify-self-end rounded-sm bg-gray-200 p-1 px-2 font-crimson-text font-semibold text-red-800 hover:bg-red-800 hover:text-gray-200"
     >
         {{ author }}
     </a>

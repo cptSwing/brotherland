@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "Das ist normal",
+                main: [
+                    `Hier ist [uns] nichts passiert, [Rostock-Lichtenhagen] haben wir
+                    nur im Fernsehen mitbekommen. Hier auf der Straße wurde nur von
+                    Weitem gerufen „Ausländer raus“. Das ist normal. Aber richtig so
+                    angreifen oder richtig ins Gesicht geschimpft, das haben wir nicht
+                    erlebt. Aber eigentlich war es sehr ruhig in Leipzig.`,
+                    `Einfach nur durch, wenn wir hier bleiben wollen, Beruf lernen oder
+                    arbeiten wollen. Dann müssen wir durch.`,
+                ],
+                author: "Lan und Huu Loi Bin Seifert",
+                authorLink: "../bio.html#seifert",
+                audioFilePath: "/public/audio/LS_ 01.mp3",
+                imageFilePath: "/public/images/LS_ 01.png",
+                imageCaption: 'Filmstill aus "The Truth Lies in Rostock"',
+            },
+        };
+    </script>
+
+    <head>
+        <include
+            src="./partials/head.html"
+            locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Lan und Huu Loi Bin Seifert"}'
+        />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav_header.html" locals='{"pathPrefix": "../", "active": "intrvw_dm01"}'></include>
+        </header>
+
+        <!-- Main: -->
+        <main class="m-auto sm:w-full md:w-4/5">
+            <div id="top-container" class="pt-6">
+                <!-- Macou1 -->
+                <div id="macou1" class="flex flex-row flex-wrap content-between">
+                    <!-- Quote -->
+                    <scope with="text">
+                        <div class="basis-full">
+                            <include src="./partials/interv_quote.html"></include>
+                        </div>
+
+                        <!-- Interview Main -->
+                        <div class="interview-info flex h-full basis-1/2 flex-col items-center justify-start">
+
+                            <!-- Text -->
+                            <include src="./partials/interv_text.html"></include>
+                        </div>
+                        <!-- Image -->
+                        <include src="./partials/interv_img.html"></include>
+                    </scope>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

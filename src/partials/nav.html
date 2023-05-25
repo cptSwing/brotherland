@@ -1,87 +1,97 @@
 <div class="relative">
-    <div class="flex justify-evenly font-playfair-display text-2xl font-medium uppercase">
-        <a href="{{ pathNavPrefix }}/project.html" alt="Project">
-            <div
-                class="rounded-sm px-4 py-2 transition-colors ease-linear hover:bg-gray-300 {{ active === 'project' ? 'bg-gray-600/75 text-gray-100' : '' }}"
-            >
-                Project
-            </div>
-        </a>
-        <!-- <if condition="active === 'index'"> {{ active }} </if> -->
-        <div class="group z-10">
-            <input id="collapsible-interviews" class="hidden" type="checkbox" />
-            <label
-                for="collapsible-interviews"
-                class="block max-h-fit cursor-pointer rounded-t-sm rounded-b-none px-4 py-2 text-center font-playfair-display text-2xl font-medium uppercase group-hover:bg-gray-300 z-0 {{ active.includes('intrvw_')  ? 'bg-gray-600/75 text-gray-100' : '' }}"
-            >
-                Interviews
-            </label>
-            <div
-                class="absolute max-h-0 overflow-hidden rounded-b-md bg-slate-100 transition-[max-height] duration-300 ease-in-out hover:z-50 group-hover:max-h-screen"
-            >
-                <div class="rounded-b-md bg-slate-100 pt-1">
-                    <ul>
-                        <li>
-                            <a href="{{ pathNavPrefix }}/interviews/intrvw_dm01.html" alt="David Micoud">
-                                <div
-                                    class="rounded-sm px-4 py-2 text-lg transition-colors ease-linear hover:bg-gray-300 {{ active === 'intrvw_dm01' ? 'bg-gray-600/75 text-gray-100' : '' }}"
-                                >
-                                    David Micoud 1
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ pathNavPrefix }}/interviews/intrvw_dm02.html" alt="David Micoud 2">
-                                <div
-                                    class="rounded-sm px-4 py-2 text-lg transition-colors ease-linear hover:bg-gray-300 {{ active === 'intrvw_dm02' ? 'bg-gray-600/75 text-gray-100' : '' }}"
-                                >
-                                    David Micoud 2
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ pathNavPrefix }}/interviews/intrvw_ia01.html" alt="Ibraimo Alberto 1">
-                                <div
-                                    class="rounded-sm px-4 py-2 text-lg transition-colors ease-linear hover:bg-gray-300 {{ active === 'intrvw_ia01' ? 'bg-gray-600/75 text-gray-100' : '' }}"
-                                >
-                                    Ibraimo Alberto 1
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ pathNavPrefix }}/interviews/intrvw_ia02.html" alt="Ibraimo Alberto 2">
-                                <div
-                                    class="rounded-sm px-4 py-2 text-lg transition-colors ease-linear hover:bg-gray-300 {{ active === 'intrvw_ia02' ? 'bg-gray-600/75 text-gray-100' : '' }}"
-                                >
-                                    Ibraimo Alberto 2
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+    <div class="h-full w-full border-y-2 border-gray-700 bg-gray-300 bg-opacity-0">
+        <div class="flex justify-evenly font-playfair-display text-xl font-semibold">
+            <a href="{{ pathNavPrefix }}/project.html" alt="Project">
+                <div
+                    class="rounded-sm px-4 py-2 transition-colors ease-linear hover:bg-gray-300  text-red-800 {{ active === 'project' ? 'bg-gray-600/75 text-gray-100' : '' }}"
+                >
+                    Project
+                </div>
+            </a>
+            <!-- <if condition="active === 'index'"> {{ active }} </if> -->
+            <div class="group z-20">
+                <input id="collapsible-interviews" class="hidden" type="checkbox" />
+                <label
+                    for="collapsible-interviews"
+                    class="block max-h-fit cursor-pointer rounded-t-sm rounded-b-none px-4 py-2 text-center font-playfair-display  text-red-800 text-xl font-semibold group-hover:bg-gray-300 z-0 {{ active.includes('intrvw_')  ? 'bg-gray-600/75 text-gray-100' : '' }}"
+                >
+                    Interviews
+                </label>
+                <div
+                    class="absolute max-h-0 overflow-hidden rounded-b-md bg-slate-100 transition-[max-height] duration-300 ease-in-out hover:z-50 group-hover:max-h-screen"
+                >
+                    <div class="rounded-b-md bg-slate-100 pt-1">
+                        <ul>
+                            <li>
+                                <a href="{{ pathNavPrefix }}/interviews/intrvw_dm01.html" alt="David Macou 1">
+                                    <div
+                                        class="rounded-sm px-4 py-2 text-lg transition-colors ease-linear hover:bg-gray-300 {{ active === 'intrvw_dm01' ? 'bg-gray-600/75 text-gray-100' : '' }}"
+                                    >
+                                        David Macou 1
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ pathNavPrefix }}/interviews/intrvw_dm02.html" alt="David Macou 2">
+                                    <div
+                                        class="rounded-sm px-4 py-2 text-lg transition-colors ease-linear hover:bg-gray-300 {{ active === 'intrvw_dm02' ? 'bg-gray-600/75 text-gray-100' : '' }}"
+                                    >
+                                        David Macou 2
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ pathNavPrefix }}/interviews/intrvw_ia01.html" alt="Ibraimo Alberto 1">
+                                    <div
+                                        class="rounded-sm px-4 py-2 text-lg transition-colors ease-linear hover:bg-gray-300 {{ active === 'intrvw_ia01' ? 'bg-gray-600/75 text-gray-100' : '' }}"
+                                    >
+                                        Ibraimo Alberto 1
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ pathNavPrefix }}/interviews/intrvw_ia02.html" alt="Ibraimo Alberto 2">
+                                    <div
+                                        class="rounded-sm px-4 py-2 text-lg transition-colors ease-linear hover:bg-gray-300 {{ active === 'intrvw_ia02' ? 'bg-gray-600/75 text-gray-100' : '' }}"
+                                    >
+                                        Ibraimo Alberto 2
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ pathNavPrefix }}/interviews/intrvw_ls01.html" alt="Lan und Huu Loi Bin Seifert">
+                                    <div
+                                        class="rounded-sm px-4 py-2 text-lg transition-colors ease-linear hover:bg-gray-300 {{ active === 'intrvw_ls01' ? 'bg-gray-600/75 text-gray-100' : '' }}"
+                                    >
+                                        Lan und Huu Loi Bin Seifert
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <a href="{{ pathNavPrefix }}/exhibits.html" alt="Exhibits">
+                <div
+                    class="rounded-sm px-4 py-2 transition-colors ease-linear hover:bg-gray-300  text-red-800 {{ active === 'exhibits' ? 'bg-gray-600/75 text-gray-100' : '' }}"
+                >
+                    Exhibits
+                </div>
+            </a>
+            <a href="{{ pathNavPrefix }}/book.html" alt="Book">
+                <div
+                    class="rounded-sm px-4 py-2 transition-colors ease-linear hover:bg-gray-300  text-red-800 {{ active === 'book' ? 'bg-gray-600/75 text-gray-100' : '' }}"
+                >
+                    Book
+                </div>
+            </a>
+            <a href="{{ pathNavPrefix }}/about.html" alt="About">
+                <div
+                    class="rounded-sm px-4 py-2 transition-colors ease-linear hover:bg-gray-300  text-red-800 {{ active === 'about' ? 'bg-gray-600/75 text-gray-100' : '' }}"
+                >
+                    About
+                </div>
+            </a>
         </div>
-        <a href="{{ pathNavPrefix }}/about.html" alt="About">
-            <div
-                class="rounded-sm px-4 py-2 transition-colors ease-linear hover:bg-gray-300 {{ active === 'about' ? 'bg-gray-600/75 text-gray-100' : '' }}"
-            >
-                About
-            </div>
-        </a>
-        <a href="{{ pathNavPrefix }}/book.html" alt="Book">
-            <div
-                class="rounded-sm px-4 py-2 transition-colors ease-linear hover:bg-gray-300 {{ active === 'book' ? 'bg-gray-600/75 text-gray-100' : '' }}"
-            >
-                Book
-            </div>
-        </a>
-        <a href="{{ pathNavPrefix }}/exhibits.html" alt="Exhibits">
-            <div
-                class="rounded-sm px-4 py-2 transition-colors ease-linear hover:bg-gray-300 {{ active === 'exhibits' ? 'bg-gray-600/75 text-gray-100' : '' }}"
-            >
-                Exhibits
-            </div>
-        </a>
     </div>
-    <div class="pointer-events-none absolute top-0 z-20 h-full w-full border-y-2 border-gray-700" />
 </div>

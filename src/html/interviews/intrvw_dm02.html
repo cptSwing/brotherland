@@ -16,7 +16,7 @@
                     hat der Betrieb darauf gehört und hat uns gesagt, dass wir einpacken und nach Hause müssen. Und wir sind dann nach Hause geflogen.`,
                 ],
                 author: "David Macou",
-                authorLink: "../bio/macou.html",
+                authorLink: "../bio.html#macou",
                 audioFilePath: "/public/audio/DM_ 02.mp3",
                 imageFilePath: "/public/images/DM_ 02.jpg",
                 imageCaption: "Hoyerswerda 1991 - Image Courtesy of Detlev Kennerth",
@@ -35,24 +35,24 @@
 
         <!-- Main: -->
         <main class="m-auto sm:w-full md:w-4/5">
-            <div id="top-container" class="pt-8 font-glegoo">
+            <div id="top-container" class="pt-6">
                 <!-- Macou1 -->
                 <div id="macou1" class="flex flex-row flex-wrap">
-                    <!-- Quote -->
                     <scope with="text">
+                        <!-- Quote -->
                         <div class="basis-full">
                             <include src="./partials/interv_quote.html"></include>
                         </div>
 
-                        <!-- Interview Main -->
-                        <div class="interview-info flex h-full basis-1/2 flex-col items-center justify-start">
-                            <br />
-
-                            <!-- Text -->
+                        <!-- Text -->
+                        <div class="interview-info flex basis-1/3 flex-col items-center justify-start">
                             <include src="./partials/interv_text.html"></include>
                         </div>
+
                         <!-- Image -->
-                        <include src="./partials/interv_img.html"></include>
+                        <div class="pl-20 w-full basis-2/3">
+                            <include src="./partials/interv_img.html"></include>
+                        </div>
                     </scope>
                 </div>
             </div>
