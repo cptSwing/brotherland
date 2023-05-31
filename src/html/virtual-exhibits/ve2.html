@@ -11,6 +11,52 @@
 
         <main class="m-auto sm:w-full md:w-4/5">
             Virtual Exhibit 2
+
+            <div class="flex h-[40rem]">
+                <div class="relative flex min-h-min basis-1/2 flex-col justify-center pr-1">
+                    <div class="text-lg">
+                        Es wirkt so, als ob die DDR nur Show gemacht hätte mit dem Thema Solidarität. Wir sind so erzogen worden in der
+                        Schule, aber wenn du es im Nachhinein betrachtest, war überhaupt gar kein Kontakt gewollt mit den Ausländern.
+                    </div>
+
+                    <!-- Audio -->
+                    <div class="flex w-full justify-center pt-4">
+                        <include
+                            src="./partials/interv_audio.html"
+                            locals='{"audioFilePath": "../../../public/audio/01_ J_R_01.mp3", "title": ""}'
+                        ></include>
+                    </div>
+                </div>
+                <div class="flex min-h-min basis-1/2 flex-col pl-1">
+                    <div class="relative h-full rounded-sm">
+                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_06.jpg" class="absolute h-full w-full object-cover" />
+                    </div>
+                    <div class="relative h-full rounded-sm pt-2">
+                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_07.jpg" class="absolute h-full w-full object-cover" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 flex h-[60rem]">
+                <div class="-mt-20 flex basis-1/2 flex-col justify-between pr-1">
+                    <div class="relative mx-4 h-3/4 rounded-sm">
+                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_08.jpg" class="absolute h-full w-full object-cover" />
+                    </div>
+
+                    <!-- Audio -->
+                    <div class="flex w-full justify-center mb-20">
+                        <include
+                            src="./partials/interv_audio.html"
+                            locals='{"audioFilePath": "../../../public/audio/01_ J_R_01.mp3", "title": ""}'
+                        ></include>
+                    </div>
+                </div>
+                <div class="flex basis-1/2 flex-col justify-end pl-1">
+                    <div class="relative h-3/4 rounded-sm">
+                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_09.jpg" class="absolute h-full w-full object-cover" />
+                    </div>
+                </div>
+            </div>
             <br />
             <a href="./ve3.html" alt="Virtual Exhibit 3">Next: Virtual Exhibit 3</a>
         </main>
