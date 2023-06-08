@@ -15,7 +15,7 @@
                 ],
                 author: "Lan und Huu Loi Bin Seifert",
                 authorLink: "../bio.html#seifert",
-                audioFilePath: "/public/audio/LS_ 01.mp3",
+                audioFilePath: "/public/audio/LS_01.mp3",
                 imageFilePath: "/public/images/LS_ 01.png",
                 imageCaption: 'Filmstill aus "The Truth Lies in Rostock"',
             },
@@ -23,13 +23,12 @@
     </script>
 
     <head>
-        <include
-            src="./partials/head.html"
-            locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Lan und Huu Loi Bin Seifert"}'
-        />
+        <include src="./partials/head.html"
+            locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Lan und Huu Loi Bin Seifert"}' />
     </head>
 
-    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+    <body class="bg-white text-gray-700"
+        onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
         <header>
             <include src="./partials/nav_header.html" locals='{"pathPrefix": "../", "active": "intrvw_dm01"}'></include>
         </header>
@@ -58,4 +57,5 @@
             </div>
         </main>
     </body>
+
 </html>

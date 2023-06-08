@@ -69,7 +69,6 @@
 
 .cursor-ve {
     @apply cursor-[url(../../public/images/75.jpg),_pointer];
-    /* cursor: url(../../public/images/75.jpg), auto; */
 }
 
 p {
