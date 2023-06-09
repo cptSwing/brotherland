@@ -12,34 +12,47 @@
         </header>
 
         <main class="m-auto flex flex-col sm:w-full md:w-4/5 font-crimson-text font-semibold text-sm text-gray-900">
-            Virtual Exhibit 2
+            Virtual Exhibit 3
 
-            <div class="flex h-[30rem]">
-                <div class="relative flex min-h-min basis-1/2 flex-col justify-center pr-1">
-                    <span class="text-left pr-20">
-                        Es wirkt so, als ob die DDR nur Show gemacht hätte mit dem Thema Solidarität. Wir sind so
-                        erzogen worden in der
-                        Schule, aber wenn du es im Nachhinein betrachtest, war überhaupt gar kein Kontakt gewollt mit
-                        den Ausländern.
+            <div class="flex h-[40rem]">
+                <div class="relative flex min-h-min basis-1/2 flex-col justify-between pr-1">
+                    <!-- Audio -->
+                    <div class="flex w-4/5 z-20 justify-center ">
+                        <include src="./partials/interv_audio.html"
+                            locals='{"audioFilePath": "../../../public/audio/01_wir_wollten_das_ja_letzten_Endes.mp3", "title": "wir wollten das ja letzten endes"}'>
+                        </include>
+                    </div>
+
+                    <!-- Steine -->
+                    <div class="relative translate-x-8 z-10 h-4/5 overflow-hidden rounded-sm">
+                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_015.jpg"
+                            class="absolute h-full w-full object-cover" />
+                    </div>
+                </div>
+
+                <div class="ml-1 mr-4 flex basis-1/2 flex-col justify-between items-center">
+                    <!-- Tauben-->
+                    <div class="relative h-full mt-16 w-full overflow-hidden rounded-sm">
+                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_014.jpg" class="absolute object-cover" />
+                    </div>
+
+                    <!-- Text "Meine Arbeit nehmen die.."  -->
+                    <span class="w-2/3 mt-16">
+                        „Meine Arbeit nehmen die mir jetzt
+                        weg!“. Da hatte aber niemand mehr
+                        Arbeit gehabt, weil alle waren ja
+                        arbeitlsos. Die Arbeit gab's ja gar
+                        nicht mehr.
                     </span>
 
                     <!-- Audio -->
-                    <div class="flex w-full justify-center pt-4">
+                    <div class="flex w-full justify-center ">
                         <include src="./partials/interv_audio.html"
-                            locals='{"audioFilePath": "../../../public/audio/01_J_R_01.mp3", "title": ""}'></include>
+                            locals='{"audioFilePath": "../../../public/audio/01_wir_wollten_das_ja_letzten_Endes.mp3", "title": "wir wollten das ja letzten endes"}'>
+                        </include>
                     </div>
-                </div>
-                <div class="ml-1 mr-4 flex min-h-min basis-1/2 flex-col">
-                    <!-- Plattenbauten Hoch -->
-                    <div class="relative h-full overflow-hidden rounded-sm">
-                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_06.jpg"
-                            class="absolute h-full w-full object-cover" />
-                    </div>
-                    <!-- Plattenbauten mittelhoch -->
-                    <div class="relative h-full overflow-hidden rounded-sm pt-2">
-                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_07.jpg"
-                            class="absolute h-full w-full object-cover" />
-                    </div>
+
+
                 </div>
             </div>
 
@@ -149,7 +162,7 @@
                 </div>
             </div>
             <br />
-            <a href="./ve3.html" alt="Virtual Exhibit 3">Next: Virtual Exhibit 3</a>
+            <a href="./ve4.html" alt="Virtual Exhibit 4">Next: Virtual Exhibit 4</a>
         </main>
     </body>
 
