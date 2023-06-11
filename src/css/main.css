@@ -67,6 +67,10 @@
         U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+main {
+    @apply sm:w-full px-2 md:w-4/5 lg:w-2/3 xl:w-3/5 text-gray-900
+}
+
 .cursor-ve {
     @apply cursor-[url(../../public/images/75.jpg),_pointer];
 }
