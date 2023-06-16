@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <include src="./partials/head.html" locals='{"pathHeadPrefix": "../", "pageTitle": "Brotherland - Project"}' />
     </head>
@@ -10,93 +9,90 @@
             <include src="./partials/nav.html" locals='{"pathPrefix": "./", "active": "project"}'></include>
         </header>
 
-        <main class="m-auto font-crimson-text text-lg font-semibold">
+        <main class="m-auto flex flex-col items-start justify-start font-crimson-text text-lg font-semibold">
             <!-- 1. -->
             <div class="mb-6 flex justify-between">
-                <span class="w-1/2 p-2">
-                    Brotherland berichtet von einer Zeit, von der man nur schwer erzählen kann. Die Komplexität der
-                    Wendejahre und ihr Erbe
-                    wird durch die Kontextualisierung von Fotos, Archivmaterial und Portraits - verknüpft mit Interviews
-                    - dargestellt.
-                </span>
-                <div class="p-2">
+                <div class="w-1/2 pr-8 text-justify">
+                    Brotherland berichtet von einer Zeit, von der man nur schwer erzählen kann. Die Komplexität der Wendejahre und ihr Erbe
+                    wird durch die Kontextualisierung von Fotos, Archivmaterial und Portraits - verknüpft mit Interviews - dargestellt.
+                </div>
+                <div class="h-80 w-1/2 pl-8">
                     <!-- Image placeholders: -->
-                    <a href="virtual-exhibits/ve2.html">
-                        <div
-                            class="h-96 w-full rounded-sm object-contain transition-colors ease-linear grayscale hover:grayscale-0 hover:cursor-[url(/public/images/75.jpg),_pointer] hover:rounded-lg hover:bg-slate-400">
-                            <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_The Truth Lies in Rostock_ 02.jpg"
-                                class="h-full" />
-                        </div>
-                    </a>
+                    <div
+                        class="relative h-full w-full overflow-hidden rounded-sm grayscale transition-[filter] ease-linear hover:rounded-lg hover:bg-slate-400 hover:grayscale-0"
+                    >
+                        <a href="virtual-exhibits/ve2.html" class="group">
+                            <img
+                                src="/public/images/Zaninelli_Jacobs_BROTHERLAND_The Truth Lies in Rostock_ 02.jpg"
+                                class="absolute h-full w-full object-cover group-hover:cursor-[url(/public/images/75.jpg),_pointer]"
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
             <!-- 2. -->
-            <div class="mb-6 flex">
-                <div class="p-2">
-                    <!-- Image placeholders: -->
-                    <a href="virtual-exhibits/ve3.html">
-                        <div
-                            class="h-full w-96 rounded-sm bg-slate-600 transition-colors ease-linear hover:cursor-[url(/public/images/75.jpg),_pointer] hover:rounded-lg hover:bg-slate-400">
-                        </div>
-                    </a>
+            <div class="mb-20 flex justify-between">
+                <div class="w-2/5 pb-16">
+                    <!-- Image placeholders: Zaninelli_Jacobs_BROTHERLAND_04.jpg -->
+                    <div
+                        class="relative h-full w-full overflow-hidden rounded-sm grayscale transition-[filter] ease-linear hover:cursor-[url(/public/images/75.jpg),_pointer] hover:rounded-lg hover:bg-slate-400 hover:grayscale-0"
+                    >
+                        <a href="virtual-exhibits/ve3.html" class="group">
+                            <img
+                                src="/public/images/Zaninelli_Jacobs_BROTHERLAND_04.jpg"
+                                class="absolute h-full w-full object-cover hover:cursor-[url(/public/images/75.jpg),_pointer]"
+                            />
+                        </a>
+                    </div>
                 </div>
-                <span class="p-2">
+                <div class="w-3/5 pl-8 pt-12 text-justify">
                     <p>
-                        Am 9. November 1989 fällt die Berliner Mauer und ein Jahr später wird Deutschland
-                        wiedervereinigt. Für viele ein
-                        Fest, die Errungenschaft der Freiheit, die Verwirklichung von etwas lang Erträumtem. Für andere
-                        der Beginn einer
+                        Am 9. November 1989 fällt die Berliner Mauer und ein Jahr später wird Deutschland wiedervereinigt. Für viele ein
+                        Fest, die Errungenschaft der Freiheit, die Verwirklichung von etwas lang Erträumtem. Für andere der Beginn einer
                         Zeit geprägt von Gewalt und Angst. Wie so oft hat die Geschichte mindestens zwei Seiten.
                     </p>
                     <p>
-                        Eberswalde, 24 November 1990. Der – ehemalige – Vertragsarbeiter Amadeu Antonio Kiowa wird von
-                        Neonazis überfallen
-                        und verstirbt am 6. Dezember. Er war eines der ersten Todesopfer rassistischer Gewalt im eben
-                        erst wiedervereinigten
+                        Eberswalde, 24 November 1990. Der – ehemalige – Vertragsarbeiter Amadeu Antonio Kiowa wird von Neonazis überfallen
+                        und verstirbt am 6. Dezember. Er war eines der ersten Todesopfer rassistischer Gewalt im eben erst wiedervereinigten
                         Deutschland. Amadeu Antonio war 1987 als Vertragsarbeiter aus Angola in die DDR gekommen.
                     </p>
                     <p>
-                        Um den Mangel an Arbeitskräften zu beheben, schloss die DDR ab Anfang der 1960er-Jahre
-                        bilaterale Verträge mit
-                        anderen Staaten zur Ausbildung und Beschäftigung von Arbeitskräften ab. Diese sozialistischen
-                        Herkunftsländer wurden
-                        als Bruderländer definiert. Die ersten Vertragsarbeiter:innen kamen aus Polen und Ungarn, später
-                        auch aus Algerien,
+                        Um den Mangel an Arbeitskräften zu beheben, schloss die DDR ab Anfang der 1960er-Jahre bilaterale Verträge mit
+                        anderen Staaten zur Ausbildung und Beschäftigung von Arbeitskräften ab. Diese sozialistischen Herkunftsländer wurden
+                        als Bruderländer definiert. Die ersten Vertragsarbeiter:innen kamen aus Polen und Ungarn, später auch aus Algerien,
                         Angola, Kuba, Mosambik und Vietnam.
                     </p>
-                </span>
+                </div>
             </div>
             <!-- 3. -->
-            <div class="mb-6 flex">
-                <span class="p-2">
+            <div class="mb-6 flex justify-between">
+                <div class="w-3/5 pr-8 text-justify">
                     <p>
-                        Die „Ausländer raus“-Gewalt nach der Wende begann nicht erst 1992 mit dem Pogrom in
-                        Rostock-Lichtenhagen und den
-                        Brandanschlägen 1993 in Mölln und Solingen. Bereits 1991 wurden in Hoyerswerda tagelang ein
-                        Wohnheim für
-                        Vertragsarbeiter und eine Geflüchtetenunterkunft angegriffen. Zeitweise standen bis zu 500
-                        Schaulustige vor den
-                        Heimen, aus dieser Masse heraus fanden die Angriffe statt. In Rostock-Lichtenhagen wurden das
-                        Wohnheim ehemaliger
-                        vietnamesischer Vertragsarbeiter:innen und die „Zentrale Aufnahmestelle für Asylbewerber“
-                        angegriffen. Steine und
-                        Molotow-Cocktails flogen gegen die Gebäude und auf die Menschen in ihnen. An diesem Pogrom
-                        beteiligten sich mehrere
+                        Die „Ausländer raus“-Gewalt nach der Wende begann nicht erst 1992 mit dem Pogrom in Rostock-Lichtenhagen und den
+                        Brandanschlägen 1993 in Mölln und Solingen. Bereits 1991 wurden in Hoyerswerda tagelang ein Wohnheim für
+                        Vertragsarbeiter und eine Geflüchtetenunterkunft angegriffen. Zeitweise standen bis zu 500 Schaulustige vor den
+                        Heimen, aus dieser Masse heraus fanden die Angriffe statt. In Rostock-Lichtenhagen wurden das Wohnheim ehemaliger
+                        vietnamesischer Vertragsarbeiter:innen und die „Zentrale Aufnahmestelle für Asylbewerber“ angegriffen. Steine und
+                        Molotow-Cocktails flogen gegen die Gebäude und auf die Menschen in ihnen. An diesem Pogrom beteiligten sich mehrere
                         hundert Neonazis und bis zu 3.000 applaudierende Zuschauer:innen.
                     </p>
                     <p>
-                        Hoyerswerda und Rostock waren, wie alle rechtsextremistischen Anschläge der 1990er-Jahre,
-                        Ausdruck rassistischer und
+                        Hoyerswerda und Rostock waren, wie alle rechtsextremistischen Anschläge der 1990er-Jahre, Ausdruck rassistischer und
                         nationalistischer Einstellungen, die später zum mörderischen Terror des sogenannten NSU führten.
                     </p>
-                </span>
-                <div class="p-2">
-                    <!-- Image placeholders: -->
-                    <a href="virtual-exhibits/ve4.html">
-                        <div
-                            class="h-full w-96 rounded-sm bg-slate-600 transition-colors ease-linear hover:cursor-[url(/public/images/75.jpg),_pointer] hover:rounded-lg hover:bg-slate-400">
-                        </div>
-                    </a>
+                </div>
+                <div class="w-2/5">
+                    <!-- Image placeholders:  -->
+                    <div
+                        class="relative h-full w-full overflow-hidden rounded-sm grayscale transition-[filter] ease-linear hover:cursor-[url(/public/images/75.jpg),_pointer] hover:rounded-lg hover:bg-slate-400 hover:grayscale-0"
+                    >
+                        <a href="virtual-exhibits/ve3.html" class="group">
+                            <img
+                                src="/public/images/Zaninelli_Jacobs_BROTHERLAND_03.jpg"
+                                class="absolute h-full w-full object-cover hover:cursor-[url(/public/images/75.jpg),_pointer]"
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
             <!-- 4. -->
@@ -105,39 +101,29 @@
                     <!-- Image placeholders: -->
                     <a href="virtual-exhibits/ve3.html">
                         <div
-                            class="h-full w-96 rounded-sm bg-slate-600 transition-colors ease-linear hover:cursor-[url(/public/images/75.jpg),_pointer] hover:rounded-lg hover:bg-slate-400">
-                        </div>
+                            class="h-full w-96 rounded-sm bg-slate-600 transition-colors ease-linear hover:cursor-[url(/public/images/75.jpg),_pointer] hover:rounded-lg hover:bg-slate-400"
+                        ></div>
                     </a>
                 </div>
                 <span class="p-2">
                     <p>
-                        In der tagesaktuellen Berichterstattung und auch der Geschichtsschreibung kamen – und kommen –
-                        die Menschen, gegen
-                        die sich diese Gewalt richtete, selten zu Wort. Auf die Fragen, wieso (deutsche) Jugendliche den
-                        Hitlergruß machen
-                        oder wieso der Rassismus in den neuen Bundesländern womöglich „verständlich“ sei, wurde
-                        erheblich mehr Gewicht
-                        gelegt. Wir haben ehemalige Vertragsarbeiter:innen aus Angola, Mosambik und Vietnam interviewt
-                        und porträtiert. In
-                        den Interviews erzählen sie von ihren Erlebnissen während der Wende. Ebenso haben wir uns aber
-                        auch entschieden,
-                        Deutsche zu interviewen, die in den in den 1990er-Jahren in Hoyerswerda, Eberswalde und Rostock
-                        gelebt haben, um
+                        In der tagesaktuellen Berichterstattung und auch der Geschichtsschreibung kamen – und kommen – die Menschen, gegen
+                        die sich diese Gewalt richtete, selten zu Wort. Auf die Fragen, wieso (deutsche) Jugendliche den Hitlergruß machen
+                        oder wieso der Rassismus in den neuen Bundesländern womöglich „verständlich“ sei, wurde erheblich mehr Gewicht
+                        gelegt. Wir haben ehemalige Vertragsarbeiter:innen aus Angola, Mosambik und Vietnam interviewt und porträtiert. In
+                        den Interviews erzählen sie von ihren Erlebnissen während der Wende. Ebenso haben wir uns aber auch entschieden,
+                        Deutsche zu interviewen, die in den in den 1990er-Jahren in Hoyerswerda, Eberswalde und Rostock gelebt haben, um
                         mehr von den/ihren Lebensrealitäten während und nach der Wende zu erfahren.
                     </p>
                     <p>
-                        Die Fotos wurden an den Orten aufgenommen, an denen die Anschläge stattfanden, und zeigen sie in
-                        einer zeitlosen
-                        Dimension. Die Stillleben und das Archivmaterial konzentrieren sich auf die Spektakularisierung
-                        der Ereignisse und
+                        Die Fotos wurden an den Orten aufgenommen, an denen die Anschläge stattfanden, und zeigen sie in einer zeitlosen
+                        Dimension. Die Stillleben und das Archivmaterial konzentrieren sich auf die Spektakularisierung der Ereignisse und
                         auf verschiedene Facetten der Gewalt. In der Summe soll <span class="italic">Brotherland</span>
-                        die Stimmung
-                        deutlich machen, in der die Angriffe stattgefunden haben und von einer breiten Masse legitimiert
+                        die Stimmung deutlich machen, in der die Angriffe stattgefunden haben und von einer breiten Masse legitimiert
                         wurden.
                     </p>
                 </span>
             </div>
         </main>
     </body>
-
 </html>
