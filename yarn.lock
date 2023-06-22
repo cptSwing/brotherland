@@ -1822,6 +1822,11 @@ semver@^5.7.0, semver@^5.7.1:
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
 
+simplelightbox@^2.14.1:
+  version "2.14.1"
+  resolved "https://registry.yarnpkg.com/simplelightbox/-/simplelightbox-2.14.1.tgz#9fa0f41e4599e49b8dc2f92f8dc01cdca04bed4e"
+  integrity sha512-REeHJetP+vq4hbKDkTf8apu7jAYOHws7PWc1j30O0q79NMIrg9g72smCyKWNTFyZtWdEd7WEu9DIClaG42s3Xg==
+
 source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"

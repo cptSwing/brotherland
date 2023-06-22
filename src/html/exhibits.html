@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../", "pageTitle": "Brotherland - Exhibits"}' />
+        <link rel="stylesheet" href="../css/simple-lightbox.css" />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../", "pageTitle": "Brotherland - Book"}' />
     </head>
 
     <body class="bg-white text-gray-700">
@@ -10,7 +10,36 @@
             <include src="./partials/nav.html" locals='{"pathPrefix": "./", "active": "exhibits"}'></include>
         </header>
 
-        <main class="m-auto">Exhibits</main>
-    </body>
+        <a class="overflow-hidden rounded-sm h-32 w-32" src="public/images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_01.jpg"></a>
+        <a class="overflow-hidden rounded-sm h-32 w-32" src="/images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_01.jpg"></a>
+        <a class="overflow-hidden rounded-sm h-32 w-32" src="images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_01.jpg"></a>
+        <a class="overflow-hidden rounded-sm h-32 w-32" src="/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_01.jpg"></a>
 
+
+        <main class="m-auto">
+            <div id="simplelightboxgallery" class="gallery grid grid-cols-4 gap-4 xl:grid-cols-5 2xl:grid-cols-6">
+                <a class="overflow-hidden rounded-sm" src="./images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_01.jpg">
+                    <img src="/public/images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_01.jpg" title="" class="w-full" />
+                </a>
+                <a class="overflow-hidden rounded-sm" src="./images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_02.jpg">
+                    <img src="/public/images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_02.jpg" title="" class="w-full" />
+                </a>
+                <a class="overflow-hidden rounded-sm" src="./images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_03.jpg">
+                    <img src="/public/images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_03.jpg" title="" class="w-full" />
+                </a>
+                <a class="overflow-hidden rounded-sm" src="./images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_04.jpg">
+                    <img src="/public/images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_04.jpg" title="" class="w-full" />
+                </a>
+                <a class="overflow-hidden rounded-sm" src="./images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_05.jpg">
+                    <img src="/public/images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_05.jpg" title="" class="w-full" />
+                </a>
+                <a class="overflow-hidden rounded-sm" src="./images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_06.jpg">
+                    <img src="/public/images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_06.jpg" title="" class="w-full" />
+                </a>
+                <a class="overflow-hidden rounded-sm" src="./images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_07.jpg">
+                    <img src="/public/images/exhibits/Zaninelli_Jacobs_BROTHERLAND_exhibition_07.jpg" title="" class="w-full" />
+                </a>
+            </div>
+        </main>
+    </body>
 </html>
