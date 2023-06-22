@@ -2,7 +2,9 @@
     "license": "MIT",
     "scripts": {
         "dev": "parcel src/index.html",
-        "build": "parcel build src/index.html"
+        "build": "parcel build src/index.html",
+        "predeploy": "rm -rf dist && parcel build ./*.html --public_url https://cptswing.github.io/brotherland",
+        "deploy": "dist -d dist"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.14",
