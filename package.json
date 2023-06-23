@@ -3,13 +3,14 @@
     "scripts": {
         "dev": "parcel src/index.html",
         "build": "parcel build src/index.html",
-        "predeploy": "rm -rf dist && parcel build src/index.html --public-url https://cptswing.github.io/brotherland",
+        "predeploy": "git checkout gh-pages && git merge main && rm -rf dist && parcel build src/index.html --public-url https://cptswing.github.io/brotherland",
         "deploy": "gh-pages -d dist"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.14",
         "gh-pages": "^5.0.0",
         "parcel": "^2.8.3",
+        "parcel-namer-hashless": "^1.0.5",
         "postcss": "^8.4.23",
         "posthtml-expressions": "^1.11.0",
         "posthtml-include": "^1.7.4",

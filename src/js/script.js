@@ -1,6 +1,6 @@
 import SimpleLightbox from "simplelightbox";
 
-exhibitGalleryOnLoad();
+exhibitGalleryOnLoad( this );
 
 /** use me in body.onload */
 function setParentElementHeight( childElementClass ) {
@@ -31,23 +31,26 @@ function imageHref( imageClass ) {
     } );
 }
 
-function exhibitGalleryOnLoad() {
-    let gallery = new this.SimpleLightbox( ".gallery a", { uniqueImages: false } );
 
-    const data = gallery.getLighboxData()
-    console.log(data);
+function exhibitGalleryOnLoad(  ) {
+
+    let gallery = new SimpleLightbox( ".gallery div", {       sourceAttr: 'gallerySrc',
+uniqueImages: false } );
+    const data = gallery.getLighboxData();
+    console.log( '%c[script]', 'color: #f71fe6', `gallery, data :`, gallery, data );
 
     gallery.on( "click", () => {
         console.log( "click" );
-        gallery.open()
+        gallery.open();
     } );
-
     gallery.on( 'show.simplelightbox', function () {
         console.log( 'show.simplelightbox' );
     } );
-
-
     gallery.on( 'error.simplelightbox', function ( e ) {
         console.log( e ); // some usefull information
     } );
+
+    let galleryThis = new this.SimpleLightbox( ".gallery div", {       sourceAttr: 'gallerySrc',
+uniqueImages: false } );
+    console.log( '%c[script]', 'color: #aa0bc4', `galleryThis :`, galleryThis );
 }
