@@ -19,20 +19,37 @@
 
                 <a
                     class="absolute right-0 top-0 z-50 h-full hover:cursor-[url(/public/images/75.jpg),_pointer] sm:w-1/12 md:w-[10%] lg:w-1/6 xl:w-1/5 2xl:w-1/4"
-                    href="#"
+                    href="./ve2.html"
                 ></a>
             </div>
+        </div>
 
-            <main class="m-auto flex flex-col font-crimson-text text-lg font-bold">
-                <div class="relative flex h-[88rem] pt-20">
-                    <div class="flex h-full w-2/5 flex-col justify-start">
-                        <!-- Stahlturm -->
-                        <div class="relative z-10 h-full overflow-hidden rounded-sm">
-                            <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_023.jpg" class="absolute h-full w-full object-cover" />
-                        </div>
+        <main class="m-auto flex flex-col font-crimson-text text-xl font-bold">
+            <div class="relative flex h-fit w-full pt-20">
+                <div class="flex h-full w-2/5 justify-start">
+                    <!-- Stahlturm -->
+                    <div class="aspect-2/3 w-full overflow-hidden rounded-sm object-cover">
+                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_023.jpg" />
+                    </div>
+                </div>
+                <div class="absolute left-1/2 top-1/4 flex h-fit w-2/5 -translate-x-1/2 -translate-y-1/4 justify-start">
+                    <!-- Audio "die ganze Struktur zerbrach" -->
+                    <div class="flex w-full justify-center rounded-sm bg-gray-900 px-2 py-8">
+                        <include
+                            src="./partials/interv_audio.html"
+                            locals='{"audioFilePath": "../../../public/audio/01_die_ganze_Struktur_zerbrach.mp3", "title": "die ganze Struktur zerbrach"}'
+                        >
+                        </include>
+                    </div>
+                </div>
+            </div>
 
+            <div class="-my-20 flex h-fit w-full justify-between lg:-my-32">
+                <div class="flex w-3/5">
+                    <div class="w-1/6"></div>
+                    <div class="relative h-full w-full">
                         <!-- Audio "das nahm ja so überhand" -->
-                        <div class="z-20 mx-auto my-32 flex w-4/5 justify-center rounded-sm bg-gray-900 px-2 py-8">
+                        <div class="absolute top-1/2 flex h-fit w-1/2 -translate-y-1/2 justify-center rounded-sm bg-gray-900 px-2 py-8">
                             <include
                                 src="./partials/interv_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/02_das_nahm_ja_so_Überhand.mp3", "title": "das nahm ja so Überhand"}'
@@ -40,40 +57,24 @@
                             </include>
                         </div>
                     </div>
-
-                    <div class="absolute left-0 right-0 top-0 z-10 mx-auto flex h-full w-1/3 flex-col justify-start pt-32">
-                        <!-- Audio "die ganze Struktur zerbrach" -->
-                        <div class="flex w-full justify-center rounded-sm bg-gray-900 px-2 py-8">
-                            <include
-                                src="./partials/interv_audio.html"
-                                locals='{"audioFilePath": "../../../public/audio/01_die_ganze_Struktur_zerbrach.mp3", "title": "die ganze Struktur zerbrach"}'
-                            >
-                            </include>
-                        </div>
-                    </div>
-
-                    <div class="h-full w-1/5"></div>
-
-                    <div class="flex h-full w-2/5 flex-col items-end justify-end">
-                        <div class="mt-auto h-full"></div>
-
-                        <!-- Plattenbau-->
-                        <div class="relative -mb-64 h-full w-full overflow-hidden rounded-sm">
-                            <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_024.jpg" class="absolute object-cover" />
-                        </div>
-                    </div>
                 </div>
 
-                <div class="relative -z-10 -ml-32 -mt-20 flex h-[70rem]">
-                    <div class="flex basis-[90%] flex-col justify-center pr-1">
-                        <!-- Scherben -->
-                        <div class="relative h-5/6 w-full overflow-hidden rounded-sm">
-                            <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_025.jpg" class="absolute h-full w-full object-cover" />
-                        </div>
+                <!-- Plattenbau-->
+                <div class="relative z-10 aspect-2/3 w-2/5 overflow-hidden rounded-sm object-cover">
+                    <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_024.jpg" />
+                </div>
+            </div>
+
+            <div class="flex h-fit w-full">
+                <div class="relative w-11/12 -translate-x-[5%]">
+                    <!-- Scherben -->
+                    <div class="aspect-3/2 w-full rounded-sm object-cover">
+                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_025.jpg" />
+                        <span class="absolute w-full text-left text-xs">mit freundlicher Genehmigung von Umbruch Bildarchiv</span>
                     </div>
 
                     <!-- Audio "Besuch bekommen" -->
-                    <div class="absolute bottom-0 right-0 mb-4 mr-12 flex w-1/4 justify-center rounded-sm bg-gray-900 px-2 py-8">
+                    <div class="absolute bottom-0 right-0 w-1/4 translate-x-[5%] translate-y-1/2 rounded-sm bg-gray-900 px-2 py-8">
                         <include
                             src="./partials/interv_audio.html"
                             locals='{"audioFilePath": "../../../public/audio/03_Besuch_bekommen.mp3", "title": "Besuch bekommen"}'
@@ -81,116 +82,140 @@
                         </include>
                     </div>
                 </div>
+            </div>
 
-                <div class="flex-flex-col mt-24 w-full items-end justify-start">
-                    <span class="ml-auto block w-1/3 text-left text-lg font-bold"
-                        >Ich habe gesagt: „Keine Angst, wir sind versteckt in der Wohnung,</span
-                    >
-                    <div class="mx-auto w-full pb-2 text-center font-sans text-7xl text-red-600">
-                        <span>WIR KOMMEN NICHT RAUS</span>
-                    </div>
-                    <span class="ml-auto block w-1/3 text-left text-lg font-bold"
-                        >Die Gefahr war schon da, in den Wohnheimen, wo so viele Vietnamesen und Ausländer gesammelt gewohnt haben. Aber ich
-                        hatte schon eine eigene Wohnung... da hatte ich Glück, in dem Fall. Die Nazis kommen nicht in die deutschen Blöcken.
-                        Nur zu den Wohnheimen, den Ausländerwohnheimen, da kommen die hin. Das habe ich von unsere Leute gehört... es war
-                        schon eine ängstliche Zeit.</span
+            <div class="flex h-fit w-full flex-col items-end justify-start py-32">
+                <span class="block w-1/2 text-left lg:w-1/3">Ich habe gesagt: „Keine Angst, wir sind versteckt in der Wohnung,</span>
+                <div class="w-full">
+                    <span
+                        class="whitespace-nowrap font-sans text-[6vw] leading-snug text-red-600 sm:text-[7.25vw] md:text-[6vw] lg:text-[5.375vw] xl:text-[4.9vw] 2xl:text-[4.45vw]"
+                        >WIR KOMMEN NICHT RAUS</span
                     >
                 </div>
+                <span class="block w-1/2 text-left lg:w-1/3">
+                    Die Gefahr war schon da, in den Wohnheimen, wo so viele Vietnamesen und Ausländer gesammelt gewohnt haben. Aber ich
+                    hatte schon eine eigene Wohnung... da hatte ich Glück, in dem Fall. Die Nazis kommen nicht in die deutschen Blöcken. Nur
+                    zu den Wohnheimen, den Ausländerwohnheimen, da kommen die hin. Das habe ich von unsere Leute gehört... es war schon eine
+                    ängstliche Zeit.</span
+                >
+            </div>
 
-                <div class="-mx-12 -mt-24 flex h-[60rem] justify-start">
-                    <div class="h-2/5 w-1/2">
-                        <!-- Bus 1 -->
-                        <div class="relative h-full w-full overflow-hidden rounded-sm">
-                            <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_026.jpg" class="absolute h-full w-full object-cover" />
-                        </div>
+            <div class="relative flex h-fit justify-between">
+                <div class="w-1/2">
+                    <!-- Bus 1 -->
+                    <div class="aspect-3/2 w-full -translate-y-2/3 overflow-hidden rounded-sm object-cover">
+                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_026.jpg" />
                     </div>
-                    <div class="-ml-12 mt-60 h-2/5 w-1/2">
-                        <!-- Bus 2 -->
-                        <div class="relative h-full w-full overflow-hidden rounded-sm">
-                            <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_027.jpg" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="w-1/2">
+                    <!-- Bus 2 -->
+                    <div class="relative aspect-3/2 w-full -translate-x-[10%] rounded-sm">
+                        <div class="absolute">
+                            <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_027.jpg" class="object-cover" />
+                            <div class="absolute bottom-0 z-10 w-full translate-y-full overflow-visible text-right text-xs">
+                                mit freundlicher Genehmigung von Detlev Kennerth
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="-mx-20 -mt-56 flex h-[80rem]">
-                    <div class="flex basis-1/2 flex-col justify-between pr-12">
-                        <!-- Flagge -->
-                        <div class="relative h-full w-full overflow-hidden rounded-sm">
-                            <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_028.jpg" class="absolute object-cover" />
-                        </div>
+            <div class="relative flex h-fit justify-between py-28">
+                <div class="w-5/12 pb-52">
+                    <!-- Flagge -->
+                    <div class="aspect-2/3 w-full overflow-hidden rounded-sm object-cover">
+                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_028.jpg" />
+                    </div>
+                </div>
+
+                <div class="relative w-5/12 pt-52">
+                    <!-- Sonnenblume -->
+                    <div class="aspect-2/3 w-full overflow-hidden rounded-sm object-cover">
+                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_029.jpg" />
                     </div>
 
-                    <div class="relative flex w-1/2 flex-col justify-end pl-12">
-                        <!-- Sonnenblume -->
-                        <div class="relative h-2/3 w-full overflow-hidden rounded-sm">
-                            <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_029.jpg" class="absolute h-full w-full object-cover" />
-                        </div>
+                    <!-- Audio "Das wollten wir doch nicht" -->
+                    <div class="absolute left-1/2 w-5/6 -translate-x-1/2 -translate-y-1/2 rounded-sm bg-gray-900 px-2 py-8">
+                        <include
+                            src="./partials/interv_audio.html"
+                            locals='{"audioFilePath": "../../../public/audio/04_das_wollten_wir_doch_nicht.mp3", "title": "das wollten wir doch nicht"}'
+                        >
+                        </include>
+                    </div>
+                </div>
+            </div>
 
-                        <!-- Audio "Das wollten wir doch nicht" -->
-                        <div class="absolute bottom-0 z-20 -mb-12 ml-12 flex w-4/5 justify-center rounded-sm bg-gray-900 px-2 py-8">
+            <div class="flex h-fit justify-between">
+                <div class="flex w-[47%] flex-col items-center justify-start">
+                    <!-- Klatsch 1 -->
+                    <div class="relative aspect-[15/9] w-full rounded-sm">
+                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_030.jpg" class="absolute object-cover" />
+                    </div>
+
+                    <div class="aspect-square w-full"></div>
+
+                    <!-- Tischtennisplatte -->
+                    <div class="relative mt-auto flex h-full w-full flex-col justify-end">
+                        <div class="relative aspect-2/3 w-11/12 overflow-hidden rounded-sm">
+                            <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_033.jpg" />
+                        </div>
+                        <!-- Audio "ich dachte ihr seid schon weg" -->
+                        <div class="absolute bottom-0 right-0 w-1/4 -translate-y-[150%] rounded-sm bg-gray-900 px-2 py-8">
                             <include
                                 src="./partials/interv_audio.html"
-                                locals='{"audioFilePath": "../../../public/audio/04_das_wollten_wir_doch_nicht.mp3", "title": "das wollten wir doch nicht"}'
+                                locals='{"audioFilePath": "../../../public/audio/05_ich_dachte_ihr_seid_schon_weg.mp3", "title": "ich dachte ihr seid schon weg"}'
                             >
                             </include>
                         </div>
                     </div>
                 </div>
 
-                <div class="flex h-[76rem]">
-                    <div class="flex w-1/2 flex-col items-center justify-between pr-8">
-                        <!-- Klatsch 1 -->
-                        <div class="relative h-full w-full overflow-hidden rounded-sm">
-                            <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_030.jpg" class="absolute object-cover" />
-                        </div>
+                <div class="relative flex w-[47%] flex-col justify-start">
+                    <div class="aspect-[15/9] w-full"></div>
 
-                        <!-- Tischtennisplatte -->
-                        <div class="relative mt-auto flex h-full w-full flex-col justify-end">
-                            <div class="relative h-full w-full overflow-hidden rounded-sm">
-                                <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_033.jpg" class="absolute object-cover" />
-                            </div>
-                            <!-- Audio "wir wollten das ja letzten endes" -->
-                            <div
-                                class="absolute bottom-1/3 right-0 -mr-12 flex w-1/4 items-center justify-center rounded-sm bg-gray-900 px-2 py-8"
-                            >
-                                <include
-                                    src="./partials/interv_audio.html"
-                                    locals='{"audioFilePath": "../../../public/audio/05_ich_dachte_ihr_seid_schon_weg.mp3", "title": "ich dachte ihr seid schon weg"}'
-                                >
-                                </include>
+                    <!-- Klatsch 2 -->
+                    <div class="relative aspect-3/2 w-full overflow-hidden rounded-sm pb-8">
+                        <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_031.jpg" class="absolute object-cover" />
+                    </div>
+
+                    <!-- Klatsch 3 -->
+                    <div class="relative aspect-3/2 w-full overflow-hidden rounded-sm">
+                        <div class="absolute">
+                            <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_032.jpg" class="object-cover" />
+                            <div class="absolute bottom-0 z-10 w-full translate-y-full overflow-visible text-right text-xs">
+                                mit freundlicher Genehmigung von Detlev Kennerth
                             </div>
                         </div>
                     </div>
 
-                    <div class="flex w-1/2 flex-col justify-end pl-8">
-                        <div class="my-auto h-1/5"></div>
-
-                        <!-- Klatsch 2 -->
-                        <div class="relative h-1/5 w-full overflow-hidden rounded-sm pb-8">
-                            <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_031.jpg" class="absolute object-cover" />
-                        </div>
-
-                        <!-- Klatsch 3 -->
-                        <div class="relative h-1/5 w-full overflow-hidden rounded-sm">
-                            <img src="/public/images/Zaninelli_Jacobs_BROTHERLAND_032.jpg" class="absolute object-cover" />
-                        </div>
-                        <div class="my-auto h-1/5"></div>
-
-                        <div class="my-auto flex h-1/5 flex-col justify-end">
-                            <!-- Audio "es gab keine Grenze" -->
-                            <div class="flex w-4/5 items-center justify-center rounded-sm bg-gray-900 px-2 py-8">
-                                <include
-                                    src="./partials/interv_audio.html"
-                                    locals='{"audioFilePath": "../../../public/audio/06_es_gab_keine_Grenze.mp3", "title": "es gab keine Grenze"}'
-                                >
-                                </include>
-                            </div>
-                        </div>
+                    <!-- Audio "es gab keine Grenze" -->
+                    <div class="absolute bottom-0 right-0 w-4/5 translate-x-[15%] rounded-sm bg-gray-900 px-2 py-8">
+                        <include
+                            src="./partials/interv_audio.html"
+                            locals='{"audioFilePath": "../../../public/audio/06_es_gab_keine_Grenze.mp3", "title": "es gab keine Grenze"}'
+                        >
+                        </include>
                     </div>
                 </div>
+            </div>
 
-                <div class="mt-36 h-[34rem] w-full rounded-lg bg-zinc-500"></div>
-            </main>
-        </div>
+            <div class="h-20"></div>
+
+            <a href="https://www.youtube.com/TyEXA0RXzfc">
+                <div class="mx-auto aspect-3/2 w-4/5 rounded-sm bg-zinc-500 hover:opacity-50">
+                    <!-- <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube-nocookie.com/embed/TyEXA0RXzfc?controls=0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                ></iframe> -->
+                </div>
+            </a>
+
+            <div class="h-20"></div>
+        </main>
     </body>
 </html>
