@@ -74,12 +74,16 @@
 
 
 main {
-    @apply sm:w-full mx-auto px-2 md:w-5/6 lg:w-3/4 xl:w-2/3 2xl:w-3/5 text-gray-900
+    @apply sm:w-full mx-auto px-2 md:w-5/6 lg:w-3/4 xl:w-2/3 2xl:w-3/5 text-gray-900 pt-16
 }
 
 /* .cursor-ve {
     @apply cursor-[url(../../public/images/75.jpg),_pointer];
 } */
+
+.cursor-ve {
+    @apply group-hover:cursor-[url(/public/images/virtAusstCursor.png)]
+}
 
 p {
     @apply mb-4;

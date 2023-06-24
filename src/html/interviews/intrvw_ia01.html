@@ -31,39 +31,18 @@ solange die Gruppe nicht gekommen, die gegen uns waren, die angeblich Nachfolger
     </script>
 
     <head>
-        <include src="./partials/head.html"
-            locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Ibraimo Alberto 1"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Ibraimo Alberto 1"}' />
     </head>
 
-    <body class="bg-white text-gray-700"
-        onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
         <header>
             <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ia01"}'></include>
         </header>
 
-        <!-- Main: -->
-        <main class="m-auto ">
-            <div id="top-container" class="pt-6">
-                <!-- Macou1 -->
-                <div id="macou1" class="flex flex-row flex-wrap">
-                    <!-- Quote -->
-                    <scope with="text">
-                        <div class="basis-full">
-                            <include src="./partials/interv_quote.html"></include>
-                        </div>
-
-                        <!-- Interview Main -->
-                        <div class="interview-info flex h-full basis-1/2 flex-col items-center justify-start">
-
-                            <!-- Text -->
-                            <include src="./partials/interv_text.html"></include>
-                        </div>
-                        <!-- Image -->
-                        <include src="./partials/interv_img.html"></include>
-                    </scope>
-                </div>
-            </div>
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
         </main>
     </body>
-
 </html>

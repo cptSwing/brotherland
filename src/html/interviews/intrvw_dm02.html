@@ -25,40 +25,18 @@
     </script>
 
     <head>
-        <include src="./partials/head.html"
-            locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - David Macou"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - David Macou"}' />
     </head>
 
-    <body class="bg-white text-gray-700"
-        onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
         <header>
             <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_dm02"}'></include>
         </header>
 
-        <!-- Main: -->
-        <main class="m-auto ">
-            <div id="top-container" class="pt-6">
-                <!-- Macou1 -->
-                <div id="macou1" class="flex flex-row flex-wrap">
-                    <scope with="text">
-                        <!-- Quote -->
-                        <div class="basis-full">
-                            <include src="./partials/interv_quote.html"></include>
-                        </div>
-
-                        <!-- Text -->
-                        <div class="interview-info flex basis-1/3 flex-col items-center justify-start">
-                            <include src="./partials/interv_text.html"></include>
-                        </div>
-
-                        <!-- Image -->
-                        <div class="pl-20 w-full basis-2/3">
-                            <include src="./partials/interv_img.html"></include>
-                        </div>
-                    </scope>
-                </div>
-            </div>
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
         </main>
     </body>
-
 </html>

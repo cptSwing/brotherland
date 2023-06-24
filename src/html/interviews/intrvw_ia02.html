@@ -41,28 +41,10 @@ solange die Gruppe nicht gekommen, die gegen uns waren, die angeblich Nachfolger
             <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ia02"}'></include>
         </header>
 
-        <!-- Main: -->
-        <main class="m-auto">
-            <div id="top-container" class="pt-6">
-                <!-- Macou1 -->
-                <div id="macou1" class="flex flex-row flex-wrap">
-                    <!-- Quote -->
-                    <scope with="text">
-                        <div class="basis-full">
-                            <include src="./partials/interv_quote.html"></include>
-                        </div>
-
-                        <!-- Interview Main -->
-                        <div class="interview-info flex h-full basis-1/2 flex-col items-center justify-start">
-
-                            <!-- Text -->
-                            <include src="./partials/interv_text.html"></include>
-                        </div>
-                        <!-- Image -->
-                        <include src="./partials/interv_img.html"></include>
-                    </scope>
-                </div>
-            </div>
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
         </main>
     </body>
 
