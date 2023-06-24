@@ -1,4 +1,5 @@
 {
+    "homepage": "https://cptswing.github.io/brotherland/",
     "license": "MIT",
     "scripts": {
         "dev": "parcel src/index.html",
