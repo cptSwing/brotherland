@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "Hoyerswerda hat den Anfang gemacht",
+                main: [
+                    `Wenn man das mit Abstand betrachtet, ist auch wirklich zu sehen,
+dass Hoyerswerda den Anfang gemacht hat, in Rostock wurde es
+noch einen Zacken schärfer. Da wurde mit Molotow-Cocktails gearbeitet, Gott sei Dank gab‘s keine Toten. Und dann Mölln*, wo die
+ganze Geschichte wirklich Leben gefordert hat. Das war für mich
+im
+Rückblick unter anderem ein Auslöser, der vielleicht dazu geführt
+hat, dass ich umgedacht habe.`,
+                ],
+                author: "Jan K. und René K.",
+                authorLink: "../bio.html#jankrenek",
+                audioFilePath: "/public/audio/J_R_03.mp3",
+                imageFilePath: "/public/images/J_R_03.jpg",
+                imageCaption: "Postkarte aus den 80er Jahren",
+                additionalContext: "In der Nacht auf den 23. November 1992 gab es in Mölln einen Brandanschlag auf zwei von türkischen Familien bewohnte Häuser mit drei Todesopfern und neun Schwerverletzten.",
+                prevLink: "intrvw_jr02.html",
+                nextLink: "intrvw_ks01.html",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Jan K. und René K. 3"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_jr03"}'></include>
+        </header>
+
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
+        </main>
+    </body>
+</html>

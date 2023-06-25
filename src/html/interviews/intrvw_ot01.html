@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "es war nicht böse gemeint",
+                main: [
+                    `Man hatte gar nicht die Möglichkeit sich kulturell miteinander irgendwie vertraut zu machen. Dass, sie die Möglichkeit hatten sich
+an unsere Kultur zu gewöhnen und wir an ihre. Dass Verständnis
+einfach für einander da ist. Wenn etwas passiert ist, wurden sie sicherlich alle abgesptempelt und wir sind vielleicht auch von denen abgestempelt worden. Manch einer verallgemeinert ja dann
+ganz schnell. Es gab so ein Begriff, der war auch nicht böse gemeint... naja heute ist es sowieso ein bisschen schwierig. Viele haben
+„Schningschnongs“ gesagt. Es gab weitere verschiede Begriffe zum
+Beispiel „Fidschis“. Es klingt jetzt ganz schlimm, aber irgendwie war
+es nicht böse gemeint. Für uns gab es auch viele Begriffe. Die Vietnamesen hat man einfach als fleißig und irgendwie nicht so auffällig
+wahrgenommen. Die wurden nicht so negativ behaftet wie vielleicht
+die Mosambikaner oder so.`,
+                ],
+                author: "Dennis und Silke O.",
+                authorLink: "../bio.html#silkedenniso",
+                audioFilePath: "/public/audio/OT_01.mp3",
+                imageFilePath: "/public/images/OT_01.jpg",
+                imageCaption: "Arbeiter vom Kombinat ‚Schwarze Pumpe‘. Bildcredit: Bundesarchiv, Bild 183-32626-0012 CC-BY-SA 3.0",
+                additionalContext: "",
+                prevLink: "intrvw_mm03.html",
+                nextLink: "intrvw_ot02.html"
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Dennis und Silke O. 1"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ot01"}'></include>
+        </header>
+
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
+        </main>
+    </body>
+</html>

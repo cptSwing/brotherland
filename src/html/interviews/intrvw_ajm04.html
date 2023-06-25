@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "es war wirklich so",
+                main: [
+                    `Beim Einkaufen: Manche Verkäuferin war so nett, aber manche
+Verkäuferin gibst du Geld, sie sagt, sie rufen mit Absicht zu
+jemanden „ich habe Geld von Neger. Ist es richtiges Geld oder
+nicht?“ und hörst du von anderen „schmeiß weg“ oder andere sagt
+„ach, mir ist egal“.`, `Schlimm war es. Wenn man es heute den
+Leuten erzählt, denken sie, man fantasiert, obwohl es wirklich so
+war.`,
+                ],
+                author: "Augusto Jone Munjunga",
+                authorLink: "../bio.html#munjunga",
+                audioFilePath: "/public/audio/AJM_04.mp3",
+                imageFilePath: "/public/images/AJM_04.jpg",
+                imageCaption: "Rückkehr nach Angola, Eberswalde 1990. Aus dem Archiv von Augusto Jone Munjunga",
+                additionalContext: "",
+                prevLink: "intrvw_ajm03.html",
+                nextLink: "intrvw_dhn01.html",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Augusto Jone Munjunga 4"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ajm04"}'></include>
+        </header>
+
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
+        </main>
+    </body>
+</html>

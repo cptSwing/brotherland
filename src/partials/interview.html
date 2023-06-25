@@ -1,20 +1,38 @@
 <div class="flex">
-    <div class="w-2/5 flex flex-col items-start justify-between">
+    <div class="flex w-1/2 flex-col">
         <!-- Quote -->
         <div class="basis-full">
-            <include src="./partials/interv_quote.html"></include>
+            <include src="./partials/interview_quote.html"></include>
         </div>
 
+        <!-- Audio -->
+        <include src="./partials/interview_audio.html" locals='{"audioFilePath": "{{ audioFilePath }}", "title": "{{ title }}"}'> </include>
+
         <!-- Text -->
-        <div class="interview-info flex basis-1/3 flex-col items-center justify-start">
-            <include src="./partials/interv_text.html"></include>
+        <div class="interview-info flex flex-col">
+            <include src="./partials/interview_text.html"></include>
         </div>
     </div>
-    <div class="w-3/5">
+
+    <div class="flex w-1/2 flex-col items-center justify-start pl-20">
         <!-- Image -->
-        <div class="aspect-3/2 w-full basis-2/3 pl-20">
-            <include src="./partials/interv_img.html"></include>
+        <!-- <div class="aspect-3/2 w-full basis-2/3 pl-20"> -->
+        <include src="./partials/interview_img.html"></include>
+        <!-- </div> -->
+
+        <span class="self-end font-crimson-text text-xs text-gray-800">{{ imageCaption }}</span>
+
+        <div class="{{ additionalContext === '' ? 'hidden' : 'mt-8 rounded bg-amber-100/50 px-2 py-1 text-sm italic' }}">
+            <p>{{additionalContext}}</p>
         </div>
     </div>
-    <div class="py-20 h-full"></div>
+</div>
+
+<div class="mt-24 mb-16 flex items-center justify-between">
+    <a class="text-center text-sm text-gray-50" href="{{prevLink}}">
+        <div class="flex h-32 w-32 items-center justify-between rounded-full bg-gray-950 p-4">vorheriges Interview</div>
+    </a>
+    <a class="text-center text-sm text-gray-50" href="{{nextLink}}">
+        <div class="flex h-32 w-32 items-center justify-between rounded-full bg-gray-950 p-4">nächstes Interview</div>
+    </a>
 </div>

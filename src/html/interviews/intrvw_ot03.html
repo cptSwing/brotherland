@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "wir waren immer sicher",
+                main: [
+                    `Transkription folgt..`,
+                ],
+                author: "Dennis und Silke O.",
+                authorLink: "../bio.html#silkedenniso",
+                audioFilePath: "/public/audio/OT_03.mp3",
+                imageFilePath: "/public/images/OT_03.jpg",
+                imageCaption: "Hoyerswerda, 1960. Bildcredit: Bundesarchiv, Bild 183-75760-0006 / CC-BY-SA 3.0",
+                additionalContext: "",
+                prevLink: "intrvw_ot02.html",
+                nextLink: "intrvw_ajm01.html",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Dennis und Silke O. 3"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ot03"}'></include>
+        </header>
+
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "das ist moderne Sklaverei",
+                main: [
+                    `Wir vergleichen nur uns Ausländer untereinander. Die polnischen
+Kollegen, die auch kein Deutsch gesprochen haben, also die haben
+über 1000 Mark bekommen, aber wir nur 400 Mark. Deshalb haben
+wir nein gesagt. Das ist das Gleiche wie moderne Sklaverei. Die anderen sind früher mit Ketten um den Hals gekommen und wir sind
+ohne Ketten von Afrika hierher gekommen, aber trotzdem gibt es
+keinen Unterschied. Das war früher Sklaverei und jetzt ist sie modern.`,
+                
+                ],
+                author: "Augusto Jone Munjunga",
+                authorLink: "../bio.html#munjunga",
+                audioFilePath: "/public/audio/AJM_02.mp3",
+                imageFilePath: "",
+                imageCaption: "",
+                additionalContext: "",
+                prevLink: "intrvw_ajm01.html",
+                nextLink: "intrvw_ajm03.html",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Augusto Jone Munjunga 2"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ajm02"}'></include>
+        </header>
+
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
+        </main>
+    </body>
+</html>

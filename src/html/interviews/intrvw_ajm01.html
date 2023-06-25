@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "ab heute hier ist das euer Arbeitsplatz",
+                main: [
+                    `Am nächsten Tag mussten früh aufstehen, wie ich zu Hause nie
+gemacht hatte. Und so das Aufstehen um 5 Uhr, schnell schnell,
+um 6 Uhr Bus nehmen zum Betrieb. Wo wir im Betrieb ankamen,
+der Gestank und so weiter, war schon „wow“, das ist schlecht. Und
+solche Schreie von den Tieren, Schweinen, Kühen und so. Hmmm
+und das war meine Frage „wo sind wir denn? Was für ein Beruf “.`,
+                    `„Ab heute ist hier das euer Arbeitsplatz!“. Die haben nicht
+Ausbildung gesagt, nur Arbeitsplatz, für vier Jahre und so. Hmmm.
+Also für mich, hmmm, war schon Hammer, was ist die Arbeit? In
+diesem Moment hast du das nicht verstanden, sie sagen wir sollen
+hier arbeiten, aber nicht lernen, aber wie denn arbeiten? Und da
+wollte man keine Diskussion.`,
+                    `In diesem Moment sollen wir in die Kantine gehen und essen.
+Ach Gott, da kommen Leute mit Kittel voll von Blut, mit solchen
+Messer. Tasche voll mit Messer, also da hat man wirklich keine Lust
+mehr gehabt. Was sollen wir denn tun? Mit Messer arbeiten? Tiere
+schlachten? Da hat man tausend Fragen im Kopf gehabt, aber du
+kommst nicht durch, du bist in einem Land, wo du nicht kennst,
+also Sprache kennst du nicht, du bist nur ein Mitglied deiner
+Gruppe, und da alle sind nervös, alle sind wirklich traurig und mit
+wem sollst du denn diskutieren. Mit gar keinem. […]`,
+                    `Die waren
+schon traurig, weil ihr Traum war schon im Wasser, die machen
+nur, weil keine andere Möglichkeit.`,
+                ],
+                author: "Augusto Jone Munjunga",
+                authorLink: "../bio.html#munjunga",
+                audioFilePath: "/public/audio/AJM_01.mp3",
+                imageFilePath: "/public/images/AJM_01.jpg",
+                imageCaption: "VEB Fleischkombinat Berlin, 1985. Aus dem Archiv von Ibraimo Alberto",
+                additionalContext: "",
+                prevLink: "intrvw_ot03.html",
+                nextLink: "intrvw_ajm02.html",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Augusto Jone Munjunga 1"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ajm01"}'></include>
+        </header>
+
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
+        </main>
+    </body>
+</html>

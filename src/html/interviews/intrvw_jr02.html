@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "es gab keine Grenze",
+                main: [
+                    `Es gab keine sichtbare Grenze. Die aktiv gewesen sind, haben halt
+mehr oder weniger vorne gestanden, und die Schaulustigen, die
+haben sich nahtlos angeschlossen und standen drum herum. In
+meiner Erinnerung war damals der gegenüberliegende Bürgersteig
+gesäumt mit Leuten. Du konntest dort keine Grenze ziehen, wer
+jetzt zu den Attentätern gehört oder wer bloß Zuschauer ist. Es war
+eine Mischung.`,
+                    `Es gab niemand aus den hinteren Reihen, der „Los, los! Ran, ran!“
+gesagt hätte. Das gab‘s so nicht. Es gab also keine Anstachelei, dass
+ältere oder andere Leute gesagt hätten, „du musst jetzt nach vorne
+stürmen.“ Wir haben es einfach gemacht.
+Ich habe in der Zeit, in der ich dort war*, nicht erlebt, dass es
+ernsthafte Sprechchöre gab im Sinne von „Ausländer raus!“ Eher
+sowas wie „wir kriegen dich“ und in der Art. Es ging wirklich um
+diesen unmittelbaren Hass. „Wir kriegen dich, wir machen dich
+fertig, wir machen dich alle.“ Sowas. Aber „Ausländer raus“ war so
+nicht zu hören.`,
+                    `Die Busse haben sie rausgefahren und dadurch war das Ziel weg.
+Zumindest hat man geglaubt, dass die Ausländer weg sind, das
+hat ja gereicht. Die rechte Szene hat sich bis 2014 damit gebrüstet,
+dass Hoyerswerda die einzige ausländerfreie Stadt sei. Was
+eigentlich falsch ist, totaler Quatsch ist. Denn es wurden ja nur
+die Asylbewerber der Albert-Schweitzer-Straße weggefahren. Die
+Vertragsarbeiter sind ja erst nach und nach weggebracht worden.
+Ich bin sogar zur Arbeit gefahren und habe gesagt: „Hoyerswerda
+ist jetzt ausländerfrei“. Das war ich selbst, der das mit Stolz in der
+Stimme gesagt hat.`,
+                ],
+                author: "Jan K. und René K.",
+                authorLink: "../bio.html#jankrenek",
+                audioFilePath: "/public/audio/J_R_02.mp3",
+                imageFilePath: "/public/images/J_R_02.png",
+                imageCaption: "Filmstill aus 'The Truth Lies in Rostock'",
+                additionalContext: "",
+                prevLink: "intrvw_jr01.html",
+                nextLink: "intrvw_jr03.html",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Jan K. und René K. 2"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_jr02"}'></include>
+        </header>
+
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
+        </main>
+    </body>
+</html>

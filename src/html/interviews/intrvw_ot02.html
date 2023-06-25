@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "dieser Begriff „Vertragsarbeiter“",
+                main: [
+                    `Transkription folgt..`,
+                ],
+                author: "Dennis und Silke O.",
+                authorLink: "../bio.html#silkedenniso",
+                audioFilePath: "/public/audio/OT_02.mp3",
+                imageFilePath: "/public/images/OT_02.jpg",
+                imageCaption: "Chemiewerk in Leipzig, 1982. Bildcredit: Bundesarchiv, Bild 183-1982-0528-002 / Grubitzsch (geb. Raphael), Waltraud / CC-BY-SA 3.0",
+                additionalContext: "",
+                prevLink: "intrvw_ot01.html",
+                nextLink: "intrvw_ot03.html",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Dennis und Silke O. 2"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ot02"}'></include>
+        </header>
+
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
+        </main>
+    </body>
+</html>

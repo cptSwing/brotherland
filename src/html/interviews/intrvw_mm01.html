@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "der Rassismus wurde noch stärker",
+                main: [
+                    `Wir hatten schon gewusst, dass es anders wird. Aber uns nicht vorgestellt, dass der Rassismus noch stärker, noch öffentlicher wird.
+Als in Deutschland die Wende kam, gab es neue Parteien. Die CDU
+hat immer schlecht über Ausländer gesprochen: „Unser Land wird
+schön, alles wird gut.“ Und das Volk hat gesagt: „Ausländer müssen
+raus. Jetzt können wir endlich was in unserem Land machen.“ Das
+Ganze war nicht so gut für uns. Und dann kam auch die NPD und
+die hat deutlich gesagt: „Ausländer raus. Die Ausländer nehmen uns
+die Arbeit weg, unsere Frauen, unsere Wohnungen. Alle Ausländer
+sind schlecht“.`,
+                    `Wir hatten Angst. Viele Jugendliche haben sich
+so geäußert und klar gemacht, dass sie gegen Ausländer sind. Es war
+eine Katastrophe.`,
+                ],
+                author: "Moises Mvuama",
+                authorLink: "../bio.html#mvuama",
+                audioFilePath: "/public/audio/MM_01.mp3",
+                imageFilePath: "/public/images/MM_01.jpg",
+                imageCaption: "CDU-Wahlplakat, Stadtwahl Bremen, 1991. Bildcredit: KAS/ACDP 10-005 : 602 CC-BY-SA 3.0 DE",
+                additionalContext:
+                    "",
+                prevLink: "intrvw_ls01.html",
+                nextLink: "intrvw_mm02.html",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Moises Mvuama 1"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_mm01"}'></include>
+        </header>
+
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
+        </main>
+    </body>
+</html>

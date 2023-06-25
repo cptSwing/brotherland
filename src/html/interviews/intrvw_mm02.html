@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "in diesem Land muss ich sterben",
+                main: [
+                    `Und als er gestorben war, für uns war... war wirklich... ich weiß
+nicht, wie kann ich sagen... für uns war sehr sehr bitterlich, dass
+wir... also ich persönlich hab gedacht, dass ja... das heißt... ich als
+Moises ich habe kein Recht zu leben, weil ich schwarz bin, also in
+diesem Land muss ich sterben. … und für uns war wirklich... das
+traurigste Zeit unseres Lebens. Wie kann man getötet werden, nur
+weil er eine andere Hautfarbe hat. Wer hat Recht über jemanden zu
+bestimmen zu leben und zu sterben, weil er andere Hautfarbe hat.`,
+                    `Ich habe mir viele Gedanken gemacht. Ich bin also nicht erwünscht
+auf dieser Welt, ich darf nicht existieren. Das war wirklich schwer
+für uns, sehr sehr schwer für uns.`,
+                ],
+                author: "Moises Mvuama",
+                authorLink: "../bio.html#mvuama",
+                audioFilePath: "/public/audio/MM_02.mp3",
+                imageFilePath: "/public/images/MM_02.jpg",
+                imageCaption: "Amadeu Antonio Kiowa, 80er Jahre. Aus dem Archiv von Augusto Jone Munjunga",
+                additionalContext:
+                    "Amadeu Antonio Kiowa kam 1987 als Vertragsarbeiter in die DDR und arbeitet im SVKE - Schlacht- und Verarbeitungskominat Eberswalde. In der Nacht vom 24. November 1990 wird Amadeu Antonio von Neonazis in Eberswalde überfallen und verstirbt am 6. Dezember. Er war einer der ersten Todesopfer rassistischer Gewalt im wiedervereinigten Deutschland.",
+                prevLink: "intrvw_mm01.html",
+                nextLink: "intrvw_mm03.html",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Moises Mvuama 2"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_mm02"}'></include>
+        </header>
+
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
+        </main>
+    </body>
+</html>
