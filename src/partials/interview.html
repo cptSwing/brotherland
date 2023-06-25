@@ -22,17 +22,17 @@
 
         <span class="self-end font-crimson-text text-xs text-gray-800">{{ imageCaption }}</span>
 
-        <div class="{{ additionalContext === '' ? 'hidden' : 'mt-8 rounded bg-amber-100/50 px-2 py-1 text-sm italic' }}">
+        <div class="{{ additionalContext === '' ? 'hidden' : 'mt-8 text-opacity-75 text-sm font-crimson-text' }}">
             <p>{{additionalContext}}</p>
         </div>
     </div>
 </div>
 
-<div class="mt-24 mb-16 flex items-center justify-between">
-    <a class="text-center text-sm text-gray-50" href="{{prevLink}}">
+<div class="mb-16 mt-24 flex items-center justify-between">
+    <a class="text-center font-crimson-text tracking-tight text-gray-100  hover:!text-white" href="{{prevLink}}">
         <div class="flex h-32 w-32 items-center justify-between rounded-full bg-gray-950 p-4">vorheriges Interview</div>
     </a>
-    <a class="text-center text-sm text-gray-50" href="{{nextLink}}">
-        <div class="flex h-32 w-32 items-center justify-between rounded-full bg-gray-950 p-4">nächstes Interview</div>
+    <a class="text-center font-crimson-text tracking-tight text-gray-100  hover:!text-white" href="{{nextLink}}">
+        <div class="flex h-32 w-32 items-center justify-between rounded-full bg-gray-950 p-4 hover:!text-white">nächstes Interview</div>
     </a>
 </div>

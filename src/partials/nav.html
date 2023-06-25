@@ -1,12 +1,12 @@
 <div class="relative h-full w-full">
     <div class="absolute left-0 top-0 -z-30 flex w-full flex-nowrap justify-start">
         <div class="md:w-[5%] lg:w-[8.33%] xl:w-[10%]"></div>
-        <span class="font-roboto text-2xl text-[13vw] font-bold uppercase leading-none text-gray-200 md:text-8xl">Brotherland</span>
+        <span class="font-roboto tracking-tighter text-2xl text-[13vw] uppercase leading-none text-gray-200 md:text-8xl">Brotherland</span>
     </div>
     <div class="z-10 h-full py-6">
         <div class="h-full w-full border-y-2 border-gray-700 bg-gray-300 bg-opacity-0">
             <nav class="m-auto sm:w-full md:w-4/5 lg:w-2/3 xl:w-3/5">
-                <div class="flex justify-between font-playfair-display text-2xl font-bold">
+                <div class="flex justify-between font-crimson-text tracking-tight text-2xl font-bold">
                     <a href="{{ pathPrefix }}/project.html" alt="Project">
                         <div
                             class="-mx-4 px-4 py-2 transition-colors ease-linear hover:bg-gray-300  text-red-800 {{ active === 'project' ? 'bg-gray-600/75 text-gray-100' : '' }}"
@@ -17,7 +17,7 @@
 
                     <a href="{{ pathPrefix }}/interviews/intrvw_ajm01.html" alt="Interviews">
                         <div
-                            class="-mx-4 px-4 py-2 transition-colors ease-linear hover:bg-gray-300  text-red-800 {{ active === 'interviews' ? 'bg-gray-600/75 text-gray-100' : '' }}"
+                            class="-mx-4 px-4 py-2 transition-colors ease-linear hover:bg-gray-300  text-red-800 {{ active.includes('intrvw') ? 'bg-gray-600/75 text-gray-100' : '' }}"
                         >
                             Interviews
                         </div>

@@ -35,6 +35,7 @@ function imageHref( imageClass ) {
 function exhibitGalleryOnLoad() {
     new SimpleLightbox( ".gallery img", {
         sourceAttr: 'src',
+        animationSpeed: 150,
         uniqueImages: false,
         overlayOpacity: 1.0
     } );

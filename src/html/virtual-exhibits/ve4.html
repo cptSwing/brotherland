@@ -23,7 +23,7 @@
                 ></a>
             </div>
 
-            <main class="flex flex-col font-crimson-text text-xl font-bold">
+            <main class="flex flex-col font-crimson-text tracking-tight text-xl font-bold">
                 <div class="relative flex h-fit w-full">
                     <div class="flex h-full w-2/5 justify-start">
                         <!-- Stahlturm -->
@@ -33,13 +33,11 @@
                     </div>
                     <div class="absolute left-1/2 top-1/4 flex h-fit w-2/5 -translate-x-1/2 -translate-y-1/4 justify-start">
                         <!-- Audio "die ganze Struktur zerbrach" -->
-                        <div class="flex w-full justify-center rounded-sm bg-gray-900 px-2 py-8">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/01_die_ganze_Struktur_zerbrach.mp3", "title": "die ganze Struktur zerbrach"}'
                             >
                             </include>
-                        </div>
                     </div>
                 </div>
 
@@ -48,7 +46,7 @@
                         <div class="w-1/6"></div>
                         <div class="relative h-full w-full">
                             <!-- Audio "das nahm ja so überhand" -->
-                            <div class="absolute top-1/2 flex h-fit w-1/2 -translate-y-1/2 justify-center rounded-sm bg-gray-900 px-2 py-8">
+                            <div class="absolute top-1/2 h-fit w-1/2 -translate-y-1/2">
                                 <include
                                     src="./partials/interview_audio.html"
                                     locals='{"audioFilePath": "../../../public/audio/02_das_nahm_ja_so_Überhand.mp3", "title": "das nahm ja so Überhand"}'
@@ -73,7 +71,7 @@
                         </div>
 
                         <!-- Audio "Besuch bekommen" -->
-                        <div class="absolute bottom-0 right-0 w-1/4 translate-x-[5%] translate-y-1/2 rounded-sm bg-gray-900 px-2 py-8">
+                        <div class="absolute bottom-0 right-0 w-1/4 translate-x-[5%] translate-y-1/2 ">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/03_Besuch_bekommen.mp3", "title": "Besuch bekommen"}'
@@ -134,7 +132,7 @@
                         </div>
 
                         <!-- Audio "Das wollten wir doch nicht" -->
-                        <div class="absolute left-1/2 w-5/6 -translate-x-1/2 -translate-y-1/2 rounded-sm bg-gray-900 px-2 py-8">
+                        <div class="absolute left-1/2 w-5/6 -translate-x-1/2 -translate-y-1/2">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/04_das_wollten_wir_doch_nicht.mp3", "title": "das wollten wir doch nicht"}'
@@ -159,7 +157,7 @@
                                 <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_033.jpg" />
                             </div>
                             <!-- Audio "ich dachte ihr seid schon weg" -->
-                            <div class="absolute bottom-0 right-0 w-1/4 -translate-y-[150%] rounded-sm bg-gray-900 px-2 py-8">
+                            <div class="absolute bottom-0 right-0 w-1/4 -translate-y-[150%]">
                                 <include
                                     src="./partials/interview_audio.html"
                                     locals='{"audioFilePath": "../../../public/audio/05_ich_dachte_ihr_seid_schon_weg.mp3", "title": "ich dachte ihr seid schon weg"}'
@@ -188,7 +186,7 @@
                         </div>
 
                         <!-- Audio "es gab keine Grenze" -->
-                        <div class="absolute bottom-0 right-0 w-4/5 translate-x-[15%] rounded-sm bg-gray-900 px-2 py-8">
+                        <div class="absolute bottom-0 right-0 w-4/5 translate-x-[15%]">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/06_es_gab_keine_Grenze.mp3", "title": "es gab keine Grenze"}'
@@ -200,19 +198,11 @@
 
                 <div class="h-20"></div>
 
-                <a href="https://www.youtube.com/TyEXA0RXzfc">
-                    <div class="mx-auto aspect-3/2 w-4/5 rounded-sm bg-zinc-500 hover:opacity-50">
-                        <!-- <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube-nocookie.com/embed/TyEXA0RXzfc?controls=0"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                ></iframe> -->
-                    </div>
-                </a>
+                <video class="mx-auto w-4/5" controls>
+                    <source  src="/public/videos/Zaninelli_Jakobs_Video_VAS4.mp4">
+                    Your system can't play vidio, it seems!
+                </video>
+            
 
                 <div class="h-20"></div>
             </main>
