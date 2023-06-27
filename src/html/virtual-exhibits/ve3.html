@@ -11,14 +11,14 @@
 
         <div class="relative">
             <!-- Hover links -->
-            <div class="absolute h-full w-full">
+            <div class="absolute h-full w-full pointer-events-none">
                 <a
-                    class="absolute left-0 top-0 z-50 h-full cursor-ve sm:w-1/12 md:w-[10%] lg:w-1/6 xl:w-1/5 2xl:w-1/4"
+                    class="absolute left-0 top-0 z-50 h-full cursor-ve sm:w-1/12 md:w-[10%] lg:w-1/6 xl:w-1/5 2xl:w-1/4 pointer-events-auto"
                     href="./ve2.html"
                 ></a>
 
                 <a
-                    class="absolute right-0 top-0 z-50 h-full cursor-ve sm:w-1/12 md:w-[10%] lg:w-1/6 xl:w-1/5 2xl:w-1/4"
+                    class="absolute right-0 top-0 z-50 h-full cursor-ve sm:w-1/12 md:w-[10%] lg:w-1/6 xl:w-1/5 2xl:w-1/4 pointer-events-auto"
                     href="./ve4.html"
                 ></a>
             </div>
@@ -27,7 +27,7 @@
                 <div class="flex h-[76rem]">
                     <div class="relative flex h-full basis-1/2 flex-col justify-between pr-1">
                         <!-- Audio -->
-                        <div class="z-20 mb-36 flex w-4/5 justify-center rounded-sm bg-gray-900 px-2 py-8">
+                        <div class="z-20 mb-36 flex w-4/5">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/01_wir_wollten_das_ja_letzten_Endes.mp3", "title": "wir wollten das ja letzten endes"}'
@@ -54,7 +54,7 @@
                         </span>
 
                         <!-- Audio "wir wollten das ja letzten endes" -->
-                        <div class="flex w-1/4 justify-center rounded-sm bg-gray-900 px-2 py-8">
+                        <div class="flex w-1/4">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/01_wir_wollten_das_ja_letzten_Endes.mp3", "title": "wir wollten das ja letzten endes"}'
@@ -67,7 +67,7 @@
                 <div class="-mr-32 flex h-[70rem] pt-16">
                     <div class="flex basis-2/5 flex-col justify-center pr-1">
                         <!-- Audio "der Rassismus wurde noch stärker" -->
-                        <div class="flex w-4/5 justify-center rounded-sm bg-gray-900 px-2 py-8">
+                        <div class="flex w-4/5">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/03_der_rassismus_wurde_noch_stärker.mp3", "title": "der Rassismus wurde noch stärker"}'
@@ -88,7 +88,7 @@
                         <span>DIE NEUE GRENZE WAR NICHT MEHR DIE MAUER, ES WAR DAS GELD</span>
 
                         <!-- Audio "wir wollten das ja letzten endes" -->
-                        <div class="flex w-1/6 justify-center rounded-sm bg-gray-900 px-2 py-8">
+                        <div class="flex w-1/6">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/01_wir_wollten_das_ja_letzten_Endes.mp3", "title": "wir wollten das ja letzten endes"}'
@@ -156,7 +156,7 @@
                             <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_021.jpg" class="absolute object-cover" />
                             <div class="absolute m-auto h-full w-1/3 translate-x-2/3 translate-y-1/2">
                                 <!-- Audio "wir wollten das ja letzten endes" -->
-                                <div class="m-auto flex w-4/5 items-center justify-center rounded-sm bg-gray-900 px-2 py-8">
+                                <div class="m-auto flex w-4/5">
                                     <include
                                         src="./partials/interview_audio.html"
                                         locals='{"audioFilePath": "../../../public/audio/05_ich_dachte_ihr_seid_schon_weg.mp3", "title": "ich dachte ihr seid schon weg"}'
