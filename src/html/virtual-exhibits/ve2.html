@@ -11,19 +11,19 @@
 
         <div class="relative">
             <!-- Hover links -->
-            <div class="absolute h-full w-full pointer-events-none">
+            <div class="pointer-events-none absolute h-full w-full">
                 <a
-                    class="absolute left-0 top-0 z-50 h-full cursor-ve sm:w-1/12 md:w-[10%] lg:w-1/6 xl:w-1/5 2xl:w-1/4 pointer-events-auto"
+                    class="cursor-ve-prev pointer-events-auto absolute left-0 top-0 z-50 h-full sm:w-[5%] md:w-[7.5%] lg:w-[10%] xl:w-[15%] 2xl:w-1/5"
                     href="./ve4.html"
                 ></a>
 
                 <a
-                    class="absolute right-0 top-0 z-50 h-full cursor-ve sm:w-1/12 md:w-[10%] lg:w-1/6 xl:w-1/5 2xl:w-1/4 pointer-events-auto"
+                    class="cursor-ve-next pointer-events-auto absolute right-0 top-0 z-50 h-full sm:w-[5%] md:w-[7.5%] lg:w-[10%] xl:w-[15%] 2xl:w-1/5"
                     href="./ve3.html"
                 ></a>
             </div>
 
-            <main class="flex flex-col font-crimson-text tracking-tight text-xl font-bold">
+            <main class="mb-44 flex flex-col font-crimson-text text-xl font-bold tracking-tight">
                 <div class="relative flex h-fit w-full">
                     <div class="relative flex min-h-min basis-1/2 flex-col items-start justify-center pr-20">
                         <span class="text-left">
@@ -32,7 +32,7 @@
                         </span>
 
                         <!-- Audio -->
-                        <div class="mx-auto w-1/5">
+                        <div class="mx-auto w-3/5">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/01_J_R_01.mp3", "title": ""}'
@@ -43,26 +43,28 @@
                         <!-- Plattenbauten Hoch -->
                         <div class="relative aspect-3/2 w-full">
                             <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_06.jpg" />
+                            <span class="absolute w-full text-right text-xs">Bundesarchiv, Bild 183-H0824-0005-001 CC-BY-SA 3.0</span>
                         </div>
                         <!-- Plattenbauten mittelhoch -->
-                        <div class="relative aspect-3/2 w-full pt-2">
+                        <div class="relative aspect-3/2 w-full pt-8">
                             <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_07.jpg" />
+                            <span class="absolute w-full text-right text-xs">mit freundlicher Genehmigung von Detlev Kennerth</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="-translate-y-[7.5%] flex h-fit">
-                    <div class="flex w-1/2 flex-col justify-between items-center pr-16">
+                <div class="flex h-fit -translate-y-[7.5%]">
+                    <div class="flex w-1/2 flex-col items-center justify-between pr-16">
                         <!-- Hausecke; türkise Fenster -->
                         <div class="relative aspect-2/3 w-full rounded-sm">
                             <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_08.jpg" />
                         </div>
 
                         <!-- Audio "Die kannten keine Schwarzen" -->
-                        <div class="w-4/5 mx-auto pb-24">
+                        <div class="mx-auto w-4/5 pb-24">
                             <include
                                 src="./partials/interview_audio.html"
-                                locals='{"audioFilePath": "../../../public/audio/02_die_kannten_keine_Schwarzen.mp3", "title": ""}'
+                                locals='{"audioFilePath": "../../../public/audio/02_die_kannten_keine_Schwarzen.mp3", "title": "die kannten keine Schwarzen"}'
                             >
                             </include>
                         </div>
@@ -93,26 +95,27 @@
                     </div>
                 </div>
 
-                <div class="relative flex pt-44 justify-between">
+                <div class="relative flex justify-between pt-44">
                     <div class="flex w-6/12 flex-col justify-between pr-20">
                         <!-- Schwimmbad -->
-                        <div class="aspect-3/2 w-full">
-                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_011.jpg"  />
+                        <div class="relative aspect-3/2 w-full">
+                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_011.jpg" />
+                            <span class="absolute w-full text-left text-xs">VEB Bild und Heimat</span>
                         </div>
 
                         <!-- Audio unterhalb v. Schwimmbad -->
-                        <div class="w-full">
+                        <div class="w-full translate-y-52">
                             <include
                                 src="./partials/interview_audio.html"
-                                locals='{"audioFilePath": "../../../public/audio/04_ein_freundschaftliches_verhältnis.mp3", "title": "ein freundschatliches Verhältnis"}'
+                                locals='{"audioFilePath": "../../../public/audio/04_ein_freundschaftliches_verhältnis.mp3", "title": "ein freundschaftliches Verhältnis"}'
                             >
                             </include>
                         </div>
                     </div>
 
-                    <div class="absolute z-10 w-full translate-y-64">
+                    <div class="absolute z-10 w-full translate-y-56">
                         <!-- Audio zw. Schwimmbad & Datsche -->
-                        <div class="w-1/3 mx-auto">
+                        <div class="mx-auto w-1/3">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/03_du_hattest_gar_nicht_die_möglichkeit.mp3", "title": "du hattest gar nicht die Möglichkeit"}'
@@ -121,7 +124,7 @@
                         </div>
                     </div>
 
-                    <div class="w-5/12 pl-4 translate-y-52">
+                    <div class="w-5/12 translate-y-52 pl-4">
                         <!-- Datsche -->
                         <div class="aspect-2/3 w-full">
                             <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_012.jpg" />
@@ -129,8 +132,8 @@
                     </div>
                 </div>
 
-                <div class="relative flex h-fit pt-64 w-full pb-20">
-                    <div class="w-3/5 translate-y-60 pr-12">
+                <div class="relative flex h-fit w-full pb-20 pt-64">
+                    <div class="w-3/5 translate-y-56 pr-12">
                         <!-- Baum -->
                         <div class="aspect-2/3 w-full">
                             <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_013.jpg" />
@@ -144,8 +147,12 @@
                             gemocht“.
                         </div>
                         <div class="mt-4">„Warum?“</div>
-                        <div class="z-10 -ml-[33rem] text-center font-sans text-7xl text-red-600">WEIL DU SCHWARZ BIST</div>
-                        <div class="mt-4">Wir hatten Angst.</div>
+                        <div class="flex items-center justify-between">
+                            <div class="z-10 -ml-[33rem] h-fit text-center font-roboto text-7xl font-medium text-red-700">
+                                WEIL DU SCHWARZ BIST
+                            </div>
+                        </div>
+                        <div class="">Wir hatten Angst.</div>
                         <div>Das war in Berlin 1982-1983.</div>
                     </div>
                 </div>

@@ -11,30 +11,30 @@
 
         <div class="relative">
             <!-- Hover links -->
-            <div class="absolute h-full w-full pointer-events-none">
+            <div class="pointer-events-none absolute h-full w-full">
                 <a
-                    class="absolute left-0 top-0 z-50 h-full cursor-ve sm:w-1/12 md:w-[10%] lg:w-1/6 xl:w-1/5 2xl:w-1/4 pointer-events-auto"
+                    class="cursor-ve-prev pointer-events-auto absolute left-0 top-0 z-50 h-full sm:w-[5%] md:w-[7.5%] lg:w-[10%] xl:w-[15%] 2xl:w-1/5"
                     href="./ve2.html"
                 ></a>
 
                 <a
-                    class="absolute right-0 top-0 z-50 h-full cursor-ve sm:w-1/12 md:w-[10%] lg:w-1/6 xl:w-1/5 2xl:w-1/4 pointer-events-auto"
+                    class="cursor-ve-next pointer-events-auto absolute right-0 top-0 z-50 h-full sm:w-[5%] md:w-[7.5%] lg:w-[10%] xl:w-[15%] 2xl:w-1/5"
                     href="./ve4.html"
                 ></a>
             </div>
 
-            <main class="flex flex-col font-crimson-text tracking-tight text-xl font-bold">
-                <div class="flex h-[76rem]">
+            <main class="mb-24 flex flex-col font-crimson-text text-xl font-bold tracking-tight">
+                <div class="flex h-fit w-full">
                     <div class="relative flex h-full basis-1/2 flex-col justify-between pr-1">
                         <!-- Audio -->
-                        <div class="z-20 mb-36 flex w-4/5">
+                        <div class="z-20 flex w-4/5">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/01_wir_wollten_das_ja_letzten_Endes.mp3", "title": "wir wollten das ja letzten endes"}'
                             >
                             </include>
                         </div>
-
+                        <div class="h-60"></div>
                         <!-- Steine -->
                         <div class="relative z-10 aspect-2/3 w-full translate-x-8 overflow-hidden rounded-sm">
                             <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_015.jpg" class="absolute h-full w-full object-cover" />
@@ -48,7 +48,7 @@
                         </div>
 
                         <!-- Text "Meine Arbeit nehmen die.."  -->
-                        <span class="mt-24 w-3/5">
+                        <span class="mt-24 w-4/5">
                             „Meine Arbeit nehmen die mir jetzt weg!“. Da hatte aber niemand mehr Arbeit gehabt, weil alle waren ja
                             arbeitlsos. Die Arbeit gab's ja gar nicht mehr.
                         </span>
@@ -64,10 +64,10 @@
                     </div>
                 </div>
 
-                <div class="-mr-32 flex h-[70rem] pt-16">
-                    <div class="flex basis-2/5 flex-col justify-center pr-1">
+                <div class="flex h-fit pt-24">
+                    <div class="flex w-1/3 flex-col justify-center">
                         <!-- Audio "der Rassismus wurde noch stärker" -->
-                        <div class="flex w-4/5">
+                        <div class="flex w-full -translate-x-12">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/03_der_rassismus_wurde_noch_stärker.mp3", "title": "der Rassismus wurde noch stärker"}'
@@ -75,20 +75,22 @@
                             </include>
                         </div>
                     </div>
-                    <div class="flex basis-3/5 flex-col justify-start pl-1">
+                    <div class="flex w-2/3 flex-col justify-start">
                         <!-- Interviewpartner -->
-                        <div class="relative aspect-2/3 w-full overflow-hidden rounded-sm">
-                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_016.jpg" class="absolute h-full w-full object-cover" />
+                        <div class="relative aspect-2/3 w-full translate-x-24 overflow-hidden rounded-sm">
+                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_016.jpg" class="absolute object-cover" />
                         </div>
                     </div>
                 </div>
 
-                <div class="relative mt-24">
-                    <div class="absolute left-0 top-0 z-10 w-4/5 text-left font-sans text-7xl text-red-600">
-                        <span>DIE NEUE GRENZE WAR NICHT MEHR DIE MAUER, ES WAR DAS GELD</span>
+                <div class="relative h-fit w-full pt-24">
+                    <div class="w-4/5 -translate-x-12">
+                        <span class="z-20 text-justify font-roboto text-7xl font-medium text-red-700"
+                            >DIE NEUE GRENZE WAR NICHT MEHR DIE MAUER, ES WAR DAS GELD</span
+                        >
 
                         <!-- Audio "wir wollten das ja letzten endes" -->
-                        <div class="flex w-1/6">
+                        <div class="flex w-1/5 pt-2">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/01_wir_wollten_das_ja_letzten_Endes.mp3", "title": "wir wollten das ja letzten endes"}'
@@ -96,28 +98,26 @@
                             </include>
                         </div>
                     </div>
-                    <div class="flex h-[60rem] justify-center pt-44">
+                    <div class="relative -z-10 flex h-fit justify-center">
                         <div class="w-3/5">
                             <!-- Nahaufnahme Interviewpartner -->
-                            <div class="relative aspect-2/3 w-full overflow-hidden rounded-sm">
-                                <img
-                                    src="/public/images/Zaninelli_Jakobs_BROTHERLAND_017.jpg"
-                                    class="absolute h-full w-full object-cover"
-                                />
+                            <div class="aspect-2/3 w-full -translate-y-64 overflow-hidden rounded-sm">
+                                <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_017.jpg" class="object-cover" />
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="-mx-20 flex h-[60rem]">
-                    <div class="flex basis-1/2 flex-col justify-between pr-12">
+                <div class="-mx-20 flex h-fit -translate-y-40">
+                    <div class="flex basis-1/2 flex-col justify-between pr-20">
                         <!-- Fresse 1 -->
-                        <div class="relative -mt-12 aspect-3/2 w-full overflow-hidden rounded-sm">
-                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_018.jpg" class="absolute object-cover" />
+                        <div class="relative aspect-3/2 w-full -translate-y-40 overflow-hidden rounded-sm">
+                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_018.jpg" class="object-cover" />
+                            <span class="absolute w-full text-left text-xs">mit freundlicher Genehmigung von Christian Ditsch</span>
                         </div>
 
                         <!-- Text "Meine Arbeit nehmen die.."  -->
-                        <span class="ml-20 mt-24 w-3/5">
+                        <span class="w-10/12 translate-x-24 translate-y-48">
                             Dass Deutschland einig wird, das hört man schon '89... vom Fernsehen und von der Straße, die Deutschen
                             unterhalten sich manchmal. Ich hatte dafür keinen Kopf... Ich war jetzt arbeitslos, ich musste irgendwas
                             versuchen um weiter Geld zu verdienen. Was ist mit mir jetzt, gehe ich nach Hause [Vietnam] oder gehe ich nicht.
@@ -125,45 +125,50 @@
                         </span>
                     </div>
 
-                    <div class="flex basis-1/2 flex-col justify-end py-28 pl-12">
+                    <div class="flex basis-1/2 translate-y-24 flex-col justify-end pl-20">
                         <!-- Fresse 2 -->
                         <div class="relative aspect-3/2 w-full overflow-hidden rounded-sm">
-                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_019.jpg" class="absolute h-full w-full object-cover" />
+                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_019.jpg" class="object-cover" />
+                            <span class="absolute w-full text-right text-xs">mit freundlicher Genehmigung von Christian Ditsch</span>
                         </div>
-
+                        <div class="h-8"></div>
                         <!-- Fresse 3 -->
-                        <div class="relative aspect-3/2 w-full overflow-hidden rounded-sm pt-20">
-                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_020.jpg" class="absolute h-full w-full object-cover" />
+                        <div class="relative aspect-3/2 w-full overflow-hidden rounded-sm">
+                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_020.jpg" class="object-cover" />
+                            <span class="absolute w-full text-right text-xs">mit freundlicher Genehmigung von Christian Ditsch</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="-mx-20 mt-32 flex h-[96rem]">
-                    <div class="flex w-3/4 flex-col items-center justify-center pr-8">
+                <div class="-mx-20 flex h-fit">
+                    <div class="flex w-[45%] flex-col items-center pr-12 justify-center">
                         <div class="mt-auto h-1/3"></div>
 
                         <!-- Autobrand -->
-                        <div class="relative aspect-2/3 w-full overflow-hidden rounded-sm">
-                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_022.jpg" class="absolute object-cover" />
+                        <div class=" aspect-2/3 w-full overflow-hidden rounded-sm">
+                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_022.jpg" class=" object-cover" />
                         </div>
 
                         <div class="mb-auto h-1/3"></div>
                     </div>
 
-                    <div class="-mr-8 flex w-fit flex-col justify-between">
-                        <!-- Bauzaun -->
-                        <div class="relative aspect-2/3 w-full overflow-hidden rounded-sm">
-                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_021.jpg" class="absolute object-cover" />
-                            <div class="absolute m-auto h-full w-1/3 translate-x-2/3 translate-y-1/2">
-                                <!-- Audio "wir wollten das ja letzten endes" -->
-                                <div class="m-auto flex w-4/5">
-                                    <include
-                                        src="./partials/interview_audio.html"
-                                        locals='{"audioFilePath": "../../../public/audio/05_ich_dachte_ihr_seid_schon_weg.mp3", "title": "ich dachte ihr seid schon weg"}'
-                                    >
-                                    </include>
-                                </div>
+                    <div class="-mr-8 flex w-[55%] pl-8 flex-col justify-between pt-24">
+                        <div class="relative">
+                            <!-- Bauzaun -->
+                            <div class="aspect-2/3 w-full overflow-hidden rounded-sm">
+                                <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_021.jpg" class="object-cover" />
                             </div>
+
+                            <div class="absolute top-0 translate-y-2/3 z-20  mx-auto h-full w-full">
+                                    <!-- Audio "wir wollten das ja letzten endes" -->
+                                    <div class="m-auto flex w-4/5">
+                                        <include
+                                            src="./partials/interview_audio.html"
+                                            locals='{"audioFilePath": "../../../public/audio/05_ich_dachte_ihr_seid_schon_weg.mp3", "title": "ich dachte ihr seid schon weg"}'
+                                        >
+                                        </include>
+                                    </div>
+                                </div>
                         </div>
 
                         <span class="mx-auto w-3/4 pt-32 text-left">

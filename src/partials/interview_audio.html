@@ -1,6 +1,7 @@
-<div class="flex w-full rounded-sm bg-gray-900 px-2 py-4">
-    <audio controls class="w-full">
+<div class="flex flex-col w-full rounded-sm bg-gray-900 px-2 py-4">
+    <audio controls class="w-full bg-none">
         <source src="{{ audioFilePath }}" type="audio/mpeg" title="{{ title }}" />
         Your system can't play audio, it seems!
     </audio>
+    <div class="text-base font-medium font-crimson-text text-center italic pt-2 tracking-wide -mb-2 w-full text-gray-300">{{ title  && '"' + title + '"' }}</div>
 </div>

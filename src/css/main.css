@@ -55,13 +55,19 @@ main {
 }
 
 a {
-    @apply hover:text-red-800/90
+    @apply text-red-900 hover:text-red-600;
 }
 
 .cursor-ve {
-    /* @apply group-hover:cursor-[url(/public/images/virtAusstCursor.png)] ; */
-    @apply hover:cursor-[url('/public/images/virtAusstCursor.png')_64_64,_auto] ;
+    @apply hover:cursor-[url('/public/images/virtAusstCursor.png')_64_64,_auto];
+}
 
+.cursor-ve-prev {
+    @apply hover:cursor-[url('/public/images/virtAusstCursor_prev.png')_64_64,_auto];
+}
+
+.cursor-ve-next {
+    @apply hover:cursor-[url('/public/images/virtAusstCursor_next.png')_64_64,_auto];
 }
 
 p {
