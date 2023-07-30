@@ -1,12 +1,7 @@
 <div class="flex">
     <div class="flex w-1/2 flex-col">
-        <!-- Quote -->
-        <div class="basis-full">
-            <include src="./partials/interview_quote.html"></include>
-        </div>
-
         <!-- Audio -->
-        <include src="./partials/interview_audio.html" locals='{"audioFilePath": "{{ audioFilePath }}", "title": "{{ title }}"}'> </include>
+        <include src="./partials/interview_audio.html" locals='{"audioFilePath": "{{ audioFilePath }}", "title": "{{ title }} | {{ author }}"}'> </include>
 
         <!-- Text -->
         <div class="interview-info flex flex-col">
@@ -16,9 +11,7 @@
 
     <div class="flex w-1/2 flex-col items-center justify-start pl-20">
         <!-- Image -->
-        <!-- <div class="aspect-3/2 w-full basis-2/3 pl-20"> -->
         <include src="./partials/interview_img.html"></include>
-        <!-- </div> -->
 
         <span class="self-end font-crimson-text text-xs text-gray-800">{{ imageCaption }}</span>
 
@@ -28,7 +21,7 @@
     </div>
 </div>
 
-<div class="mb-16 mt-24 flex items-center justify-between">
+<div class="mb-16 mt-12 sm:-mx-[2rem] md:-mx-[4rem] lg:-mx-[7rem] xl:-mx-[12rem] flex items-center justify-between">
     <a class="text-center font-crimson-text tracking-tight text-gray-100  hover:!text-white" href="{{prevLink}}">
         <div class="flex h-32 w-32 items-center justify-between rounded-full bg-gray-950 p-4">vorheriges Interview</div>
     </a>

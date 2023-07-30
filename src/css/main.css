@@ -58,6 +58,20 @@ a {
     @apply text-red-900 hover:text-red-600;
 }
 
+audio {
+    filter: grayscale(1) saturate(500%) contrast(100%) invert(100%);
+       /* mix-blend-mode: multiply; */
+    /* width: 200px;
+    height: 25px; */
+}
+
+@-moz-document url-prefix() {
+    audio {
+        filter: invert(0%);
+           /* mix-blend-mode: multiply; */
+    }
+}
+
 .cursor-ve {
     @apply hover:cursor-[url('/public/images/virtAusstCursor.png')_64_64,_auto];
 }

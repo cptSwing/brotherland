@@ -11,19 +11,19 @@
 
         <div class="relative">
             <!-- Hover links -->
-            <div class="absolute h-full w-full pointer-events-none">
+            <div class="pointer-events-none absolute h-full w-full">
                 <a
-                    class="cursor-ve-prev absolute left-0 top-0 z-50 h-full sm:w-1/12 md:w-[10%] lg:w-1/6 xl:w-1/5 2xl:w-1/4 pointer-events-auto"
+                    class="cursor-ve-prev pointer-events-auto absolute left-0 top-0 z-50 h-full sm:w-1/12 md:w-[10%] lg:w-1/6 xl:w-1/5 2xl:w-1/4"
                     href="./ve3.html"
                 ></a>
 
                 <a
-                    class="cursor-ve-next absolute right-0 top-0 z-50 h-full sm:w-1/12 md:w-[10%] lg:w-1/6 xl:w-1/5 2xl:w-1/4 pointer-events-auto"
+                    class="cursor-ve-next pointer-events-auto absolute right-0 top-0 z-50 h-full sm:w-1/12 md:w-[10%] lg:w-1/6 xl:w-1/5 2xl:w-1/4"
                     href="./ve2.html"
                 ></a>
             </div>
 
-            <main class="mb-24 flex flex-col font-crimson-text tracking-tight text-xl font-bold">
+            <main class="mb-24 flex flex-col font-crimson-text text-xl font-bold tracking-tight">
                 <div class="relative flex h-fit w-full">
                     <div class="flex h-full w-2/5 justify-start">
                         <!-- Stahlturm -->
@@ -33,11 +33,11 @@
                     </div>
                     <div class="absolute left-1/2 top-1/4 flex h-fit w-2/5 -translate-x-1/2 -translate-y-1/4 justify-start">
                         <!-- Audio "die ganze Struktur zerbrach" -->
-                            <include
-                                src="./partials/interview_audio.html"
-                                locals='{"audioFilePath": "../../../public/audio/01_die_ganze_Struktur_zerbrach.mp3", "title": "die ganze Struktur zerbrach"}'
-                            >
-                            </include>
+                        <include
+                            src="./partials/interview_audio.html"
+                            locals='{"audioFilePath": "../../../public/audio/01_die_ganze_Struktur_zerbrach.mp3", "title": "die ganze Struktur zerbrach"}'
+                        >
+                        </include>
                     </div>
                 </div>
 
@@ -71,7 +71,7 @@
                         </div>
 
                         <!-- Audio "Besuch bekommen" -->
-                        <div class="absolute bottom-0 right-0 w-1/4 translate-x-[5%] translate-y-1/2 ">
+                        <div class="absolute bottom-0 right-0 w-1/3 translate-x-[5%] translate-y-1/2">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/03_Besuch_bekommen.mp3", "title": "Besuch bekommen"}'
@@ -85,7 +85,7 @@
                     <span class="block w-1/2 text-left lg:w-1/3">Ich habe gesagt: „Keine Angst, wir sind versteckt in der Wohnung,</span>
                     <div class="w-full">
                         <span
-                            class="whitespace-nowrap font-sans text-[6vw] leading-snug text-red-600 sm:text-[7.25vw] md:text-[6vw] lg:text-[5.375vw] xl:text-[4.9vw] 2xl:text-[4.45vw]"
+                            class="whitespace-nowrap font-roboto text-[6vw] font-medium leading-snug text-red-700 sm:text-[7.25vw] md:text-[6vw] lg:text-[5.375vw] xl:text-[4.9vw] 2xl:text-[4.45vw]"
                             >WIR KOMMEN NICHT RAUS</span
                         >
                     </div>
@@ -100,18 +100,17 @@
                 <div class="relative flex h-fit justify-between">
                     <div class="w-1/2">
                         <!-- Bus 1 -->
-                        <div class="aspect-3/2 w-full -translate-y-2/3 overflow-hidden rounded-sm object-cover">
+                        <div class="relative aspect-3/2 w-full -translate-y-2/3 rounded-sm object-cover">
                             <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_026.jpg" />
+                            <span class="absolute w-full text-left text-xs"> mit freundlicher Genehmigung von Detlev Kennerth </span>
                         </div>
                     </div>
                     <div class="w-1/2">
                         <!-- Bus 2 -->
                         <div class="relative aspect-3/2 w-full -translate-x-[10%] rounded-sm">
-                            <div class="absolute">
-                                <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_027.jpg" class="object-cover" />
-                                <div class="absolute bottom-0 z-10 w-full translate-y-full overflow-visible text-right text-xs">
-                                    mit freundlicher Genehmigung von Detlev Kennerth
-                                </div>
+                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_027.jpg" class="object-cover" />
+                            <div class="absolute bottom-0 z-10 w-full translate-y-full overflow-visible text-right text-xs">
+                                mit freundlicher Genehmigung von Detlev Kennerth
                             </div>
                         </div>
                     </div>
@@ -157,10 +156,10 @@
                                 <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_033.jpg" />
                             </div>
                             <!-- Audio "ich dachte ihr seid schon weg" -->
-                            <div class="absolute bottom-0 right-0 w-1/4 -translate-y-[150%]">
+                            <div class="absolute bottom-0 -right-[7%] w-1/3 -translate-y-[160%]">
                                 <include
                                     src="./partials/interview_audio.html"
-                                    locals='{"audioFilePath": "../../../public/audio/05_ich_dachte_ihr_seid_schon_weg.mp3", "title": "ich dachte ihr seid schon weg"}'
+                                    locals='{"audioFilePath": "../../../public/audio/05_A_D_08.mp3", "title": ""}'
                                 >
                                 </include>
                             </div>
@@ -199,10 +198,9 @@
                 <div class="h-20"></div>
 
                 <video class="mx-auto w-4/5" controls>
-                    <source  src="/public/videos/Zaninelli_Jakobs_Video_VAS4.mp4">
+                    <source src="/public/videos/Zaninelli_Jakobs_Video_VAS4.mp4" />
                     Your system can't play vidio, it seems!
                 </video>
-            
 
                 <div class="h-20"></div>
             </main>
