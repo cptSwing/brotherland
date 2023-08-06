@@ -5,22 +5,25 @@
     </head>
 
     <body class="bg-white text-black">
-        <div class="flex items-center justify-start">
-            <div class="md:w-20"></div>
-            <div class="min-w-xl relative aspect-2/3 h-screen">
-                <img src="../public/images/Zaninelli_Jakobs_BROTHERLAND_01.jpg" class="h-full w-full object-cover" />
+        <header class="block md:hidden">
+            <include src="./partials/nav.html" locals='{"pathPrefix": "./html", "active": ""}'></include>
+        </header>
+
+        <div class="flex flex-col-reverse items-center justify-start md:flex-row">
+            <div class="hidden md:block md:w-20"></div>
+            <div class="relative aspect-2/3 h-screen">
+                <img src="../public/images/Zaninelli_Jakobs_BROTHERLAND_01.jpg" class="object-cover" />
             </div>
-            <div class="flex h-screen flex-col justify-start pl-10">
+
+            <div class="hidden flex-col justify-start pl-10 md:flex md:h-screen">
                 <div class="h-16"></div>
 
-                <div
-                    class="font-roboto text-2xl font-medium uppercase text-gray-800 md:text-8xl"
-                >
+                <div class="font-roboto text-2xl font-medium uppercase text-gray-800 md:text-8xl">
                     <div>Brother</div>
                     <div>land</div>
                 </div>
 
-                <div class="h-12"></div>
+                <div class="h-16"></div>
 
                 <nav class="min-w-fit font-crimson-text text-3xl font-medium">
                     <a href="./html/project.html" alt="Project">

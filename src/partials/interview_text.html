@@ -1,15 +1,10 @@
 <div class="flex flex-col items-start justify-between">
-    <div class="mt-10">
+    <div class="mt-0 whitespace-pre-line text-justify md:mt-10">
         <each loop="item, index in main">
             <p class="font-crimson-text text-lg font-semibold text-gray-950">{{ item }}</p>
         </each>
     </div>
-    <div class="mt-10" />
+    <div class="mt-0 md:mt-10" />
 
-    <a
-        href="{{ authorLink }}"
-        class="w-max justify-self-end rounded-sm  font-crimson-text font-semibold"
-    >
-        {{ author }}
-    </a>
+    <a href="{{ authorLink }}" class="w-max justify-self-end rounded-sm font-crimson-text font-semibold"> {{ author }} </a>
 </div>

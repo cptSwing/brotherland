@@ -1,7 +1,11 @@
-<div class="flex">
-    <div class="flex w-1/2 flex-col">
+<div class="flex flex-col md:flex-row">
+    <div class="flex w-full flex-col md:w-1/2">
         <!-- Audio -->
-        <include src="./partials/interview_audio.html" locals='{"audioFilePath": "{{ audioFilePath }}", "title": "{{ title }} | {{ author }}"}'> </include>
+        <include
+            src="./partials/interview_audio.html"
+            locals='{"audioFilePath": "{{ audioFilePath }}", "title": "{{ title }} | {{ author }}"}'
+        >
+        </include>
 
         <!-- Text -->
         <div class="interview-info flex flex-col">
@@ -9,7 +13,7 @@
         </div>
     </div>
 
-    <div class="flex w-1/2 flex-col items-center justify-start pl-20">
+    <div class="mt-8 flex w-full flex-col items-center justify-center md:mt-0 md:w-1/2 md:justify-start md:pl-20">
         <!-- Image -->
         <include src="./partials/interview_img.html"></include>
 
@@ -21,11 +25,11 @@
     </div>
 </div>
 
-<div class="mb-16 mt-12 sm:-mx-[2rem] md:-mx-[4rem] lg:-mx-[7rem] xl:-mx-[12rem] flex items-center justify-between">
-    <a class="text-center font-crimson-text tracking-tight text-gray-100  hover:!text-white" href="{{prevLink}}">
+<div class="mb-16 mt-12 flex items-center justify-between sm:-mx-[2rem] md:-mx-[4rem] lg:-mx-[7rem] xl:-mx-[12rem]">
+    <a class="text-center font-crimson-text tracking-tight text-gray-100 hover:!text-white" href="{{prevLink}}">
         <div class="flex h-32 w-32 items-center justify-between rounded-full bg-gray-950 p-4">vorheriges Interview</div>
     </a>
-    <a class="text-center font-crimson-text tracking-tight text-gray-100  hover:!text-white" href="{{nextLink}}">
+    <a class="text-center font-crimson-text tracking-tight text-gray-100 hover:!text-white" href="{{nextLink}}">
         <div class="flex h-32 w-32 items-center justify-between rounded-full bg-gray-950 p-4 hover:!text-white">nächstes Interview</div>
     </a>
 </div>

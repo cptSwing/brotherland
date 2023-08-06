@@ -71,13 +71,12 @@ audio {
 }
 
 /* "Checkbox Hack" https://stackoverflow.com/a/48469407 : */
-
 #hamburger-menu-checkbox:checked ~ #hamburger-menu-panel {
-    @apply !flex;
+    @apply !flex !h-screen;
 }
 
-#hamburger-menu-checkbox:checked ~ #hamburger-menu-lines > div {
-    @apply !ml-auto !w-1/2 !bg-red-800;
+#hamburger-menu-checkbox:checked ~ #hamburger-menu-lines > div > div {
+    @apply !bg-red-800;
 }
 
 .cursor-ve {

@@ -3,15 +3,10 @@
     <script locals>
         module.exports = {
             text: {
-                title: "Das ist normal",
+                title: "das ist normal",
                 main: [
-                    `Hier ist [uns] nichts passiert, [Rostock-Lichtenhagen] haben wir
-                    nur im Fernsehen mitbekommen. Hier auf der Straße wurde nur von
-                    Weitem gerufen „Ausländer raus“. Das ist normal. Aber richtig so
-                    angreifen oder richtig ins Gesicht geschimpft, das haben wir nicht
-                    erlebt. Aber eigentlich war es sehr ruhig in Leipzig.`,
-                    `Einfach nur durch, wenn wir hier bleiben wollen, Beruf lernen oder
-                    arbeiten wollen. Dann müssen wir durch.`,
+                    `Hier ist [uns] nichts passiert, [Rostock-Lichtenhagen] haben wir nur im Fernsehen mitbekommen. Hier auf der Straße wurde nur von weitem gerufen „Ausländer raus“. Das ist normal. Aber richtig so angreifen oder richtig ins Gesicht geschimpft, das haben wir nicht erlebt. Aber eigentlich war es sehr ruhig in Leipzig.
+                    Einfach nur durch, wenn wir hier bleiben wollen, Beruf lernen oder arbeiten wollen. Dann müssen wir durch.`,
                 ],
                 author: "Lan und Huu Loi Bin Seifert",
                 authorLink: "../bio.html#seifert",
@@ -27,12 +22,13 @@
     </script>
 
     <head>
-        <include src="./partials/head.html"
-            locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Lan und Huu Loi Bin Seifert"}' />
+        <include
+            src="./partials/head.html"
+            locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Lan und Huu Loi Bin Seifert"}'
+        />
     </head>
 
-    <body class="bg-white text-gray-700"
-        onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
         <header>
             <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ls01"}'></include>
         </header>
@@ -43,5 +39,4 @@
             </scope>
         </main>
     </body>
-
 </html>
