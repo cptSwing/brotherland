@@ -11,14 +11,14 @@
 
         <div class="relative">
             <!-- Hover links -->
-            <div class="pointer-events-none absolute h-full w-full">
+            <div class="pointer-events-none absolute hidden h-full w-full md:block">
                 <a
-                    class="cursor-ve-prev pointer-events-auto absolute left-0 top-0 z-50 h-full sm:w-[5%] md:w-[7.5%] lg:w-[10%] xl:w-[15%] 2xl:w-1/5"
+                    class="cursor-ve-prev pointer-events-auto absolute left-0 top-0 z-50 h-full md:w-[7.5%] lg:w-[10%] xl:w-[15%] 2xl:w-1/5"
                     href="./ve4.html"
                 ></a>
 
                 <a
-                    class="cursor-ve-next pointer-events-auto absolute right-0 top-0 z-50 h-full sm:w-[5%] md:w-[7.5%] lg:w-[10%] xl:w-[15%] 2xl:w-1/5"
+                    class="cursor-ve-next pointer-events-auto absolute right-0 top-0 z-50 h-full md:w-[7.5%] lg:w-[10%] xl:w-[15%] 2xl:w-1/5"
                     href="./ve3.html"
                 ></a>
             </div>
@@ -34,14 +34,14 @@
                         </span>
 
                         <!-- Audio -->
-                        <div class="mx-auto w-4/5 md:w-3/5">
+                        <div class="mx-auto w-4/5 pt-2 md:w-3/5 md:pt-0">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/01_J_R_01.mp3", "title": ""}'
                             ></include>
                         </div>
                     </div>
-                    <div class="flex min-h-min w-full flex-col md:ml-1 md:mr-4 md:w-auto md:basis-1/2">
+                    <div class="flex min-h-min w-full flex-col pt-4 md:ml-1 md:mr-4 md:w-auto md:basis-1/2 md:pt-0">
                         <!-- Plattenbauten Hoch -->
                         <div class="relative aspect-3/2 w-full">
                             <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_06.jpg" />
@@ -55,7 +55,7 @@
                     </div>
                 </div>
 
-                <div class="flex h-fit flex-col pt-8 md:-translate-y-[7.5%] md:flex-row md:pt-0">
+                <div class="flex h-fit flex-col pt-16 md:-translate-y-[7.5%] md:flex-row md:pt-0">
                     <div class="flex w-full flex-col items-center justify-between md:w-1/2 md:pr-16">
                         <!-- Hausecke; türkise Fenster -->
                         <div class="relative aspect-2/3 w-4/5 md:w-full">
@@ -63,7 +63,7 @@
                         </div>
 
                         <!-- Audio "Die kannten keine Schwarzen" -->
-                        <div class="mx-auto w-3/5 pt-4 md:w-4/5 md:pb-24 md:pt-0">
+                        <div class="mx-auto w-3/5 pt-8 md:w-4/5 md:pb-24 md:pt-0">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"audioFilePath": "../../../public/audio/02_die_kannten_keine_Schwarzen.mp3", "title": "die kannten keine Schwarzen"}'
@@ -71,7 +71,7 @@
                             </include>
                         </div>
                     </div>
-                    <div class="mx-auto flex w-4/5 flex-col justify-end md:mx-0 md:w-1/2 md:pt-96">
+                    <div class="mx-auto flex w-4/5 flex-col justify-end pt-4 md:mx-0 md:w-1/2 md:pt-96">
                         <!-- Feuerzeug -->
                         <div class="ml-auto aspect-2/3 w-full overflow-hidden md:w-4/5">
                             <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_09.jpg" />
