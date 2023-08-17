@@ -9,17 +9,19 @@
     },
     "parcelIgnore": [],
     "devDependencies": {
+        "@types/node": "^20.5.0",
         "autoprefixer": "^10.4.14",
-        "gh-pages": "^5.0.0",
+        "gh-pages": "^6.0.0",
         "parcel": "^2.8.3",
         "parcel-resolver-ignore": "^2.1.5",
         "postcss": "^8.4.23",
         "posthtml-expressions": "^1.11.0",
         "posthtml-include": "^1.7.4",
-        "prettier": "^2.8.8",
-        "prettier-plugin-tailwindcss": "^0.2.8",
+        "prettier": "^3.0.2",
+        "prettier-plugin-tailwindcss": "^0.5.3",
         "sharp": "^0.31.1",
         "simplelightbox": "^2.14.1",
-        "tailwindcss": "^3.3.2"
+        "tailwindcss": "^3.3.2",
+        "tailwindcss-breakpoints-inspector": "^1.1.0"
     }
 }

@@ -14,5 +14,6 @@ module.exports = {
             },
         },
     },
-    plugins: [require("./tailwind_BreakpointInspector")],
+    // plugins: [require("./tailwind_BreakpointInspector")],
+    plugins: [require("tailwindcss-breakpoints-inspector")],
 };
