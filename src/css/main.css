@@ -83,6 +83,12 @@ audio {
     @apply hover:cursor-[url('/public/images/virtAusstCursor.png')_64_64,_auto];
 }
 
+@media (min-width: 768px) {
+    .md\:cursor-ve {
+        @apply cursor-ve;
+    }
+}
+
 .cursor-ve-prev {
     @apply hover:cursor-[url('/public/images/virtAusstCursor_prev.png')_64_64,_auto];
 }
