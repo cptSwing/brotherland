@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "das nahm so Überhand",
+                main: [`[Übersetzung folgt]`],
+                author: "Dorina und Andreas S.",
+                authorLink: "../bio.html#dorinasandreass",
+                audioFilePath: "/public/audio/A_D_05.mp3",
+                imageFilePath: "/public/images/A_D_05.jpg",
+                imageCaption:
+                    "Flyer „Rostock bleibt Deutsch“. April/Mai 1992. Bildcredit: Dokumentationszentrum „Lichtenhagen im Gedächtnis“",
+                additionalContext: "",
+                prevLink: "intrvw_a_d04.html",
+                nextLink: "intrvw_dm02.html",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Dorina und Andreas S. 5"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_a&d05"}'></include>
+        </header>
+
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
+        </main>
+    </body>
+</html>

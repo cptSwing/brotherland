@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "das wollten wir doch nicht",
+                main: [
+                    `Erstaunlicherweise waren ja auch zum Anfang … standen auch die Älteren da und haben mit gegrölt … aber wo sie mitgekriegt haben, dass die ersten Sixpacks abgefackelt wurden, dass die ersten Autos da umgeworfen wurden, dass da jetzt richtig Randale losging, da sind sie alle verschwunden mit einmal. Die fanden das mit einmal blöd. Vorher standen sie auch und habe geschrienen, dass die … „Weg hier mit euch“. Und dann wo richtig los, dann waren sie auf einmal weg. Dann haben sie gesagten: „Oh ne, das wollten wir doch nicht.“ Wie war das “wollte ich doch nicht? Ich habe doch ein Streichholz in der Hand gehabt. Ich habe doch mitgezündelt, vielleicht“.`,
+                ],
+                author: "Dorina und Andreas S.",
+                authorLink: "../bio.html#dorinasandreass",
+                audioFilePath: "/public/audio/A_D_06.mp3",
+                imageFilePath: "/public/images/A_D_06.jpg",
+                imageCaption: "Bild-Reportage des „Stern“ Nr. 37/1992. Bildcredit: DISS/SchlagZeilen 1992",
+                additionalContext: "",
+                prevLink: "intrvw_jr02.html",
+                nextLink: "intrvw_ls01.html",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Dorina und Andreas S. 8"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_a&d08"}'></include>
+        </header>
+
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
+        </main>
+    </body>
+</html>

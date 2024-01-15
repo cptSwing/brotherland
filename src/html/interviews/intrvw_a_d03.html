@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <script locals>
+        module.exports = {
+            text: {
+                title: "meine Arbeit nehmen die mir jetzt weg",
+                main: [
+                    `„Meine Arbeit nehmen die mir jetzt weg!“ Da hatte aber niemand mehr Arbeit gehabt, weil alle waren ja arbeitslos. Die Arbeit gab’s ja gar nicht mehr.
+					Die Werften wurden alle dichtgemacht, die ganze Betriebe haben sich stellenweise aufgelöst und … blieben ja nur noch eine Handvoll Arbeitsplätze. Vorher waren es, was weiß ich, zehntausend Leute und dann sind nur noch 500 übrig geblieben. Und die anderen, die 9500, die standen dann da und haben so eine Krawatte gekriegt, die haben es nicht verstanden, warum sind wir alle arbeitslos auf einmal und jetzt kommt hier noch so ein Haufen rein und das, glaube ich, war dieser Zündstoff.`,
+                ],
+                author: "Dorina und Andreas S.",
+                authorLink: "../bio.html#dorinasandreass",
+                audioFilePath: "/public/audio/A_D_03.mp3",
+                imageFilePath: "/public/images/A_D_03.jpg",
+                imageCaption: "Rostock-Lichtenhagen, August 1992. Bildcredit: Filmstill aus The Truth Lies in Rostock/Spectacle",
+                additionalContext: "",
+                prevLink: "intrvw_ajm03.html",
+                nextLink: "intrvw_a_d04.html",
+            },
+        };
+    </script>
+
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Dorina und Andreas S. 3"}' />
+    </head>
+
+    <body class="bg-white text-gray-700" onload="setParentElementHeight('interview-info'); imageHref('interview-image');">
+        <header>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_a&d03"}'></include>
+        </header>
+
+        <main>
+            <scope with="text">
+                <include src="./partials/interview.html"></include>
+            </scope>
+        </main>
+    </body>
+</html>
