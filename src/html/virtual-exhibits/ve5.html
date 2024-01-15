@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+    <head>
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Virtual Exhibit 5"}' />
+    </head>
+
+    <body class="bg-white">
+        <header>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "yes"}'></include>
+        </header>
+
+        <div class="relative">
+            <!-- Hover links -->
+            <div class="pointer-events-none absolute hidden h-full w-full md:block">
+                <a
+                    class="cursor-ve-prev pointer-events-auto absolute left-0 top-0 z-50 h-full md:w-[7.5%] lg:w-[10%] xl:w-[15%] 2xl:w-1/5"
+                    href="./ve4.html"
+                ></a>
+
+                <a
+                    class="cursor-ve-next pointer-events-auto absolute right-0 top-0 z-50 h-full md:w-[7.5%] lg:w-[10%] xl:w-[15%] 2xl:w-1/5"
+                    href="./ve2.html"
+                ></a>
+            </div>
+
+            <main class="mb-24 flex flex-col font-crimson-text text-xl font-bold tracking-tight">
+                <div class="relative mx-auto flex h-fit w-11/12 flex-col md:flex-row">
+                    <!-- Menge vor Sonnenblumenhaus -->
+                    <div class="w-full overflow-hidden rounded-sm object-cover">
+                        <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_051.jpg" />
+                        <span class="absolute w-full text-right text-xs"
+                            >Bernd Wichmann/Dokumentationszentrum "Lichtenhagen im Gedächtnis"</span
+                        >
+                    </div>
+
+                    <!-- Audio "wie ein Theater beobachtet" -->
+                    <div
+                        class="mx-auto h-fit w-4/5 pt-8 md:absolute md:left-1/2 md:top-full md:mx-0 md:w-2/5 md:-translate-x-1/2 md:-translate-y-1/2 md:pt-0"
+                    >
+                        <include
+                            src="./partials/interview_audio.html"
+                            locals='{"audioFilePath": "../../../public/audio/DM_01.mp3", "title": "wie ein Theater beobachtet"}'
+                        >
+                        </include>
+                    </div>
+                </div>
+
+                <div class="flex h-fit w-full">
+                    <div class="mx-auto flex w-full flex-col items-center justify-between pt-2 md:mx-0 md:w-full md:flex-row md:pt-32">
+                        <!-- Fingerzeig-->
+                        <div class="mx-auto aspect-2/3 w-1/2 overflow-hidden object-cover md:mx-0">
+                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_052.jpg" />
+                        </div>
+
+                        <div class="w-1/3">
+                            <div>
+                                Hier ist uns nichts passiert, den Anschlag in Rostock-Lichtenhagen haben wir nur im Fernsehen mitbekommen.
+                                Hier auf der Straſe wurde uns nur von Weitem zugerufen "Ausländer raus".
+                            </div>
+                            <div class="h-4"></div>
+                            <div>Aber das ist normal.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex h-fit w-full">
+                    <div class="relative flex w-full items-end justify-between pt-8 md:flex-row md:pt-24">
+                        <div class="mr-[10%] w-1/3 md:translate-y-1/3">
+                            <div>
+                                Im Oktober mussten wir aus dem Wohnheim raus, wir sind in einem Bus eingestiegen, nach Frankurt am Main
+                                gefahren worden und von dort zurück nach Mosambik dann.
+                            </div>
+                            <div class="h-4"></div>
+                            <div>
+                                Wir waren alle traurig, niemand hat sich unterhalten. Jeder hat an seinem Platz gesessen und überlegt. Was
+                                wird wohl mit uns jetzt, wenn wir zurück nach Mosambik kommen, denn in Mosambik war Bürgerkrieg.
+                            </div>
+                        </div>
+
+                        <!-- Porträt gelbe Bluse -->
+                        <div class="mx-auto aspect-3/2 w-2/3 md:mx-0">
+                            <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_053.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-fit w-full pt-40">
+                    <div class="flex md:flex-col">
+                        <div class="flex justify-end md:flex-row">
+                            <!-- Bushaltestelle-->
+                            <div class="relative z-50 aspect-3/2 w-1/2">
+                                <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_054.jpg" />
+                            </div>
+                        </div>
+
+                        <div class="flex md:-translate-y-[15%] md:flex-row">
+                            <div class="flex w-3/5 md:flex-col">
+                                <!-- Audio "Das wollten wir doch nicht" -->
+                                <div class="z-40 mx-auto w-1/5 md:translate-y-1/2">
+                                    <include
+                                        src="./partials/interview_audio.html"
+                                        locals='{"audioFilePath": "../../../public/audio/04_das_wollten_wir_doch_nicht.mp3", "title": ""}'
+                                    >
+                                    </include>
+                                </div>
+                                <!-- Gemüse-->
+                                <div class="relative aspect-3/2 w-full">
+                                    <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_055.jpg" />
+                                </div>
+                            </div>
+
+                            <div class="flex w-2/5 items-start justify-end md:flex-col">
+                                <!-- Audio "Für mich war das ein Unfall" -->
+                                <div class="mx-auto w-full md:-translate-x-[15%] md:-translate-y-1/2">
+                                    <include
+                                        src="./partials/interview_audio.html"
+                                        locals='{"audioFilePath": "../../../public/audio/KS_01.mp3", "title": "für mich war das ein Unfall"}'
+                                    >
+                                    </include>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-fit w-full">
+                    <div class="flex items-end justify-between md:flex-row">
+                        <div class="w-1/2">
+                            <!-- Audio "Hoyerswerda hat den Anfang gemacht" -->
+                            <div class="mx-auto w-4/5 md:mr-[100%] md:-translate-y-full">
+                                <include
+                                    src="./partials/interview_audio.html"
+                                    locals='{"audioFilePath": "../../../public/audio/J_R_03.mp3", "title": "Hoyerswerda hat den Anfang gemacht"}'
+                                >
+                                </include>
+                            </div>
+                        </div>
+                        <div class="w-1/2">
+                            <!-- Gemüse-->
+                            <div class="relative aspect-3/2 w-full">
+                                <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_056.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex h-fit flex-col items-end justify-between pt-8 md:flex-row md:pt-20">
+                    <div class="w-1/2">
+                        <div class="w-full">
+                            <!-- Postkarte -->
+                            <div class="relative aspect-2/3 w-full overflow-hidden">
+                                <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_057.jpg" />
+                                <span class="absolute w-full text-right text-xs">VEB Bild und Heimat</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-1/2">
+                        <!-- Audio "Heimat hin oder her" -->
+                        <div class="mx-auto w-4/5 md:-translate-y-1/2">
+                            <include
+                                src="./partials/interview_audio.html"
+                                locals='{"audioFilePath": "../../../public/audio/Heimat_hin_oder_her.mp3", "title": "Heimat hin oder her"}'
+                            >
+                            </include>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-fit w-1/3 md:pt-44">
+                    <div class="flex items-start justify-start md:flex-col">
+                        <div>Die Polizei ist so aggressiv heute.</div>
+                        <!-- <div class="h-4"></div> -->
+                        <div>
+                            Ich weiß nicht was sie für Idee oder welche Orientierung die haben. Damals, in der DDR, gab es solche Sachen
+                            nicht, mit der Polizei hatten wir keine Probleme. Wenn ich heute ein Problem habe, muss ich selber was
+                            unternehmen, selber was tun bevor es zu spät ist. Ich kann nicht warten bis die Polizei hilft, wenn etwas in
+                            Richtung Rassimus passiert. Ich merke, dass auch die Polizisten nicht wollen, dass wir hier in Deutschland sind.
+                            Deshalb ist die Polizei nichts für mich.
+                        </div>
+                        <!-- Audio "Heimat hin oder her" -->
+                        <div class="mx-auto w-1/3">
+                            <include
+                                src="./partials/interview_audio.html"
+                                locals='{"audioFilePath": "../../../public/audio/04_das_wollten_wir_doch_nicht.mp3", "title": ""}'
+                            >
+                            </include>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
