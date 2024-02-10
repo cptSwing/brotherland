@@ -26,7 +26,7 @@
             <main class="mb-24 flex flex-col font-crimson-text text-xl font-bold tracking-tight">
                 <div class="relative mx-auto flex h-fit w-11/12 flex-col md:flex-row">
                     <!-- Menge vor Sonnenblumenhaus -->
-                    <div class="w-full overflow-hidden rounded-sm object-cover">
+                    <div class="w-full overflow-hidden object-cover">
                         <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_051.jpg" />
                         <span class="absolute w-full text-right text-xs"
                             >Bernd Wichmann/Dokumentationszentrum "Lichtenhagen im Gedächtnis"</span
@@ -84,7 +84,7 @@
                     </div>
                 </div>
 
-                <div class="h-fit w-full pt-40">
+                <div class="h-fit w-full -translate-x-[5%] pt-36">
                     <div class="flex md:flex-col">
                         <div class="flex justify-end md:flex-row">
                             <!-- Bushaltestelle-->
@@ -95,11 +95,11 @@
 
                         <div class="flex md:-translate-y-[15%] md:flex-row">
                             <div class="flex w-3/5 md:flex-col">
-                                <!-- Audio "Das wollten wir doch nicht" -->
+                                <!-- Audio "mm 02" -->
                                 <div class="z-40 mx-auto w-1/5 md:translate-y-1/2">
                                     <include
                                         src="./partials/interview_audio.html"
-                                        locals='{"audioFilePath": "../../../public/audio/04_das_wollten_wir_doch_nicht.mp3", "title": ""}'
+                                        locals='{"audioFilePath": "../../../public/audio/MM_02.mp3", "title": ""}'
                                     >
                                     </include>
                                 </div>
@@ -123,7 +123,7 @@
                     </div>
                 </div>
 
-                <div class="h-fit w-full">
+                <div class="-mt-[10%] h-fit w-full">
                     <div class="flex items-end justify-between md:flex-row">
                         <div class="w-1/2">
                             <!-- Audio "Hoyerswerda hat den Anfang gemacht" -->
@@ -135,8 +135,8 @@
                                 </include>
                             </div>
                         </div>
-                        <div class="w-1/2">
-                            <!-- Gemüse-->
+                        <div class="w-[45%]">
+                            <!-- Basketball-->
                             <div class="relative aspect-3/2 w-full">
                                 <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_056.jpg" />
                             </div>
@@ -148,7 +148,7 @@
                     <div class="w-1/2">
                         <div class="w-full">
                             <!-- Postkarte -->
-                            <div class="relative aspect-2/3 w-full overflow-hidden">
+                            <div class="relative aspect-2/3 w-full">
                                 <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_057.jpg" />
                                 <span class="absolute w-full text-right text-xs">VEB Bild und Heimat</span>
                             </div>
@@ -160,7 +160,7 @@
                         <div class="mx-auto w-4/5 md:-translate-y-1/2">
                             <include
                                 src="./partials/interview_audio.html"
-                                locals='{"audioFilePath": "../../../public/audio/Heimat_hin_oder_her.mp3", "title": "Heimat hin oder her"}'
+                                locals='{"audioFilePath": "../../../public/audio/B_L_02.mp3", "title": "Heimat hin oder her"}'
                             >
                             </include>
                         </div>
@@ -168,7 +168,7 @@
                 </div>
 
                 <div class="h-fit w-1/3 md:pt-44">
-                    <div class="flex items-start justify-start md:flex-col">
+                    <div class="flex -translate-x-[5%] items-start justify-start md:flex-col">
                         <div>Die Polizei ist so aggressiv heute.</div>
                         <!-- <div class="h-4"></div> -->
                         <div>
@@ -178,15 +178,71 @@
                             Richtung Rassimus passiert. Ich merke, dass auch die Polizisten nicht wollen, dass wir hier in Deutschland sind.
                             Deshalb ist die Polizei nichts für mich.
                         </div>
-                        <!-- Audio "Heimat hin oder her" -->
-                        <div class="mx-auto w-1/3">
+                        <!-- Audio "mm03" -->
+                        <div class="mx-auto w-1/2">
                             <include
                                 src="./partials/interview_audio.html"
-                                locals='{"audioFilePath": "../../../public/audio/04_das_wollten_wir_doch_nicht.mp3", "title": ""}'
+                                locals='{"audioFilePath": "../../../public/audio/MM_03.mp3", "title": ""}'
                             >
                             </include>
                         </div>
                     </div>
+                </div>
+
+                <div class="flex h-fit -translate-y-[15%] flex-col items-end justify-between md:flex-row">
+                    <div class="w-2/5">
+                        <!-- Audio "ich war ein richtiger Sklave" -->
+                        <div class="mr-auto w-4/5 md:-translate-y-[250%]">
+                            <include
+                                src="./partials/interview_audio.html"
+                                locals='{"audioFilePath": "../../../public/audio/DM_04.mp3", "title": "ich war ein richtiger Sklave"}'
+                            >
+                            </include>
+                        </div>
+                    </div>
+
+                    <div class="w-3/5">
+                        <div class="w-full">
+                            <!-- Wand -->
+                            <div class="relative aspect-2/3 w-full overflow-hidden">
+                                <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_058.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex h-fit -translate-y-[25%] flex-col justify-between md:flex-row">
+                    <div class="w-1/2">
+                        <div class="w-full">
+                            <!-- Nazi gruppe -->
+                            <div class="relative aspect-2/3 w-full overflow-hidden">
+                                <img src="/public/images/Zaninelli_Jakobs_BROTHERLAND_059.jpg" />
+                                <span class="absolute w-full text-right text-xs"
+                                    >Filmstill aus <span class="italic">The Truth Lies in Rostock</span>/Spectacle</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex w-1/2 flex-col items-center justify-center">
+                        <div class="h-1/2 w-4/5">
+                            Ich fahre nach wie vor gerne nach Lichtenhagen. Wenn ich das Sonnenblumenhochhaus jetzt betrachte, wenn ich da
+                            vorbei fahre, sehe ich das jetzt nicht im Zusammenhang mit dem was da passiert ist. Das... dieses
+                            Sonnenblumenhochhaus ist genau so... genau dieses Motiv, diese Sonnenblume, ist irgendwo Kunst. Für mich ist das
+                            was passiert ist nicht mehr so das Ausschlaggebende. Für mich ist Lichtenhagen auch... da habe ich meine
+                            Kindheit verbracht, da bin ich zur Schule gegangen, das war schön. Von da aus sind wir immer mit dem Fahrrad
+                            nach Warnemünde zum Strand gefahren. Man möchte nicht immer Alles so in Verbindung bringen mit dem Ganzen.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="-mx-0.5 flex translate-y-[120%] items-center justify-start md:hidden">
+                    <a class="text-center font-crimson-text tracking-tight text-gray-100" href="./ve4.html">
+                        <div class="flex h-32 w-32 items-center justify-between rounded-full bg-gray-950 p-4">zur vorherigen Seite</div>
+                    </a>
+                    <a class="hidden text-center font-crimson-text tracking-tight text-gray-100" href="./ve2.html">
+                        <div class="flex h-32 w-32 items-center justify-between rounded-full bg-gray-950 p-4">zur nächsten Seite</div>
+                    </a>
                 </div>
             </main>
         </div>
