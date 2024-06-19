@@ -49,8 +49,16 @@ if (!document.cookie) {
     setCookie("lang", "DE");
 }
 
-const languageSwitchElement = document.getElementById("languageSwitch");
-languageSwitchElement.addEventListener("click", () => {
+// store originals, translate
+document.addEventListener("DOMContentLoaded", () => {
+    allLangElements = document.querySelectorAll(`[${dataAttributeName}]`);
+    allLangElements.forEach((elem) => (originalInnerHTML[elem.getAttribute(dataAttributeName)] = elem.innerHTML)); // Save original - DE - innerHTML
+
+    translateAll(allLangElements);
+});
+
+// Click handler language switch button
+document.getElementById("languageSwitch").addEventListener("click", () => {
     const lang = getCookie("lang");
     let newLang;
 
@@ -61,15 +69,6 @@ languageSwitchElement.addEventListener("click", () => {
         setCookie("lang", "DE");
         newLang = "DE";
     }
-
-    console.log("%c[script]", "color: #ef6c7d", `CLICK newLang :`, newLang);
-    translateAll(allLangElements);
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    allLangElements = document.querySelectorAll(`[${dataAttributeName}]`);
-    console.log("%c[script]", "color: #700272", `allLangElements :`, allLangElements);
-    allLangElements.forEach((elem) => (originalInnerHTML[elem.getAttribute(dataAttributeName)] = elem.innerHTML)); // Save original - DE - innerHTML
 
     translateAll(allLangElements);
 });
@@ -88,9 +87,7 @@ function translateAll(elements) {
     });
 }
 
-// Replace the inner text of the given HTML element
-// with the translation in the active locale,
-// corresponding to the element's data-i18n-key
+// Replace the inner text of the given HTML element with the translation in the active locale, corresponding to the element's data-lang-key
 function translateElement(element, key, translDb) {
     const translation = translDb[key];
     element.innerHTML = translation;
