@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "a_d01",
                 title: "ein freundschaftliches Verhältnis",
                 main: [
                     `Das war ja ein freundschaftliches Verhältnis zu ihnen [Vietnamesen], weil sie ja … es wurde ja gesagt, zumindest war es ein freundschaftliches … weil die sind hergekommen, weil die hier arbeiten wollten und was lernen wollten, und die haben uns ja nichts getan in dem Sinne, sondern sie haben ihre Arbeit gemacht, sie haben sich integriert, sie haben denn in den Kollektiven dann mitgemacht. 
@@ -22,12 +23,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Dorina und Andreas S. 1"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 1"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_a&d01"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

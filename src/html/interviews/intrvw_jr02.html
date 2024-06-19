@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "jr02",
                 title: "es gab keine Grenze",
                 main: [
                     `Es gab jetzt keine sichtbare Grenze. Also die, die aktiv gewesen sind, haben halt mehr oder weniger vorne gestanden, aber das, was jetzt die Schaulustigen waren, die haben sich nahtlos angeschlossen und standen drumherum. In meiner Erinnerung war ja damals die Schweitzer-Straße, der gegenüberliegende Bürgersteig von diesem Block her, war ja gesäumt mit Leuten. Du konntest dort keine Grenze ziehen, wer jetzt zu den Attentätern gehört oder wer bloß Zuschauer ist. […] Ich selbst hab nicht mitbekommen, dass sich da eine ernsthafte Anstachelung in dem Sinne gab […] Es gab jetzt nicht aus den sogenannten hinteren Reihen jemanden, der gesagt hat: „Los, los! Ran, ran!“ Das gab’s so nicht. Nö. Das finde ich sehr interessant. Es gab also keine Motivation durch ältere Leute, die dann … oder durch andere Leute, die gesagt haben, „du musst jetzt vorstürmen.“ Das kam von selbst heraus.
@@ -23,12 +24,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Jan K. und René K. 2"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 2"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_jr02"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

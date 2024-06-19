@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "ajm01",
                 title: "ab heute hier ist das euer Arbeitsplatz",
                 main: [
                     `Am nächsten Tag mussten früh aufstehen, wie ich zu Hause nie gemacht hatte. Und so das Aufstehen um 5 Uhr; schnell, schnell um 6 Uhr Bus nehmen zum Betrieb. Wo wir im Betrieb ankamen, der Gestank und so weiter, war schon „wow“, das ist schlecht. Und solche Schreie von den Tieren, Schweinen, Kühen und so. Hmmm, und das war meine Frage „wo sind wir denn? Was für ein Beruf?“ […] „Ab heute ist hier das euer Arbeitsplatz!“
@@ -22,12 +23,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Augusto Jone Munjunga 1"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 1"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ajm01"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

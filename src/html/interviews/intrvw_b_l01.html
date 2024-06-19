@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "b_l01",
                 title: "du bist ganz anders gesehen",
                 main: [
                     `Wie gesagt die Heimat ist arm, nicht so viel Möglichkeiten für Ausbildung und Schule. Und wenn du die Möglichkeit hast, ins Ausland [zu gehen], Russland, Polen kamen infrage, Deutschland und Tschechien. Und Deutschland steht an erster Stelle, war was Besonderes, sehr gerne hier hergekommen. Die Lebensqualität damals wie heute [war] sehr angesehen, mit der Ordnung, der Qualität, der Genauigkeit nach wie vor, Deutschland hat sehr großen Namen. Du kriegst das durch die Erwachsenen mit, direkt, genau ... wir sind noch jung, wir sind damals, also ich bin mit 17 hergekommen, wirklich unberührt. Wirklich, damals 17 verglichen mit heute wie die Jugendliche mit 10. Ich wusste bis zuletzt nicht mal, wo die Kinder herkommen. Nicht jeder durfte, für mich ich empfinde es als großes Privileg, dass ich ins Ausland durfte und ich habe gesehen, dass wenn ich fertig bin, nach 3 Jahren... du bist angesehen, du hast eine Ausbildung im Ausland, in Deutschland, genossen. Du bist ganz anders angesehen, du hast ganz andere Möglichkeiten um höhere Positionen anzutreten und dort kannst du deine Karriere verfolgen. So war das, so sehe ich das. Wo ich nach Deutschland gekommen bin, es ist alles anders gekommen.`,
@@ -20,12 +21,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Ngoc Bich Pfaff 1"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 1"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_b_l01"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

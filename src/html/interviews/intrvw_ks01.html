@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "ks01",
                 title: "für mich war das ein Unfall",
                 main: [
                     `Ich sag mal, gerade mit dem Amadeu Antonio finde ich es ein bisschen überspitzt. Ich muss ehrlich sagen, für mich war das eigentlich damals wirklich ein Unfall, der provoziert wurde, es kam zu Unstimmigkeiten. Er war auch sehr provozierend, muss ich sagen, und das müssten eigentlich seine Artgenossen eigentlich mit bekräftigen. Wurde dann natürlich gleich publik damals gemacht und so hoch gespielt, deswegen ist ja alles entstanden. Ich selber finde es eigentlich übertrieben, finde es schlimm, dass es so ist, dass wir so dargestellt werden, Eberswalde. Ich sag’ mal, wie oft streiten sich Deutsche, wo was Schlimmes passiert? Und nur weil es ein Ausländer ist, also für mich ist Mensch Mensch, muss ich mal sagen. Mir fehlt da manchmal ein bisschen das Verständnis. Das ist meine persönliche Meinung. […] Hat Geschichte geschrieben. Aber schade, dass es so hoch gepuscht wird, so ein Mittelwert wäre schön gewesen. Wir waren nicht ausländerfeindlich, wir hatten hier Polen, Ungarn, wir hatten Vietnamesen, die Angolaner über die ganzen Jahre. Und ich sag’ mal, wenn in dreißig oder vierzig Jahren einmal was passiert, ist das kein Maßstab, oder? Würde ich so sagen, ist meine Meinung. Aber das ist schlimm, man kann es nicht so offen tragen, weil es einfach zu gefährlich ist. Die eigene Meinung ist da nicht gefragt.
@@ -24,12 +25,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Kordula S."}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}}"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ks01"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "dm01",
                 title: "wie ein Theater beobachtet",
                 main: [
                     `Ich glaube, unsere Nachbarn haben das alles wie ein Theater beobachtet. Wir hatten keine Solidarität von unseren Nachbarn, die zwölf Jahre mit uns gelebt haben. Die haben nur zugeguckt durchs Fenster oder von weiter weg. Die haben versucht zu sehen, was da los ist zwischen den Jugendlichen, die Parolen gerufen haben, und der Polizei, die mit Hunden dastand. Die waren nur Zuschauer, es gab keine Solidarität, bis wir nach Hause geflogen sind. Wir haben keine Solidarität von unseren Nachbarn aus Hoyerswerda bekommen.
@@ -22,12 +23,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - David Macou 1"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 1"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_dm01"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "ot02",
                 title: "dieser Begriff „Vertragsarbeiter“",
                 main: [
                     `Mich hat immer gestört dieser Begriff „Vertragsarbeiter“, weil für meine … also das, was ich immer dachte, dass die hier sind, um ausgebildet zu werden, denn … früher nach der Wende gab’s erst diesen Begriff „Vertragsarbeiter“, das heißt ja, dass die praktisch hier Arbeitsplätze besetzten und ich glaube … das war auch so ein Begriff, der extra dafür [instrumentalisiert] … um die Leute dahin gehend zu instrumentalisieren, „die und die können euch eventuell die Arbeitsplätze wegnehmen“, so habe ich früher gedacht darüber … kurz nach der Wende. Weil ich dachte immer, dass die werden hier ausgebildet … 
@@ -23,12 +24,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Dennis und Silke O. 2"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 2"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ot02"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

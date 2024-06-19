@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "ls01",
                 title: "das ist normal",
                 main: [
                     `Hier ist [uns] nichts passiert, [Rostock-Lichtenhagen] haben wir nur im Fernsehen mitbekommen. Hier auf der Straße wurde nur von weitem gerufen „Ausländer raus“. Das ist normal. Aber richtig so angreifen oder richtig ins Gesicht geschimpft, das haben wir nicht erlebt. Aber eigentlich war es sehr ruhig in Leipzig.
@@ -12,7 +13,7 @@
                 authorLink: "../bio.html#seifert",
                 audioFilePath: "/public/audio/LS_01.mp3",
                 imageFilePath: "/public/images/LS_01.png",
-                imageCaption: 'Filmstill aus "The Truth Lies in Rostock"',
+                imageCaption: 'Filmstill aus "The Truth Lies in Rostock"/Spectacle',
                 additionalContext:
                     "August 1992: In Rostock-Lichtenhagen wurden das Wohnheim ehemaliger vietnamesischer Vertragsarbeiter:innen und die „Zentrale Aufnahmestelle für Asylbewerber“ angegriffen. Steine und Molotow-Cocktails flogen gegen die Gebäude und auf die Menschen in ihnen. An diesem Pogrom beteiligten sich mehrere hundert Neonazis und bis zu 3.000 applaudierende Zuschauer:innen.",
                 prevLink: "intrvw_a_d06.html",
@@ -22,15 +23,12 @@
     </script>
 
     <head>
-        <include
-            src="./partials/head.html"
-            locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Lan und Huu Loi Bin Seifert"}'
-        />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}}"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ls01"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

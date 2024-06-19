@@ -3,7 +3,12 @@
         <!-- Audio -->
         <include
             src="./partials/interview_audio.html"
-            locals='{"audioFilePath": "{{ audioFilePath }}", "title": "{{ title }} | {{ author }}"}'
+            locals='{
+				"id": "{{ id }}",
+				"author": "{{ author }}",
+				"audioFilePath": "{{ audioFilePath }}",
+				"title": "{{ title }}"
+			}'
         >
         </include>
 
@@ -17,19 +22,26 @@
         <!-- Image -->
         <include src="./partials/interview_img.html"></include>
 
-        <span class="self-end font-crimson-text text-xs text-gray-800">{{ imageCaption }}</span>
+        <span data-lang-key="{{ id }}-caption" class="self-end font-crimson-text text-xs text-gray-800">{{ imageCaption }}</span>
 
         <div class="{{ additionalContext === '' ? 'hidden' : 'mt-8 text-opacity-75 text-sm font-crimson-text' }}">
-            <p>{{additionalContext}}</p>
+            <p data-lang-key="{{ id }}-context">{{additionalContext}}</p>
         </div>
     </div>
 </div>
 
 <div class="mb-16 mt-12 flex items-center justify-between sm:-mx-[2rem] md:-mx-[4rem] lg:-mx-[7rem] xl:-mx-[12rem]">
     <a class="text-center font-crimson-text tracking-tight text-gray-100 hover:!text-white" href="{{prevLink}}">
-        <div class="flex h-32 w-32 items-center justify-between rounded-full bg-gray-950 p-4">vorheriges Interview</div>
+        <div data-lang-key="interview-prev" class="flex h-32 w-32 items-center justify-between rounded-full bg-gray-950 p-4">
+            vorheriges Interview
+        </div>
     </a>
     <a class="text-center font-crimson-text tracking-tight text-gray-100 hover:!text-white" href="{{nextLink}}">
-        <div class="flex h-32 w-32 items-center justify-between rounded-full bg-gray-950 p-4 hover:!text-white">nächstes Interview</div>
+        <div
+            data-lang-key="interview-next"
+            class="flex h-32 w-32 items-center justify-between rounded-full bg-gray-950 p-4 hover:!text-white"
+        >
+            nächstes Interview
+        </div>
     </a>
 </div>

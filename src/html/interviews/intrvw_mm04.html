@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "mm04",
                 title: "die kannten keine Schwarzen",
                 main: [
                     `Aber unser Alltag in der Stadt, mit den Leuten zu treffen, war sehr, sehr merkwürdig, weil die Leuten kannten uns nicht, die kannten keine Schwarzen.
@@ -27,12 +28,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Moises Mvuama 4"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{ text.author }} 4"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_mm04"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{ text.id }}"}'></include>
         </header>
 
         <main>

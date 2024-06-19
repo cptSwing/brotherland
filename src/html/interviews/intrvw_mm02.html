@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "mm02",
                 title: "in diesem Land muss ich sterben",
                 main: [
                     `Und als er gestorben war, für uns war … war wirklich … ich weiß nicht, wie kann ich sagen … für uns war sehr, sehr bitterlich, dass wir … also ich persönlich hab gedacht, dass ja … das heißt … ich als Moises, ich habe kein Recht zu leben, weil ich schwarz bin, also in diesem Land muss ich sterben. … und für uns war wirklich … das traurigste Zeit unseres Lebens. Wie kann man getötet werden, nur weil er eine andere Hautfarbe hat. Wer hat recht, über jemanden zu bestimmen, zu leben und zu sterben, weil er andere Hautfarbe hat. Ich habe mir viele Gedanken gemacht. Ich bin also nicht erwünscht auf dieser Welt, ich darf nicht existieren. Das war wirklich schwer für uns, sehr, sehr schwer für uns.`,
@@ -21,12 +22,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Moises Mvuama 2"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 2"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_mm02"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

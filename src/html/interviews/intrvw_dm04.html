@@ -3,9 +3,10 @@
     <script locals>
         module.exports = {
             text: {
+                id: "dm04",
                 title: "ich war ein richtiger Sklave",
                 main: [
-                    `Bis heute, wir sind seit 31 Jahren arm. Der Staat hat uns keine Arbeit gegeben. Wir versuchen irgendwas zu machen um zu überleben. Unser Leben hier ist sehr sehr schlecht, seitdem wir aus der DDR zurück sind. Man hat uns versprochen, dass wir in Mosambik unser Geld bekommen sollen, war nicht die Wahrheit, was die zwei Staaten uns gesagt haben. Die Wahrheit ist wir haben richtig gearbeitet, aber unser Geld hat die Schulden vom mosambikanischen Staat zu bezahlen. Das heißt, für mich, wir waren natürlich Sklaven. Weil die ganze Arbeit, die zwölf Jahre, die ich in der DDR gearbeitet habe, meinem ganzen Geld wurden für die Schulden von Mosambik verrechnet. Bis heute denke ich, ich war ein richtiger Sklave. Ich bekomme keine Arbeit, bekomme keine Solidarität, kein Respekt von unserem Staat, nichts. Ich bin nur ein Mensch, der versucht zu überleben. Das ist ein großes Unrecht für mich, das ist ein großes Unrecht. Das ist ein großes Unrecht. Wenn ich, dass gewusst hätte, dass ich in die DDR gehe, um die Schulden vom mosambikanischen Staat zu bezahlen, ich wäre nicht in die DDR geflogen. Aber ich hab das nicht gewusst.`,
+                    `Bis heute, wir sind seit 31 Jahren arm. Der Staat hat uns keine Arbeit gegeben. Wir versuchen irgendwas zu machen um zu überleben. Unser Leben hier ist sehr sehr schlecht, seitdem wir aus der DDR zurück sind. Man hat uns versprochen, dass wir in Mosambik unser Geld bekommen sollen, war nicht die Wahrheit, was die zwei Staaten uns gesagt haben. Die Wahrheit ist wir haben richtig gearbeitet, aber unser Geld hat die Schulden vom mosambikanischen Staat zu bezahlen. Das heißt, für mich, wir waren natürlich Sklaven. Weil die ganze Arbeit, die zwölf Jahre, die ich in der DDR gearbeitet habe, meinem ganzen Geld wurden für die Schulden von Mosambik verrechnet. Bis heute denke ich, ich war ein richtiger Sklave. Ich bekomme keine Arbeit, bekomme keine Solidarität, kein Respekt von unserem Staat, nichts. Ich bin nur ein Mensch, der versucht zu überleben. Das ist ein großes Unrecht für mich... das ist ein großes Unrecht. Wenn ich, dass gewusst hätte, dass ich in die DDR gehe, um die Schulden vom mosambikanischen Staat zu bezahlen, ich wäre nicht in die DDR geflogen. Aber ich hab das nicht gewusst.`,
                 ],
                 author: "David Macou",
                 authorLink: "../bio.html#macou",
@@ -21,12 +22,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - David Macou 4"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 4"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_dm04"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

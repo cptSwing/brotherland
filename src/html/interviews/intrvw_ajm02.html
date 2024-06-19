@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "ajm02",
                 title: "das ist moderne Sklaverei",
                 main: [
                     `Wir vergleichen nur [uns] mit Ausländer. Die Polen, die Kollegen, die auch kein Deutsch gesprochen haben, also die haben über 1000 Mark bekommen, aber wir 400 Mark. Deshalb haben wir nein gesagt, das ist das Gleiche, wie wenn man sagt, das ist moderne Sklaverei. Die anderen sind früher gekommen, mit Ketten um den Hals oder so, und wir sind ohne Ketten von Afrika hierhergekommen, aber trotzdem ist der Unterschied nicht da. Das war eine Sklaverei früher und jetzt ist sie modern.`,
@@ -21,12 +22,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Augusto Jone Munjunga 2"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 2"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ajm02"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

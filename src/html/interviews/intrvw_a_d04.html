@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "a_d04",
                 title: "die ganze Struktur zerbrach",
                 main: [
                     `Das zu verstehen, jetzt „Oh Gott, was das den jetzt alles, wo kommen die alle her, was sind das den für Kulturen eigentlich“. Wir haben uns ja nie Gedanken dadrüber gemacht, warum auch, brauchten wir ja nie. Weil, das gab es ja so in dem Ausmaße nicht. Es gab vielleicht schon immer mal kleinere … aber nicht so jetzt diese Masse … du hast es in Fernsehen gesehen oder im Film gesehen, das war spannend, interessant. … aber jetzt haste es direkt vor der Tür gehabt, so muss ich sagen … das ist so … die eigene Ordnung wurde durcheinander gebracht. […] Ich gehe doch nicht draußen in Busch und pinkel da einfach hin. Das macht man einfach nicht. Das war ja … das hat ja gar nichts vielleicht mit denen … na ja vielleicht auch doch schon … aber es ist nicht so, dass es ausländerfeindlich war … es war einfach nur so … Es gehört sich nicht. Die ganze Struktur zerbrach.`,
@@ -11,7 +12,7 @@
                 authorLink: "../bio.html#dorinasandreass",
                 audioFilePath: "/public/audio/A_D_04.mp3",
                 imageFilePath: "/public/images/A_D_04.jpg",
-                imageCaption: "Werbung RFT Color 20 Fernseher. Bundesarchiv, Bild 183-H0812-0031-001 / CC-BY-SA 3.0",
+                imageCaption: "Werbung RFT Color 20 Fernseher. Bildcredit: Bundesarchiv, Bild 183-H0812-0031-001 / CC-BY-SA 3.0",
                 additionalContext: "",
                 prevLink: "intrvw_a_d03.html",
                 nextLink: "intrvw_a_d05.html",
@@ -20,12 +21,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Dorina und Andreas S. 4"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 4"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_a&d04"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

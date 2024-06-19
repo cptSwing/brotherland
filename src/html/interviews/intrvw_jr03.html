@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "jr03",
                 title: "Hoyerswerda hat den Anfang gemacht",
                 main: [
                     `Wenn darüber berichtet worden ist, gab’s ja immer die Aussage „Hoyerswerda, Rostock, Mölln“. Ja! So, das war der Verlauf, das war die Aussage und … wenn man das so mit Abstand betrachtet, ist es ja auch wirklich zu sehen, Hoyerswerda hat den Anfang gemacht, in Rostock war es dann noch einen Zacken schärfer gewesen. Da sind ja richtig mit … mit Molotow-Cocktails und so was gearbeitet worden. Gott sei Dank gab’s keine Toten. Und dann Mölln, wo dann wirklich die ganze Geschichte Leben gefordert hat. Das Ganze. Und das war schon […] 
@@ -22,12 +23,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Jan K. und René K. 3"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 3"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_jr03"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

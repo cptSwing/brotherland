@@ -1,7 +1,7 @@
 <div class="flex flex-col items-start justify-between">
     <div class="mt-0 whitespace-pre-line text-left md:mt-10">
         <each loop="item, index in main">
-            <p class="font-crimson-text text-lg font-semibold text-gray-950">{{ item }}</p>
+            <p data-lang-key="{{ id }}-text-{{ index + 1 }}" class="font-crimson-text text-lg font-semibold text-gray-950">{{ item }}</p>
         </each>
     </div>
     <div class="mt-0 md:mt-10" />

@@ -3,8 +3,11 @@
     <script locals>
         module.exports = {
             text: {
+                id: "a_d05",
                 title: "das nahm so Überhand",
-                main: [`[Transkription folgt]`],
+                main: [
+                    `Das war natürlich schrecklich, wenn du … muss ich wirklich sagen. Das nahm ja so überhand. Man muss sich ja vorstellen, der ganze, vor dem … praktisch vor dem Sonnenblumenhochhaus, vor dem Hochhaus, der ganze Rasen, der war innerhalb von einer Woche, war der übersät … weil das Sonnenblumenhochhaus war voll, die konnten keine mehr aufnehmen und die haben einfach da richtig ihre Zelte aufgeschlagen, kampiert … […] die Zigeuner haben wir gesagt damals, Romas und Sintis jetzt. Für uns war es ein buntes Volk, es waren die Zigeuner. Und die haben einfach auf dem Rasen gelegen, die Familien, die haben Feuer gemacht. Ich meine, was positiv war, es gab zu dem Zeitpunkt keine streunenden Katzen mehr, wo auch immer die geblieben sind … man weiß es nicht. Aber die haben schön Feuer gemacht, sag’ ich mal.`,
+                ],
                 author: "Dorina und Andreas S.",
                 authorLink: "../bio.html#dorinasandreass",
                 audioFilePath: "/public/audio/A_D_05.mp3",
@@ -19,12 +22,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Dorina und Andreas S. 5"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 5"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_a&d05"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "dm02",
                 title: "Besuch bekommen",
                 main: [
                     `Im August 1989 haben wir mitbekommen, dass irgendwas nicht stimmt, im Oktober war dann diese Demos mit den DDR-Bürgern. Wir hatten Angst und wir sind nicht zu der Demo gegangen. 1990 haben wir dann den ersten „Besuch“ bekommen von mehr als hundert Jugendlichen. Diese Jugendlichen, Neonazis, kamen dann zu unserem Wohnheim. Die haben dann alles kaputt gemacht, mit Steinen geworfen und so weiter. Die haben uns gesagt, dass sie wiederkommen. Dann war September 1991 und die Jugendlichen sind wiedergekommen. Und die haben wieder unser Wohnheim kaputt gemacht. Das waren schlechte Erfahrungen, die ich in den letzten zwei Jahren da gemacht habe, nachdem ich zwölf Jahre dort gewohnt hatte. 1990 und 1991 war sehr, sehr schlecht für mich. Bis heute vergesse ich diese Erfahrungen nicht, diese Aggressionen, die ich gesehen und erlebt habe.
@@ -22,12 +23,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - David Macou 2"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 2"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_dm02"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

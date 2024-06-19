@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "a_d08",
                 title: "die waren so in ihrem Rausch",
                 main: [
                     `Und das war dieses massive, so kompakt war das mit mal … das gibt’s doch gar nicht, wie … irgendwann müssen die doch fertig sein, so … […] Die sind nicht nach Hause gegangen. Das ging ja noch … ab einer bestimmten Zeit wusstest du ganz genau, dann darf ich da nicht langgehen, dann darf da nicht mehr hin, weil … oder da kann ich da nicht mehr hin, weil dann fangen die sich wieder an zu sammeln. Und so war‘s ja auch … plötzlich war ein Bierwagen da, dann gab es natürlich auch Alkohol, der floss. Und andere haben das auch gleich natürlich ausgenutzt. Und es gab auch Bürger, die wirklich versucht haben auf die anderen „das könnt ihr nicht machen“ oder wo man nachher mitbekommen hat: „Mensch, da sind ja doch noch Menschen in den Wohnungen drin. Da sind doch noch Vietnamesen, unsere Vietnamesen sind da drin.“ Die waren so in ihren Rausch, man muss sich das vorstellen, wenn so Hunde aufeinandertreffen und nicht mehr aufhören zu beißen … im Blutrausch sind die dann da … so waren die in ihrem Blutrausch … solange bis jetzt … ich weiß nicht, wann sie nicht zufrieden gewesen wären. Man kann wirklich froh sein, dass es keine Toten in dem Sinne gab. […] Aber die Leute, die waren ja auch wie im Wahn, sofern sich irgendwo was bewegt hat „Da sind die!“, die waren gar nicht mehr da … die waren alle schon raus, aber da bewegte sich was, da müssen die noch sein, die versteckt sich da drin, die holen wir raus`,
@@ -11,8 +12,7 @@
                 authorLink: "../bio.html#dorinasandreass",
                 audioFilePath: "/public/audio/A_D_08.mp3",
                 imageFilePath: "/public/images/A_D_08.jpg",
-                imageCaption:
-                    "Flyer „Rostock bleibt Deutsch“. April/Mai 1992. Bildcredit: Dokumentationszentrum „Lichtenhagen im Gedächtnis“",
+                imageCaption: 'Rostock Lichtenhagen 1992. Filmstill aus "The Truth Lies in Rostock"/Spectacle',
                 additionalContext: "",
                 prevLink: "intrvw_dm01.html",
                 nextLink: "intrvw_jr02.html",
@@ -21,12 +21,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Dorina und Andreas S. 8"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 8"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_a&d08"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

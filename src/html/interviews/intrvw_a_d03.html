@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "a_d03",
                 title: "meine Arbeit nehmen die mir jetzt weg",
                 main: [
                     `„Meine Arbeit nehmen die mir jetzt weg!“ Da hatte aber niemand mehr Arbeit gehabt, weil alle waren ja arbeitslos. Die Arbeit gab’s ja gar nicht mehr.
@@ -21,12 +22,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Dorina und Andreas S. 3"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 3"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_a&d03"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{[text.id]}"}'></include>
         </header>
 
         <main>

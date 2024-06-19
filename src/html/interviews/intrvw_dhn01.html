@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "dhn01",
                 title: "ich liebe Deutschland",
                 main: [
                     `Ich liebe Deutschland. Von Anfang an, die erste Sekunde, erste Stunde. Für mich sind es auch so schöne Erinnerungen. Es waren so schöne Zeiten, mit den deutschen Kollegen und Kolleginnen zu arbeiten.
@@ -21,12 +22,13 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Duong Hoai Nam 1"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{ text.author }}"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_dhn01"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{ text.id }}"}'></include>
+            <!-- <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_dhn01"}'></include> -->
         </header>
 
         <main>

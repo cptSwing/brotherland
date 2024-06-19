@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "ajm03",
                 title: "ich dachte, ihr seid schon weg",
                 main: [
                     `Diese Zeit, auch bevor die [ersten afrikanischen] Kollegen schon gegangen war, auf die Straße zu gehen, war schon sehr, sehr, sehr, sehr gefährlich. Im Betrieb haben die Kollegen gesagt: „Wann geht ihr denn? Du bist ja immer noch hier. Ich dachte, ihr seid schon weg.“ Auf der Straße genau so, Kinder und Jugendliche im Bus oder auf die Straße, dann hat man gehört „Ausländer raus! Alle Ausländer“. Und unser Name war sowieso nur „Neger, Bimbo“. Da war wirklich schlecht, aber was sollst du tun. Du hast gesagt, du bleibst hier. Alles ist schon organisiert, Leute warten auf Abfahrt. Und dann später sind sie gegangen, wir sind hier geblieben und es war noch schlimmer: Auf die Straße gehen, musstest du zu dritt, zu viert, fünf Person, aber musst trotzdem gucken, wer kommt da. Wenn die Jugendlichen, welche Leute kommen. Lieber auf die anderen Seite gehen.
@@ -12,7 +13,7 @@
                 authorLink: "../bio.html#munjunga",
                 audioFilePath: "/public/audio/AJM_03.mp3",
                 imageFilePath: "/public/images/AJM_03.jpg",
-                imageCaption: "Rückkehr nach Angola, Eberswalde 1990. Aus dem Archiv von Augusto Jone Munjunga",
+                imageCaption: "Vor der Rückkehr nach Angola, Eberswalde 1990. Aus dem Archiv von Augusto Jone Munjunga",
                 additionalContext: "",
                 prevLink: "intrvw_mm01.html",
                 nextLink: "intrvw_a_d03.html",
@@ -21,12 +22,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Augusto Jone Munjunga 3"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 3"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ajm03"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>

@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "ia01",
                 title: "die Gesellschaft war nicht so interessiert",
                 main: [
                     `Die Gesellschaft war nicht so interessiert. Ein Interesse war schon da, aber das Problem war der Streit mit den Nachbarn. Die Nachbarn haben gefragt „Warum nehmt ihr den jetzt [mit nach Hause], ist das euer Kind jetzt oder wie ist das?“, wir waren noch jung. Es gab immer Ärger mit einigen Rechtsextremen […] und [die Kollegen] haben Angst gehabt, deswegen war der Kontakt [mit uns so]. Wir waren nicht die Menschen, die Arbeitskollegen öfters mit nach Hause nehmen können. Man hatte mit den Nachbarn Ärger gekriegt und der Nachbar hat gefragt: „Kennst du nicht jemand, der weiß ist, mit dem du dich beschäftigen kannst oder befreundet sein kannst? Du weißt nicht, was die hier machen. Die haben es geschafft, zu uns zu kommen, das alles irgendwie zu machen, aber wir können nirgendwo hinreisen. Und du nimmst die mit zu dir nach Hause. Spinnst du?“.
@@ -21,12 +22,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Ibraimo Alberto 1"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{ text.author }} 1"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_ia01"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{ text.id }}"}'></include>
         </header>
 
         <main>

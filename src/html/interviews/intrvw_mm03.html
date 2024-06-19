@@ -3,6 +3,7 @@
     <script locals>
         module.exports = {
             text: {
+                id: "mm03",
                 title: "heute habe ich dieses Trauma nicht mehr",
                 main: [
                     `Heute habe ich dieses Trauma nicht mehr. Aber ich weiß, dass jederzeit wir eine neue Nachricht hören können, dass die Nazis etwas gegen Ausländer getan haben. Dieser Gedanke ist immer da. Aber Angst habe ich nicht mehr. Ich bin heute bereit, etwas gegen Neonazis oder gegen Ausländerfeindlichkeit zu tun.`,
@@ -20,12 +21,12 @@
     </script>
 
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - Moises Mvuama 3"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "../../", "pageTitle": "Brotherland - {{text.author}} 3"}' />
     </head>
 
     <body class="bg-white text-gray-700">
         <header>
-            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_mm03"}'></include>
+            <include src="./partials/nav.html" locals='{"pathPrefix": "../", "active": "intrvw_{{text.id}}"}'></include>
         </header>
 
         <main>
