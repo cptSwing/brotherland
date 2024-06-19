@@ -38,63 +38,60 @@ function exhibitGalleryOnLoad() {
     });
 }
 
+// Internationalization Code, roughly based on https://phrase.com/blog/posts/step-step-guide-javascript-localization
+
+const dataAttributeName = "data-lang-key";
+const originalInnerHTML = {};
+let allLangElements;
+
 // Set Cookies on load:
-if (window) {
-    window.getCookie = getCookie;
-
-    console.log(window);
-}
-
 if (!document.cookie) {
     setCookie("lang", "DE");
 }
 
 const languageSwitchElement = document.getElementById("languageSwitch");
-
-// Switch Button's text
-window.addEventListener("load", () => {
-    const lang = getCookie("lang");
-    console.log(lang);
-    if (lang === "DE") {
-        languageSwitchElement.innerText = "English";
-    } else {
-        languageSwitchElement.innerText = "Deutsch";
-    }
-
-    console.log("Loaded!", lang);
-});
-
 languageSwitchElement.addEventListener("click", () => {
-    if (languageSwitchElement.innerText === "English") {
-        languageSwitchElement.innerText = "Deutsch";
-        setCookie("lang", "EN");
-        translateAll(); // WARN can't access original content in html file (..? or new ajax fetch?), so only DE -> EN. Rather trigger reload?
-    } else {
-        languageSwitchElement.innerText = "English";
-        setCookie("lang", "DE");
-    }
-});
+    const lang = getCookie("lang");
+    let newLang;
 
-// Internationalization Code, roughly based on https://phrase.com/blog/posts/step-step-guide-javascript-localization
+    if (lang !== "EN") {
+        setCookie("lang", "EN");
+        newLang = "EN";
+    } else {
+        setCookie("lang", "DE");
+        newLang = "DE";
+    }
+
+    console.log("%c[script]", "color: #ef6c7d", `CLICK newLang :`, newLang);
+    translateAll(allLangElements);
+});
 
 document.addEventListener("DOMContentLoaded", () => {
-    const lang = getCookie("lang");
-    console.log("%c[script]", "color: #920c0f", `DOMContentLoaded - lang :`, lang);
+    allLangElements = document.querySelectorAll(`[${dataAttributeName}]`);
+    console.log("%c[script]", "color: #700272", `allLangElements :`, allLangElements);
+    allLangElements.forEach((elem) => (originalInnerHTML[elem.getAttribute(dataAttributeName)] = elem.innerHTML)); // Save original - DE - innerHTML
 
-    if (lang === "EN") {
-        translateAll();
-    }
+    translateAll(allLangElements);
 });
 
-function translateAll() {
-    document.querySelectorAll("[data-lang-key]").forEach(translateElement);
+function translateAll(elements) {
+    const lang = getCookie("lang");
+
+    elements.forEach((elem) => {
+        const key = elem.getAttribute(dataAttributeName);
+
+        if (lang === "EN") {
+            translateElement(elem, key, transl_EN);
+        } else {
+            Object.keys(originalInnerHTML).length && translateElement(elem, key, originalInnerHTML);
+        }
+    });
 }
 
 // Replace the inner text of the given HTML element
 // with the translation in the active locale,
 // corresponding to the element's data-i18n-key
-function translateElement(element) {
-    const key = element.getAttribute("data-lang-key");
-    const translation = transl_EN[key];
+function translateElement(element, key, translDb) {
+    const translation = translDb[key];
     element.innerHTML = translation;
 }
