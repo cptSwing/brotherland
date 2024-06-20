@@ -44,7 +44,7 @@ const dataAttributeName = "data-lang-key";
 const originalInnerHTML = {};
 let allLangElements;
 
-// Set Cookies on load:
+// Set Cookies:
 if (!document.cookie) {
     setCookie("lang", "DE");
 }
@@ -60,14 +60,28 @@ document.addEventListener("DOMContentLoaded", () => {
 // Click handler language switch button
 document.getElementById("languageSwitch").addEventListener("click", () => {
     const lang = getCookie("lang");
-    let newLang;
+
+    console.log("%c[script]", "color: #21d9af", `click, lang :`, lang);
 
     if (lang !== "EN") {
         setCookie("lang", "EN");
-        newLang = "EN";
     } else {
         setCookie("lang", "DE");
-        newLang = "DE";
+    }
+
+    translateAll(allLangElements);
+});
+
+// Click handler language switch button Mobile!
+document.getElementById("languageSwitchMobile").addEventListener("click", () => {
+    const lang = getCookie("lang");
+
+    console.log("%c[script]", "color: #21d9af", `click, lang :`, lang);
+
+    if (lang !== "EN") {
+        setCookie("lang", "EN");
+    } else {
+        setCookie("lang", "DE");
     }
 
     translateAll(allLangElements);
@@ -88,7 +102,7 @@ function translateAll(elements) {
 }
 
 // Replace the inner text of the given HTML element with the translation in the active locale, corresponding to the element's data-lang-key
-function translateElement(element, key, translDb) {
-    const translation = translDb[key];
+function translateElement(element, key, translations) {
+    const translation = translations[key];
     element.innerHTML = translation;
 }

@@ -1,0 +1,67 @@
+<div class="absolute z-10 mt-9 hidden w-full md:block">
+    <div class="mx-auto h-fit w-full border-y border-gray-700 bg-gray-300 bg-opacity-0">
+        <nav class="pointer-events-auto m-auto sm:w-full md:w-4/5 lg:w-2/3 xl:w-3/5">
+            <div class="flex justify-between font-crimson-text text-2xl font-bold tracking-tight">
+                <a href="/" alt="Home">
+                    <div
+                        class="px-2 transition-colors ease-linear hover:bg-gray-400/50 hover:text-red-800 {{ active === '' ? 'bg-gray-600/75 text-gray-100' : ' text-red-800' }}"
+                    >
+                        Home
+                    </div>
+                </a>
+
+                <a href="{{ pathPrefix }}/project.html" alt="Project">
+                    <div
+                        data-lang-key="nav-project"
+                        class="px-2 transition-colors ease-linear hover:bg-gray-400/50 hover:text-red-800 {{ active === 'project' ? 'bg-gray-600/75 text-gray-100' : ' text-red-800' }}"
+                    >
+                        Projekt
+                    </div>
+                </a>
+
+                <a href="{{ pathPrefix }}/interviews/intrvw_dhn01.html" alt="Interviews">
+                    <div
+                        class="px-2 transition-colors ease-linear hover:bg-gray-400/50 hover:text-red-800 {{ active.includes('intrvw') ? 'bg-gray-600/75 text-gray-100' : ' text-red-800' }}"
+                    >
+                        Interviews
+                    </div>
+                </a>
+
+                <a href="{{ pathPrefix }}/exhibits.html" alt="Exhibits">
+                    <div
+                        data-lang-key="nav-exhibits"
+                        class="px-2 transition-colors ease-linear hover:bg-gray-400/50 hover:text-red-800 {{ active === 'exhibits' ? 'bg-gray-600/75 text-gray-100' : ' text-red-800' }}"
+                    >
+                        Ausstellungen
+                    </div>
+                </a>
+
+                <a href="{{ pathPrefix }}/book.html" alt="Book">
+                    <div
+                        data-lang-key="nav-book"
+                        class="px-2 transition-colors ease-linear hover:bg-gray-400/50 hover:text-red-800 {{ active === 'book' ? 'bg-gray-600/75 text-gray-100' : ' text-red-800' }}"
+                    >
+                        Buch
+                    </div>
+                </a>
+
+                <a href="{{ pathPrefix }}/about.html" alt="About">
+                    <div
+                        data-lang-key="nav-about"
+                        class="px-2 transition-colors ease-linear hover:bg-gray-400/50 hover:text-red-800 {{ active === 'about' ? 'bg-gray-600/75 text-gray-100' : ' text-red-800' }}"
+                    >
+                        Über uns
+                    </div>
+                </a>
+
+                <div
+                    data-lang-key="nav-english"
+                    id="languageSwitch"
+                    class="-mr-20 px-2 cursor-pointer py-0 text-2xl transition-colors ease-linear hover:text-red-800 text-white {{ active === 'english' ? 'bg-gray-600/75' : 'bg-black' }}"
+                >
+                    English
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

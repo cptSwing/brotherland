@@ -1,13 +1,15 @@
 <!doctype html>
 <html>
     <head>
-        <include src="./partials/head.html" locals='{"pathHeadPrefix": "./", "pageTitle": "Brotherland", "lang": "HAOHO"}' />
+        <include src="./partials/head.html" locals='{"pathHeadPrefix": "./", "pageTitle": "Brotherland"}' />
     </head>
 
     <body class="bg-white text-black">
-        <!-- Include nav menu if mobile view: -->
         <header class="block md:hidden">
-            <include src="./partials/nav.html" locals='{"pathPrefix": "./html", "active": "/"}'></include>
+            <!-- "Brotherland" Text: -->
+            <include src="./partials/nav_logo_text.html" locals='{"active": "{{active}}"}'></include>
+            <!-- Include nav menu if mobile view: -->
+            <include src="./partials/nav_mobile.html" locals='{"pathPrefix": "./html", "active": "/"}'></include>
         </header>
 
         <div class="flex w-full flex-col-reverse items-center justify-start md:flex-row">
@@ -29,42 +31,36 @@
 
                 <nav class="min-w-fit font-crimson-text text-3xl font-medium">
                     <a href="./html/project.html" alt="Project">
-                        <div
-                            data-lang-key="nav-project"
-                            class="py-1 pl-1 text-[rgb(51,_51,_51)] transition-colors ease-linear hover:underline"
-                        >
-                            Projekt
-                        </div>
+                        <div data-lang-key="nav-project" class="py-1 pl-1 text-[rgb(51,_51,_51)] hover:underline">Projekt</div>
                     </a>
+
                     <a href="./html/interviews/intrvw_dhn01.html" alt="Interviews">
-                        <div class="py-1 pl-1 text-[rgb(51,_51,_51)] transition-colors ease-linear hover:underline">Interviews</div>
+                        <div class="py-1 pl-1 text-[rgb(51,_51,_51)] hover:underline">Interviews</div>
                     </a>
+
                     <a href="./html/book.html" alt="Book">
-                        <div
-                            data-lang-key="nav-book"
-                            class="py-1 pl-1 text-[rgb(51,_51,_51)] transition-colors ease-linear hover:underline"
-                        >
-                            Buch
-                        </div>
+                        <div data-lang-key="nav-book" class="py-1 pl-1 text-[rgb(51,_51,_51)] hover:underline">Buch</div>
                     </a>
+
                     <a href="./html/exhibits.html" alt="Exhibits">
-                        <div
-                            data-lang-key="nav-exhibits"
-                            class="py-1 pl-1 text-[rgb(51,_51,_51)] transition-colors ease-linear hover:underline"
-                        >
-                            Ausstellungen
-                        </div>
+                        <div data-lang-key="nav-exhibits" class="py-1 pl-1 text-[rgb(51,_51,_51)] hover:underline">Ausstellungen</div>
                     </a>
+
                     <a href="./html/about.html" alt="About">
-                        <div
-                            data-lang-key="nav-about"
-                            class="py-1 pl-1 text-[rgb(51,_51,_51)] transition-colors ease-linear hover:underline"
-                        >
-                            Über uns
-                        </div>
+                        <div data-lang-key="nav-about" class="py-1 pl-1 text-[rgb(51,_51,_51)] hover:underline">Über uns</div>
                     </a>
+
+                    <div
+                        data-lang-key="nav-english"
+                        id="languageSwitch"
+                        class="cursor-pointer py-1 pl-1 text-[rgb(51,_51,_51)] hover:underline"
+                    >
+                        English
+                    </div>
                 </nav>
             </div>
         </div>
     </body>
 </html>
+
+<!-- class="-mr-20 cursor-pointer px-2 py-0 text-2xl text-white hover:text-red-800" -->
