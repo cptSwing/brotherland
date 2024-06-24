@@ -52,7 +52,10 @@ if (!document.cookie) {
 // store originals, translate
 document.addEventListener("DOMContentLoaded", () => {
     allLangElements = document.querySelectorAll(`[${dataAttributeName}]`);
-    allLangElements.forEach((elem) => (originalInnerHTML[elem.getAttribute(dataAttributeName)] = elem.innerHTML)); // Save original - DE - innerHTML
+    allLangElements.forEach((elem) => {
+        const dataValue = elem.getAttribute(dataAttributeName);
+        originalInnerHTML[dataValue] = elem.innerHTML;
+    }); // Save original - DE - innerHTML
 
     translateAll(allLangElements);
 });
