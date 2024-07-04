@@ -6,12 +6,22 @@
     "nav-english": "Deutsch",
     "virtual-exhibit-text": "enter virtual Exhibit",
 
+    "no_id-audio-title": "",
+
     "project-1": "<p>Brotherland tells of a time that is difficult to talk about without reproducing the racism and violence with language.</p><p>The complexity of those years and their legacy can be presented and made comprehensible through a contextualisation of photos, archive material, portraits, interviews and texts. Brotherland tries to reintegrate ignored stories into the larger history and bring them back into the collective narrative.</p><p>In the interviews and stories of the time witnesses, racist and violent content can sometimes be heard.</p>",
     "project-2": "<p>When the Berlin Wall fell on 9 November 1989 and one year later Germany was reunited, for many it was a celebration, the achievement of freedom and the realization of something long dreamed of. For others, it was the beginning of a time marked by violence and fear. As is often the case, History has at least two sides.</p><p>Eberswalde, 24 November 1990. A former contract worker, Amadeu Antonio Kiowa, is attacked by neo-Nazis and dies on December 6. He was one of the first victims of racist violence in the newly reunified Germany. Amadeu Antonio had come to the GDR as a contract worker from Angola in 1987.</p><p>To remedy the shortage of labor, the GDR hade made bilateral agreements with other states for the training and employment of workers from the early 1960s onwards. These socialist countries of origin were defined as ‘brotherlands’. The first contract workers came from Poland and Hungary, later also from Algeria, Angola, Cuba, Mozambique, and Vietnam.</p>",
     "project-3": "<p>The ‘foreigners out’ violence after the so-called ‘Wende’ did not begin in 1992 with the pogrom in Rostock-Lichtenhagen nor the arson attacks in Mölln and Solingen in 1993. As early as 1991, a dormitory for contract workers and a shelter for refugees in Hoyerswerda were attacked for days. At times, up to 500 onlookers stood in front of the homes, and it was from this crowd that the attacks took place. In Rostock- Lichtenhagen, the home of former Vietnamese contract workers and the Central Reception Centre for Asylum Seekers were attacked. Stones and Molotov cocktails flew at the buildings and the people inside. Several hundred neo-Nazis and up to 3,000 applauding spectators took part in the pogrom.</p><p>Hoyerswerda and Rostock, like all right-wing extremist attacks of the 1990s, were expressions of racist and nationalist attitudes that later led to the murderous terror of the so-called NSU.</p>",
     "project-4": "<p>In the daily news coverage and also in the historiography, the people against whom this violence was directed were - and still are - seldom heard and even more rarely put a face to them. Much more emphasis was placed on the questions of why (German) youths made the Hitler salute or why racism was possibly 'understandable'.</p><p>We interviewed and portrayed former contract workers from Angola, Mozambique and Vietnam. QR codes lead to the interviews, and they themselves recount their experiences during 'die Wende' period. We also decided to interview Germans who lived in Hoyerswerda, Eberswalde and Rostock in the 1990s to learn more about the realities of their lives during and after the fall of GDR.</p><p>The photos were taken at the locations where the attacks took place and depict them in a timeless dimension. The still lifes and archive material focus on the spectacularisation of the events and on different facets of violence.</p><p>All in all, <span class='italic'>Brotherland</span> is intended to illustrate the mood in which the attacks took place and were legitimised by a broad mass of people.</p><p>BROTHERLAND is a project by <a href='./about.html'>Martina Zaninelli and Thomas Jakobs</a></p>",
 
     "book-1": "A photo-text book with more interviews, photos and archive material is in progress.",
+
+    "about-1": "Brotherland is a project by Martina Zaninelli and Thomas Jakobs",
+    "about-2": "Exhibitions and nominations",
+    "about-3": "Contact",
+    "about-4": "Biographies",
+    "about-5": "Martina takes the pictures, Thomas asks the questions. Together they developed and have been working on Brotherland for over three years. Martina was born and grew up in Italy. Thomas was born and grew up in a state that no longer exists, the GDR. Both live in Berlin now. Martina holds a BA in Modern and Contemporary History and attended Lisa Barnard's masterclass at ISSP. Thomas has worked as streetworker and educator. Now they both work – in Berlin's night life - as bouncers. Their project Brotherland was exhibited at Castelnuovo Fotografia (Italy), Les Boutographies (France), Fusion Festival, longlisted for Format Festival, selected for PhotoMatch at Fotofestiwal and exhibited in various cities in Germany as Rostock, Dresden and Berlin.",
+    "about-6": "The realisation of the website was made possible thanks to the support of the",
+    "about-7": "and with the support of the <a class=\"w-1/2\" href=\"https://soziale-bildung.org/ueber_uns/politische-bildung/dokumentationszentrum-lichtenhagen-im-gedaechtnis/\" target=\"_blank\">Soziale Bildung e.V. / Dokumentationszentrum „Lichtenhagen im Gedächtnis“</a>",
 
     "bio-archive-text": "From the archive of",
 
@@ -161,5 +171,32 @@
     "ls01-text-1": "Nothing happened here [to us], we only saw [Rostock-Lichtenhagen] on TV. Here on the street people were just shouting ‘Foreigners out’ from afar. That was normal. But we didn't really experience attacks like that or people really shouting in our faces. It was really fairly quiet in Leipzig. \nJust get through it if we want to stay here, learn a trade or work. Then we have to get through it.",
     "ls01-caption": "Film still from The Truth Lies in Rostock/Spectacle",
     "ls01-context": "August 1992: In Rostock-Lichtenhagen, the home of former Vietnamese contract workers and the Central Reception Centre for Asylum Seekers were attacked. Stones and Molotov cocktails flew at the buildings and the people inside. Several hundred neo-Nazis and up to 3,000 applauding spectators took part in the pogrom.",
-    "ls01-audio-title": "that's normal"
+    "ls01-audio-title": "that's normal",
+
+    "ve-prev": "previous\npage",
+    "ve-next": "next\npage",
+    "ve-permission": "With friendly permission by",
+
+    "ve2-1": "It's as if the GDR was just putting on a show when it came to solidarity. We were educated like that at school, but if you look at it in retrospect, there was no desire to have any contact with foreigners at all.",
+    "ve2-2": "Back then in the GDR they said there was no racial discrimination. But there was for us. When we walked into the bar, people said: \"Oh, it's getting dark here now\" or: \"Here comes the coal\". And then we realized that it was all about our [skin] color. But we couldn't do anything, we wanted to learn and work.",
+    "ve2-3": "Nobody told us the history of Germany. Then suddenly a group of young people came and said that they were Hitler's successors. ‘We represent Hitler and Hitler didn't like people like you.’ \n‘Why?’",
+    "ve2-4": "BECAUSE YOU'RE BLACK",
+    "ve2-5": "People were afraid.",
+    "ve2-6": "That was in Berlin in 1982/1983.",
+
+    "ve3-1": "‘They're taking my job now!’ But nobody had any work left because everyone was unemployed. There was no more work at all.",
+    "ve3-2": "THE NEW BORDER WAS NO LONGER THE WALL, IT WAS THE MONEY",
+    "ve3-3": "You could already hear that Germany was going to be united in '89 ... on TV and on the street, Germans were sometimes talking about it. I didn't have a mind for it ... I was unemployed now, I had to try something to keep earning money. What about me now, do I go home [Vietnam] or don't? We already had enough problems in our heads with our situation ...",
+    "ve3-4": "You were no longer recognized as an education worker. I found that very formative. Then some people really did come from over there and trained us first. We practically had to redo our training so that we were allowed to continue working. I found that really impactful and also... also so hurtful. We had a good education, but suddenly that no longer counted and by what right? You just didn't understand that. And then it wasn't long before you were suddenly dismissed. That was shortly after reunification, when a lot of people were fired. Friends who lived next door to us came to us and then we all cried together for a while. You were suddenly afraid, afraid for your existence, what are you going to do now, what happens next... We weren't used to that.",
+
+    "ve4-1": "I said: \"Don't worry, we're hidden in the apartment,",
+    "ve4-2": "WE'RE NOT GOING OUT!",
+    "ve4-3": "The danger was already there, in the dormitories where so many Vietnamese and foreigners lived together. But I already had my own apartment... I was lucky in that case. The Nazis don't come into the German blocks. They only come to the foreigners' dormitories. I got to hear that from our people... It was a scary time.",
+
+    "ve5-1": "Nothing happened to us here, we only heard about the attack in Rostock-Lichtenhagen on TV. Here on the street, we only heard people shouting \"Foreigners out\" from afar.",
+    "ve5-2": "But that's normal.",
+    "ve5-3": "In October we had to leave the dormitory, we got on a bus, were driven to Frankurt am Main and from there back to Mozambique.",
+    "ve5-4": "We were all sad, nobody was talking. Everyone sat in their seats and thought. What will happen to us now when we get back to Mozambique, since there was a civil war in Mozambique.",
+    "ve5-5": "The police is so aggressive nowadays.<br/>I don't know what their ideas are or what attitude they have. Back then, in the GDR, there were no such things, we had no problems with the police. If I have a problem today, I have to do something myself, do something before it's too late. I can't wait for the police to help when something racist happens. I realize that the police don't want us to be here in Germany either. That's why the police is nothing for me.",
+    "ve5-6": "I still enjoy going to Lichtenhagen. When I look at the Sunflower House now, when I drive over there, I don't see it in the context of what happened there. That... this Sunflower House is just like that... This motif, this sunflower, is art somewhere. For me, what happened is no longer the decisive aspect. For me, Lichtenhagen is also... I spent my childhood there, I went to school there, it was nice. We used to cycle from there to Warnemünde to the beach. You don't always want to associate everything with the whole thing."
 }
