@@ -79,6 +79,14 @@ audio {
     @apply !bg-red-800;
 }
 
+/* .cursor-ve:hover {
+    cursor:
+        url("/public/images/virtAusstCursor.png") 64 64,
+        auto;
+
+
+} */
+
 .cursor-ve {
     @apply hover:cursor-[url('/public/images/virtAusstCursor.png')_64_64,_auto];
 }
