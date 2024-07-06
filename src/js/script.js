@@ -64,8 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("languageSwitch").addEventListener("click", () => {
     const lang = getCookie("lang");
 
-    console.log("%c[script]", "color: #21d9af", `click, lang :`, lang);
-
     if (lang !== "EN") {
         setCookie("lang", "EN");
     } else {
@@ -79,8 +77,6 @@ document.getElementById("languageSwitch").addEventListener("click", () => {
 document.getElementById("languageSwitchMobile").addEventListener("click", () => {
     const lang = getCookie("lang");
 
-    console.log("%c[script]", "color: #21d9af", `click, lang :`, lang);
-
     if (lang !== "EN") {
         setCookie("lang", "EN");
     } else {
@@ -93,46 +89,20 @@ document.getElementById("languageSwitchMobile").addEventListener("click", () => 
 function translateAll(elements) {
     const lang = getCookie("lang");
 
+    // Replace "bobbels" per language
+    const stylesheetRules = [...document.styleSheets[0].cssRules];
+    const cursorVeMd = stylesheetRules.find((rule) => rule.cssText.includes(".md\\:cursor-ve:hover"));
+    const cursorVePrev = stylesheetRules.find((rule) => rule.selectorText === ".cursor-ve-prev:hover");
+    const cursorVeNext = stylesheetRules.find((rule) => rule.selectorText === ".cursor-ve-next:hover");
+
     if (lang === "EN") {
-        console.log("%c[script]", "color: #414893", `document.styleSheets :`, document.styleSheets);
-
-        const stylesheet = document.styleSheets[0];
-        const cursorVe = [...stylesheet.cssRules].find((rule) => rule.selectorText === ".cursor-ve:hover");
-        cursorVe.style.setProperty("cursor", 'url("/public/images/1x1.png") 64 64, auto;');
-
-        console.log("%c[script]", "color: #6308da", `cursorVe :`, cursorVe);
-
-        // const cursorStyle = document.createElement("style");
-        // cursorStyle.setAttribute("type", "text/css");
-        // cursorStyle.textContent = `
-        // 	.cursor-ve:hover {
-        // 		cursor: url('/public/images/virtAusstCursor_EN.png') 64 64, auto;
-        // 	}
-
-        // 	.cursor-ve-prev:hover {
-        // 		cursor: url('/public/images/virtAusstCursor_prev_EN.png') 64 64, auto;
-        // 	}
-
-        // 	.cursor-ve-next:hover {
-        // 		cursor: url('/public/images/virtAusstCursor_next_EN.png') 64 64, auto;
-        // 	}
-        // `;
-        // document.head.appendChild(cursorStyle);
+        cursorVeMd.cssRules[0].style.setProperty("cursor", 'url("/public/images/virtAusstCursor_EN.png") 64 64, auto');
+        cursorVePrev.style.setProperty("cursor", 'url("/public/images/virtAusstCursor_prev_EN.png") 64 64, auto');
+        cursorVeNext.style.setProperty("cursor", 'url("/public/images/virtAusstCursor_next_EN.png") 64 64, auto');
     } else {
-        // const cursorStyle = document.createElement("style");
-        // cursorStyle.setAttribute("type", "text/css");
-        // cursorStyle.textContent = `
-        // 	.cursor-ve:hover {
-        // 		cursor: url('/public/images/virtAusstCursor.png') 64 64, auto;
-        // 	}
-        // 	.cursor-ve-prev:hover {
-        // 		cursor: url('/public/images/virtAusstCursor_prev.png') 64 64, auto;
-        // 	}
-        // 	.cursor-ve-next:hover {
-        // 		cursor: url('/public/images/virtAusstCursor_next.png') 64 64, auto;
-        // 	}
-        // `;
-        // document.head.appendChild(cursorStyle);
+        cursorVeMd.cssRules[0].style.setProperty("cursor", 'url("/public/images/virtAusstCursor.png") 64 64, auto');
+        cursorVePrev.style.setProperty("cursor", 'url("/public/images/virtAusstCursor_prev.png") 64 64, auto');
+        cursorVeNext.style.setProperty("cursor", 'url("/public/images/virtAusstCursor_next.png") 64 64, auto');
     }
 
     elements.forEach((elem) => {
