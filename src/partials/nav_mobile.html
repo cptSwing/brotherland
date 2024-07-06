@@ -1,13 +1,13 @@
-<div class="absolute right-0 top-0 flex items-center justify-center aspect-square md:hidden {{ active === '/' ? 'h-14' : 'h-14' }}">
+<div class="absolute right-0 h-full top-0 flex items-center justify-center w-[14%] md:hidden {{ active === '/' ? 'h-14' : 'h-14' }}">
     <input id="hamburger-menu-checkbox" type="checkbox" class="hidden" />
     <label id="hamburger-menu-label" for="hamburger-menu-checkbox" class="absolute right-0 top-0 z-50 aspect-square h-full cursor-pointer">
     </label>
 
-    <div id="hamburger-menu-lines" class="z-40 flex h-full w-full flex-col justify-center px-2">
-        <div class="flex h-2/3 flex-col justify-evenly">
-            <div class="h-[9%] rounded-sm bg-black/50"></div>
-            <div class="h-[9%] rounded-sm bg-black/50"></div>
-            <div class="h-[9%] rounded-sm bg-black/50"></div>
+    <div id="hamburger-menu-lines" class="z-40 flex h-full w-full flex-col justify-center pl-2 pr-1">
+        <div class="flex h-1/2 flex-col justify-evenly">
+            <div class="inline-block h-[10%] min-h-0.5 rounded-sm bg-black/50"></div>
+            <div class="inline-block h-[10%] min-h-0.5 rounded-sm bg-black/50"></div>
+            <div class="inline-block h-[10%] min-h-0.5 rounded-sm bg-black/50"></div>
         </div>
     </div>
 

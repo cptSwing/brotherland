@@ -6,10 +6,12 @@
 
     <body class="bg-white text-black">
         <header class="block md:hidden">
-            <!-- "Brotherland" Text: -->
-            <include src="./partials/nav_logo_text.html" locals='{"active": "{{active}}"}'></include>
-            <!-- Include nav menu if mobile view: -->
-            <include src="./partials/nav_mobile.html" locals='{"pathPrefix": "./html", "active": "/"}'></include>
+            <div class="relative flex h-full w-full flex-nowrap justify-between sm:justify-start">
+                <!-- "Brotherland" Text: -->
+                <include src="./partials/nav_logo_text.html" locals='{"active": "{{active}}"}'></include>
+                <!-- Include nav menu if mobile view: -->
+                <include src="./partials/nav_mobile.html" locals='{"pathPrefix": "./html", "active": "/"}'></include>
+            </div>
         </header>
 
         <div class="flex w-full flex-col-reverse items-center justify-start md:flex-row">
