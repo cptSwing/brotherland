@@ -4,7 +4,7 @@
     "scripts": {
         "dev": "parcel src/index.html public/images/virtAusstCursor.png public/images/virtAusstCursor_EN.png public/images/virtAusstCursor_prev.png public/images/virtAusstCursor_prev_EN.png public/images/virtAusstCursor_next.png public/images/virtAusstCursor_next_EN.png",
         "build": "parcel build src/index.html public/images/virtAusstCursor.png public/images/virtAusstCursor_EN.png public/images/virtAusstCursor_prev.png public/images/virtAusstCursor_prev_EN.png public/images/virtAusstCursor_next.png public/images/virtAusstCursor_next_EN.png",
-        "predeploy": "rm -rf dist && parcel build src/index.html public/images/virtAusstCursor.png public/images/virtAusstCursor_EN.png public/images/virtAusstCursor_prev.png public/images/virtAusstCursor_prev_EN.png public/images/virtAusstCursor_next.png public/images/virtAusstCursor_next_EN.png --public-url https://www.brotherland.info && cp CNAME ./dist",
+        "predeploy": "rm -rf dist && parcel build src/index.html --public-url https://www.brotherland.info && cp CNAME ./dist",
         "deploy": "gh-pages -d dist"
     },
     "devDependencies": {
