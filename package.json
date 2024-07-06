@@ -2,18 +2,16 @@
     "homepage": "https://www.brotherland.info/",
     "license": "MIT",
     "scripts": {
-        "dev": "parcel src/index.html",
-        "build": "parcel build src/index.html",
-        "predeploy": "rm -rf dist && parcel build src/index.html --public-url https://www.brotherland.info && cp CNAME ./dist",
+        "dev": "parcel src/index.html public/images/virtAusstCursor.png public/images/virtAusstCursor_EN.png public/images/virtAusstCursor_prev.png public/images/virtAusstCursor_prev_EN.png public/images/virtAusstCursor_next.png public/images/virtAusstCursor_next_EN.png",
+        "build": "parcel build src/index.html public/images/virtAusstCursor.png public/images/virtAusstCursor_EN.png public/images/virtAusstCursor_prev.png public/images/virtAusstCursor_prev_EN.png public/images/virtAusstCursor_next.png public/images/virtAusstCursor_next_EN.png",
+        "predeploy": "rm -rf dist && yarn build --public-url https://www.brotherland.info && cp CNAME ./dist",
         "deploy": "gh-pages -d dist"
     },
-    "parcelIgnore": [],
     "devDependencies": {
         "@types/node": "^20.5.0",
         "autoprefixer": "^10.4.19",
         "gh-pages": "^6.0.0",
         "parcel": "^2.8.3",
-        "parcel-resolver-ignore": "^2.1.5",
         "postcss": "^8.4.38",
         "posthtml-expressions": "^1.11.0",
         "posthtml-include": "^1.7.4",
