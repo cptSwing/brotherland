@@ -86,6 +86,13 @@ document.getElementById("languageSwitchMobile").addEventListener("click", () => 
     translateAll(allLangElements);
 });
 
+const cursorVeUrl = new URL("/public/images/virtAusstCursor.png", import.meta.url);
+const cursorVeEnUrl = new URL("/public/images/virtAusstCursor_EN.png", import.meta.url);
+const cursorVePrevUrl = new URL("/public/images/virtAusstCursor_prev.png", import.meta.url);
+const cursorVePrevEnUrl = new URL("/public/images/virtAusstCursor_prev_EN.png", import.meta.url);
+const cursorVeNextUrl = new URL("/public/images/virtAusstCursor_next.png", import.meta.url);
+const cursorVeNextEnUrl = new URL("/public/images/virtAusstCursor_next_EN.png", import.meta.url);
+
 function translateAll(elements) {
     const lang = getCookie("lang");
 
@@ -96,13 +103,13 @@ function translateAll(elements) {
     const cursorVeNext = stylesheetRules.find((rule) => rule.selectorText === ".cursor-ve-next:hover");
 
     if (lang === "EN") {
-        cursorVeMd.cssRules[0].style.setProperty("cursor", 'url("/public/images/virtAusstCursor_EN.png") 64 64, auto');
-        cursorVePrev.style.setProperty("cursor", 'url("/public/images/virtAusstCursor_prev_EN.png") 64 64, auto');
-        cursorVeNext.style.setProperty("cursor", 'url("/public/images/virtAusstCursor_next_EN.png") 64 64, auto');
+        cursorVeMd.cssRules[0].style.setProperty("cursor", `url(${cursorVeEnUrl}) 64 64, auto`);
+        cursorVePrev.style.setProperty("cursor", `url(${cursorVePrevEnUrl}) 64 64, auto`);
+        cursorVeNext.style.setProperty("cursor", `url(${cursorVeNextEnUrl}) 64 64, auto`);
     } else {
-        cursorVeMd.cssRules[0].style.setProperty("cursor", 'url("/public/images/virtAusstCursor.png") 64 64, auto');
-        cursorVePrev.style.setProperty("cursor", 'url("/public/images/virtAusstCursor_prev.png") 64 64, auto');
-        cursorVeNext.style.setProperty("cursor", 'url("/public/images/virtAusstCursor_next.png") 64 64, auto');
+        cursorVeMd.cssRules[0].style.setProperty("cursor", `url(${cursorVeUrl}) 64 64, auto`);
+        cursorVePrev.style.setProperty("cursor", `url(${cursorVePrevUrl}) 64 64, auto`);
+        cursorVeNext.style.setProperty("cursor", `url(${cursorVeNextUrl}) 64 64, auto`);
     }
 
     elements.forEach((elem) => {
