@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Click handler language switch button
 document.getElementById("languageSwitch").addEventListener("click", () => {
-    const lang = getCookie("lang");
+    const lang = getCookieWrapper("lang");
 
     if (lang !== "EN") {
         setCookie("lang", "EN");
@@ -75,7 +75,7 @@ document.getElementById("languageSwitch").addEventListener("click", () => {
 
 // Click handler language switch button Mobile!
 document.getElementById("languageSwitchMobile").addEventListener("click", () => {
-    const lang = getCookie("lang");
+    const lang = getCookieWrapper("lang");
 
     if (lang !== "EN") {
         setCookie("lang", "EN");
@@ -94,7 +94,7 @@ const cursorVeNextUrl = new URL("/public/images/virtAusstCursor_next.png", impor
 const cursorVeNextEnUrl = new URL("/public/images/virtAusstCursor_next_EN.png", import.meta.url);
 
 function translateAll(elements) {
-    const lang = getCookie("lang");
+    const lang = getCookieWrapper("lang");
 
     // Replace "bobbels" per language
     const stylesheetRules = [...document.styleSheets[0].cssRules];
@@ -126,5 +126,17 @@ function translateAll(elements) {
 // Replace the inner text of the given HTML element with the translation in the active locale, corresponding to the element's data-lang-key
 function translateElement(element, key, translations) {
     const translation = translations[key];
-    element.innerHTML = translation;
+    if (element.innerHTML) {
+        element.innerHTML = translation;
+    }
 }
+
+const getCookieWrapper = (arg) => {
+    const res = getCookie(arg);
+    if (res !== "EN") {
+        document.documentElement.style.setProperty("--transcription-display", "none");
+    } else {
+        document.documentElement.style.removeProperty("--transcription-display");
+    }
+    return res;
+};
