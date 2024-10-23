@@ -1,9 +1,31 @@
-<div class="mb-4 flex w-full flex-col rounded-sm bg-black px-2 py-4 md:mb-0">
+<div
+    class="relative mb-4 flex w-full translate-x-[0%] transform-gpu flex-col rounded-t-sm bg-black px-[--padding-x] py-4 [--padding-x:theme(spacing.2)] md:mb-0"
+>
     <audio controls class="w-full bg-none">
         <source src="{{ audioFilePath }}" type="audio/mpeg" title="{{ title }}" />
         Your system can't play audio, it seems!
     </audio>
-    <div class="-mb-2 w-full pt-2 text-center font-crimson-text text-base font-medium italic tracking-wide text-gray-300">
-        <span data-lang-key="{{ id ? id : 'no_id'}}-audio-title">{{title && title}}</span>{{author && " | " + author}}
+    <div class="mx-auto -mb-2 w-full pt-2 text-center font-crimson-text text-base font-medium italic tracking-wide text-gray-300">
+        <span data-lang-key="{{ id ? id : 'no_id'}}-audio-title">{{title && title}}</span>
+        <span>{{author && " | " + author}}</span>
+    </div>
+    <div
+        class="{{ typeof enableTranscript !== 'undefined' ? ' absolute top-full left-0 w-full -mt-3 [display:var(--transcription-display,flex)] pb-1  px-[--padding-x] bg-black rounded-b-sm flex-col justify-start items-center ' : 'hidden' }}"
+    >
+        <input type="checkbox" id="{{'transcript-toggle' + id}}" class="peer hidden" />
+        <label
+            for="{{'transcript-toggle' + id}}"
+            data-lang-key="transcript"
+            class="mt-px cursor-pointer select-none border-t-[1px] border-gray-300/25 px-px pt-px text-center font-roboto text-xs tracking-wide text-gray-300/25 transition-colors hover:border-gray-300 hover:text-gray-300 peer-checked:border-gray-300 peer-checked:text-gray-300 peer-checked:before:content-['Close_']"
+        >
+        </label>
+
+        <div
+            data-lang-key="{{ id ? id + '-text-1' : ''}}"
+            class="fixed bottom-4 left-1/2 z-50 hidden h-64 w-full min-w-80 -translate-x-1/2 transform-gpu overflow-y-auto rounded-sm bg-black px-[--padding-x] py-1 text-left font-crimson-text text-base tracking-wide text-gray-300 opacity-90 [scrollbar-color:theme(colors.gray.300)_transparent] [scrollbar-width:thin] peer-checked:block"
+        >
+            <!-- Need any just any empty content here to be considered for language switching -->
+            &nbsp;
+        </div>
     </div>
 </div>
