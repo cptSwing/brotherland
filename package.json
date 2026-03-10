@@ -1,5 +1,4 @@
 {
-    "homepage": "https://www.brotherland.info/",
     "license": "MIT",
     "scripts": {
         "dev": "parcel src/index.html",
