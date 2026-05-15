@@ -1,15 +1,13 @@
-<nav class="h-full w-full">
-    <div class="relative flex h-full w-full flex-nowrap justify-between sm:justify-start">
-        <!-- Empty spacer on desktop: -->
-        <div class="hidden md:block md:w-[5%] lg:w-[8.33%] xl:w-[10%]"></div>
+<nav class="relative h-fit w-full">
+    <!-- Empty spacer on desktop: -->
+    <!-- <div class="hidden md:block md:w-[5%] lg:w-[8.33%] xl:w-[10%]"></div> -->
 
-        <!-- "Brotherland" Text: -->
-        <include src="./partials/nav_logo_text.html" locals='{"active": "{{active}}"}'></include>
+    <!-- "Brotherland" Text: -->
+    <include src="./partials/nav_logo_text.html" locals='{"active": "{{active}}"}'></include>
 
-        <!-- Hamburger/Mobile Menu -->
-        <include src="./partials/nav_mobile.html" locals='{"pathPrefix": "{{pathPrefix}}", "active": "{{active}}"}'></include>
+    <!-- Hamburger/Mobile Menu -->
+    <include src="./partials/nav_mobile.html" locals='{"pathPrefix": "{{pathPrefix}}", "active": "{{active}}"}'></include>
 
-        <!-- Desktop Menu -->
-        <include src="./partials/nav_desktop.html" locals='{"pathPrefix": "{{pathPrefix}}", "active": "{{active}}"}'></include>
-    </div>
+    <!-- Desktop Menu -->
+    <include src="./partials/nav_desktop.html" locals='{"pathPrefix": "{{pathPrefix}}", "active": "{{active}}"}'></include>
 </nav>
