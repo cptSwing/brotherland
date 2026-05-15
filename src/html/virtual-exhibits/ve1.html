@@ -11,7 +11,7 @@
 
         <div class="relative">
             <!-- Hover links -->
-            <div class="pointer-events-none absolute hidden h-full w-full md:block">
+            <div class="pointer-events-none fixed left-0 right-0 hidden h-full w-screen md:block">
                 <a
                     class="cursor-ve-next pointer-events-auto absolute right-0 top-0 z-50 h-full md:w-[7.5%] lg:w-[10%] xl:w-[15%] 2xl:w-1/5"
                     href="./ve2.html"
@@ -19,21 +19,21 @@
             </div>
 
             <main class="mb-44 flex flex-col font-crimson-text text-lg font-bold tracking-tight md:text-xl">
-                <div class="flex w-full items-start justify-between space-x-20">
-                    <div class="relative mt-10 flex w-1/2 flex-col items-start justify-between">
-                        <div class="relative w-full">
+                <div class="flex w-full flex-col items-start justify-between md:flex-row md:space-x-[10%]">
+                    <div class="relative order-last flex w-full flex-col items-start justify-between md:order-none md:mt-10 md:w-1/2">
+                        <div class="relative order-last w-full md:order-none">
                             <img src="/public/images/Zaninelli_Jakobs_VAS_01.jpg" />
                         </div>
 
-                        <span data-lang-key="ve1-1" class="mx-auto mt-24 w-2/3 text-left">
+                        <span data-lang-key="ve1-1" class="mx-auto mb-6 w-4/5 text-left md:mb-0 md:mt-24 md:w-2/3">
                             Es wurde nur gefragt ob man zum Arbeiten für fünf Jahre in die DDR gehen möchte. Mehr wussten wir nicht, wohin
                             und was wir machen, das war wirklich eine Überraschung. Ich war sehr jung damals und erstmal neugierig.
                         </span>
                     </div>
 
-                    <div class="flex w-1/2 flex-col items-end justify-between">
+                    <div class="flex w-full flex-col items-center justify-between md:w-1/2 md:items-end">
                         <!-- Audio -->
-                        <div class="mx-auto w-2/3">
+                        <div class="z-10 mx-auto w-2/3 translate-y-1/3 md:translate-y-0">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"id": "dhn01", "author": "", "title": "Ich liebe Deutschland", "enableTranscript": "true", "audioFilePath": "../../../public/audio/DHN_01.mp3"}'
@@ -42,13 +42,13 @@
                         </div>
 
                         <!-- Plattenbauten -->
-                        <div class="relative mt-48 w-full">
+                        <div class="relative w-full md:mt-48">
                             <img src="/public/images/Zaninelli_Jakobs_VAS_02.jpg" />
                             <span class="absolute w-full text-right text-xs">Bundesarchiv, Bild 183-1987-0212-010 / CC-BY-SA 3.0</span>
                         </div>
 
                         <!-- Audio -->
-                        <div class="ml-8 mr-auto w-1/3 -translate-y-1/2">
+                        <div class="z-10 mx-auto mb-4 mt-32 w-1/3 md:m-auto md:ml-[10%] md:-translate-y-1/2">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"id": "b_l01", "author": "", "title": "", "enableTranscript": "true", "audioFilePath": "../../../public/audio/B_L_01.mp3"}'
@@ -58,28 +58,28 @@
                     </div>
                 </div>
 
-                <div class="mt-32 flex h-fit w-full items-start justify-between">
+                <div class="mt-40 flex h-fit w-full flex-col items-center justify-between md:mt-32 md:flex-row md:items-start">
                     <!-- Blumen -->
-                    <div class="relative ml-10 mt-24 aspect-3/2 w-1/2">
+                    <div class="relative order-last aspect-3/2 w-full md:order-none md:ml-10 md:mt-24 md:w-1/2">
                         <img src="/public/images/Zaninelli_Jakobs_VAS_03.jpg" />
                         <span class="absolute w-full text-left text-xs">aus dem Archiv von Augusto Jone Munjunga</span>
                     </div>
 
-                    <span data-lang-key="ve1-2" class="w-1/3">
+                    <span data-lang-key="ve1-2" class="mb-8 w-4/5 md:mb-auto md:w-1/3">
                         Ich möchte in die DDR gehen. Ich muss dringend raus, raus hier... dann komm ich zurück, wie ein Ingenieur, als
                         Mensch mit einer Position, um mich zu beteiligen an der Entwicklung vom Land. Da war ich wirklich begeistert mit
                         voller Motivation für das Land.
                     </span>
                 </div>
 
-                <div class="mt-20 flex w-full items-start justify-between space-x-40">
-                    <div class="flex w-1/2 flex-col items-start justify-between">
+                <div class="mt-32 flex w-full flex-col items-center justify-between md:mt-20 md:flex-row md:items-start md:space-x-[12.5%]">
+                    <div class="flex w-full flex-col items-center justify-between md:w-1/2 md:items-start">
                         <!-- Tischtennisplatte -->
                         <div class="aspect-2/3 w-full">
                             <img src="/public/images/Zaninelli_Jakobs_VAS_04.jpg" />
                         </div>
 
-                        <span data-lang-key="ve1-3" class="mt-24 w-4/5 self-center">
+                        <span data-lang-key="ve1-3" class="mt-8 w-4/5 md:mt-24 md:self-center">
                             Dann wurde ich ausgewählt für ein Studium in der DDR und wusste auch nicht was. Hauptsache meine Eltern freuten
                             sich: dann kann sie weg. Erstmal nicht im Krieg... meine Eltern haben drei Kinder und eins ist so wie in
                             Sicherheit.
@@ -87,26 +87,26 @@
                     </div>
 
                     <!-- Ecke -->
-                    <div class="mt-32 aspect-2/3 w-1/2 overflow-hidden">
+                    <div class="mt-8 aspect-2/3 w-full overflow-hidden md:mt-32 md:w-1/2">
                         <img src="/public/images/Zaninelli_Jakobs_VAS_05.jpg" />
                     </div>
                 </div>
 
-                <div class="relative mt-32 flex w-full flex-col items-center justify-between md:flex-row">
+                <div class="relative mt-40 flex w-full flex-col items-center justify-between md:mt-32 md:flex-row">
                     <!-- Schiebermütze -->
-                    <div class="relative ml-20 mr-auto aspect-3/2 w-1/2">
+                    <div class="relative aspect-3/2 w-full md:ml-20 md:mr-auto md:w-1/2">
                         <img src="/public/images/Zaninelli_Jakobs_VAS_06.jpg" />
                     </div>
 
-                    <span data-lang-key="ve1-4" class="mt-24 w-1/3">
+                    <span data-lang-key="ve1-4" class="mt-10 w-4/5 md:mt-24 md:w-1/3">
                         In der DDR haben wir erfahren, dass irgendwas mit unseren Verträgen zwischen Mosambik und der DDR nicht stimmt.
                     </span>
                 </div>
 
-                <div class="mt-24 flex w-full items-stretch justify-between">
-                    <div class="relative flex w-1/2 flex-col items-center">
+                <div class="mt-32 flex w-full flex-col items-center justify-between md:mt-24 md:flex-row md:items-stretch">
+                    <div class="relative order-last flex w-full flex-col items-center md:order-none md:w-1/2">
                         <!-- Audio -->
-                        <div class="w-1/4">
+                        <div class="mb-32 w-1/2 md:mb-0 md:ml-auto md:mr-[20%] md:w-2/5 xl:w-1/4">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"id": "ajm01", "author": "", "title": "", "enableTranscript": "true", "audioFilePath": "../../../public/audio/AJM_01.mp3"}'
@@ -114,12 +114,12 @@
                             </include>
                         </div>
                         <!-- Springbrunnen -->
-                        <div class="mt-2 w-full">
+                        <div class="w-full md:mt-2">
                             <img src="/public/images/Zaninelli_Jakobs_VAS_07.jpg" />
                             <span class="absolute w-full text-left text-xs">VEB Bild und Heimat</span>
                         </div>
                         <!-- Audio "Vertragsarbeiter" -->
-                        <div class="flex w-2/3 grow items-center justify-center">
+                        <div class="mt-8 w-4/5 md:mt-auto md:flex md:w-2/3 md:grow md:items-center md:justify-center">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"id": "ot02", "author": "", "title": "dieser Begriff \"Vertragsarbeiter\"", "enableTranscript": "true", "audioFilePath": "../../../public/audio/OT_02.mp3"}'
@@ -128,30 +128,30 @@
                         </div>
                     </div>
 
-                    <div class="relative flex w-1/2 flex-col items-center justify-start">
+                    <div class="relative flex w-full flex-col items-center justify-start md:w-1/2 md:items-end">
                         <span
                             data-lang-key="ve1-5"
-                            class="z-10 block text-right font-roboto text-6xl font-medium leading-none text-red-700 md:text-7xl"
+                            class="z-10 order-last block w-full whitespace-pre-line text-left font-roboto text-5xl font-medium leading-none text-red-700 md:order-none md:text-right md:text-5xl lg:text-6xl 2xl:text-7xl"
                             >UNSER TRAUM WAR SCHON IM WASSER. WIR MACHTEN ES NUR, WEIL WIR KEINE ANDERE MÖGLICHKEIT HATTEN.</span
                         >
 
                         <!-- Plattenparadies -->
-                        <div class="relative z-0 -mt-12 aspect-2/3 w-4/5 self-end">
+                        <div class="relative z-0 -mb-6 aspect-2/3 w-4/5 md:-mt-12 md:mb-auto">
                             <img src="/public/images/Zaninelli_Jakobs_VAS_08.jpg" />
-                            <span class="absolute w-full text-right text-xs">VEB Bild und Heimat</span>
+                            <span class="absolute bottom-full w-full text-right text-xs md:bottom-auto">VEB Bild und Heimat</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="mt-12 flex w-full items-center justify-between">
+                <div class="mt-32 flex w-full flex-col items-center justify-between md:mt-12 md:flex-row">
                     <!-- Platte -->
-                    <div class="relative w-2/3">
+                    <div class="relative w-full md:w-2/3">
                         <img src="/public/images/Zaninelli_Jakobs_VAS_09.jpg" />
                     </div>
 
                     <!-- Audio "Moderne Sklaverei" -->
-                    <div class="w-2/5">
-                        <div class="ml-auto mr-0 w-4/5 translate-x-4 translate-y-full">
+                    <div class="w-4/5 md:w-2/5">
+                        <div class="w-full -translate-y-1/2 md:ml-auto md:mr-0 md:w-4/5 md:translate-x-4 md:translate-y-full">
                             <include
                                 src="./partials/interview_audio.html"
                                 locals='{"id": "ajm02", "author": "", "title": "das ist moderne Sklaverei", "enableTranscript": "true", "audioFilePath": "../../../public/audio/AJM_02.mp3"}'
@@ -161,9 +161,9 @@
                     </div>
                 </div>
 
-                <div class="flex items-center justify-end md:hidden">
+                <div class="mt-24 flex items-center justify-end md:mt-48">
                     <a class="text-center font-crimson-text tracking-tight text-gray-100" href="./ve2.html">
-                        <span data-lang-key="ve-next" class="size-32 flex items-center justify-center rounded-full bg-gray-950 p-4"
+                        <span data-lang-key="ve-next" class="flex size-32 items-center justify-center rounded-full bg-gray-950 p-4"
                             >zur nächsten Seite</span
                         >
                     </a>
