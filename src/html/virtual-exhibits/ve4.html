@@ -232,7 +232,13 @@
 
                 <div class="h-12 md:h-20"></div>
 
-                <video class="mx-auto w-full md:w-4/5" controls>
+                <video
+                    class="mx-auto aspect-[16/9] w-full md:w-4/5"
+                    controls
+                    loading="lazy"
+                    preload
+                    poster="/public/images/video_preview.jpg"
+                >
                     <source src="/public/videos/VA4_smaller.mp4" />
                     Your system can't play vidio, it seems!
                 </video>

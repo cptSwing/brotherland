@@ -67,6 +67,10 @@ audio {
     /* mix-blend-mode: multiply; */
 }
 
+video[poster] {
+    @apply cursor-pointer object-cover;
+}
+
 @-moz-document url-prefix() {
     audio {
         filter: invert(0%);
