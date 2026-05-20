@@ -1,5 +1,9 @@
+import AudioPlayer from "./audioPlayer.ts";
 import { getCookie, setCookie } from "./cookies.ts";
 import transl_EN_Json from "../lang/en.json";
+
+// register "audio-player" element
+window.customElements.define("audio-player", AudioPlayer);
 
 // Internationalization Code, roughly based on https://phrase.com/blog/posts/step-step-guide-javascript-localization
 
