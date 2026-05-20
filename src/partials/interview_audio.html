@@ -7,7 +7,7 @@
     </audio>
 
     <div class="mx-auto my-1 w-full text-center font-crimson-text text-base font-medium italic tracking-wide text-gray-300">
-        <span data-lang-key="{{ id ? id : 'no_id'}}-audio-title">{{title && title}}</span>
+        <span data-lang-key="{{title ? id + '-audio-title' : 'no_id-audio-title'}}">{{title && title}}</span>
         <span>{{author && " | " + author}}</span>
     </div>
 
