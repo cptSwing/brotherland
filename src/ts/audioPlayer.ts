@@ -1,116 +1,138 @@
+import createElementWithProperties from "./createElementWithProperties";
+
 class AudioPlayer extends HTMLElement {
     static observedAttributes = ["source", "title"] as const;
-    private readonly audioElement = document.createElement("audio");
 
-    private readonly playWrapper = document.createElement("div");
-    private readonly playButton = document.createElement("button");
-    private readonly playRangeTrack = document.createElement("div");
-    private readonly playRangeTrackFill = document.createElement("div");
-    private readonly playRangeTrackMarkerWrapper = document.createElement("div");
+    // TODO clean up these wrt which are actually needed exposed, even if private - adding .innerHtml would be less of a hassle than .append() left and right
+    private readonly audioElement = createElementWithProperties({
+        element: { tagName: "audio" },
+        style: { display: "none" },
+        attributes: {
+            preload: "metadata",
+        },
+    });
 
-    private readonly playRangeTrackMarker = document.createElement("div");
+    private readonly playWrapper = createElementWithProperties({
+        element: { tagName: "div" },
+        css: /* tw */ "flex items-stretch justify-between size-full",
+    });
 
-    private readonly audioTitle = document.createElement("div");
+    private readonly playButton = createElementWithProperties({
+        element: { tagName: "button" },
+        css: /* tw */ "min-w-16 aspect-square before:block before:size-full before:[mask-repeat:no-repeat] before:[mask-position:left] before:[mask-size:contain] before:[mask-image:url('../../public/images/triangle.svg')] before:bg-gray-100 ml-[--ap-tracker-height] px-px py-3",
+    });
+    private readonly playRangeWrapper = createElementWithProperties({
+        element: { tagName: "div" },
+        css: /* tw */ "relative w-[calc(100%-var(--ap-tracker-marker-size))] min-h-8 mx-auto flex flex-col justify-center items-stretch group",
+        // "before:absolute",
+        // "before:top-1/2",
+        // "before:bg-purple-500",
+        // "before:w-full",
+        // "before:h-2",
+        // "before:left-0",
+        // "before:-translate-y-1",
+        // "before:rounded-sm",
+        style: {
+            "--ap-tracker-marker-size": "calc(var(--ap-tracker-height)*2)",
+        },
+    });
 
-    private duration = 0;
-    private current = 0;
+    private readonly playRangeBar = createElementWithProperties({
+        element: { tagName: "div" },
+        css: /* tw */ "w-full h-[--ap-tracker-height] bg-gray-400 cursor-pointer ",
+    });
+
+    private readonly playRangeFill = createElementWithProperties({
+        element: { tagName: "div" },
+        css: /* tw */ "w-full h-[calc(var(--ap-tracker-height)-2px)] translate-y-px bg-gray-200 group-hover:bg-white group-active:bg-white transform-gpu origin-left scale-x-[var(--ap-progress-percentage,0)] transition-transform ease-linear transition-[background-color]",
+    });
+    private readonly playRangeMarkerWrapper = createElementWithProperties({
+        element: { tagName: "div" },
+        css: /* tw */ "absolute inset-0 translate-x-[calc(var(--ap-progress-percentage,0)*100%)] transform-gpu transition-transform ease-linear ",
+    });
+
+    private readonly playRangeMarker = createElementWithProperties({
+        element: { tagName: "div" },
+        css: /* tw */ "absolute top-1/2 left-0 bg-gray-200/60 border border-gray-200 rounded-full size-[--ap-tracker-marker-size] -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity group-active:opacity-100",
+    });
+
+    private readonly audioTitle = createElementWithProperties({
+        element: { tagName: "div" },
+        css: /* tw */ "bg-gray-950 w-full shrink text-white text-center text-sm font-crimson-text italic",
+    });
 
     constructor() {
         super();
 
-        // root
-        this.classList.add("inline-block", "relative", "flex", "flex-col", "justify-start", "items-stretch", "w-56", "bg-green-500");
+        /**
+         * root wrapper (this)
+         *   - playWrapper
+         *       - playButton
+         *       - audioTitle
+         *   - playRangeWrapper
+         *       - playRangeBar
+         *          - playRangeFill
+         *       - playRangeMarkerWrapper
+         *          - playRangeMarker
+         *
+         *   - audioElement
+         */
 
-        // hidden audio element
-        this.audioElement.style.display = "none";
-        this.audioElement.preload = "metadata";
-        this.audioElement.addEventListener("loadeddata", () => {
-            this.duration = this.audioElement.duration;
-        });
-        this.audioElement.addEventListener("timeupdate", () => {
-            this.current = this.audioElement.currentTime;
-
-            this.playRangeTrack.style.setProperty("--ap-progress-percentage", (this.audioElement.currentTime / this.duration).toString());
-        });
-        this.append(this.audioElement);
+        // root wrapper
+        this.classList.add(
+            "inline-block",
+            "relative",
+            "flex",
+            "flex-col",
+            "justify-start",
+            "rounded-sm",
+            "items-stretch",
+            "w-56",
+            "bg-gray-950",
+        );
+        this.style.setProperty("--ap-tracker-height", "0.3rem");
 
         // play button
-        this.playButton.classList.add("bg-red-500", "w-16");
-        const textContentPlay = "Play";
-        this.playButton.textContent = textContentPlay;
         this.playButton.addEventListener("click", () => {
             if (this.audioElement.paused) {
                 this.audioElement
                     .play()
                     .then(() => {
-                        this.playButton.textContent = "Pause";
+                        this.playButton.classList.replace(
+                            "before:[mask-image:url('../../public/images/triangle.svg')]",
+                            "before:[mask-image:url('../../public/images/twoRects.svg')]",
+                        );
                     })
                     .catch((err) => console.error(err));
             } else {
                 this.audioElement.pause();
-                this.playButton.textContent = textContentPlay;
+                this.playButton.classList.replace(
+                    "before:[mask-image:url('../../public/images/twoRects.svg')]",
+                    "before:[mask-image:url('../../public/images/triangle.svg')]",
+                );
             }
         });
 
-        this.playRangeTrack.classList.add(
-            "relative",
-            "w-[calc(100%-theme(spacing.16)-theme(spacing.5))]",
-            "mx-auto",
-            "flex",
-            "flex-col",
-            "justify-center",
-            "before:absolute",
-            "before:top-1/2",
-            "before:bg-purple-500",
-            "before:w-full",
-            "before:h-2",
-            "before:left-0",
-            "before:-translate-y-1",
-            "before:rounded-sm",
-        );
-
-        this.playRangeTrackFill.classList.add(
-            "w-full",
-            "h-1",
-            "bg-orange-500",
-            "transform-gpu",
-            "origin-left",
-            "scale-x-[var(--ap-progress-percentage,0)]",
-            "transition-transform",
-            "ease-linear",
-        );
-        this.playRangeTrack.append(this.playRangeTrackFill);
-
-        this.playRangeTrackMarkerWrapper.classList.add(
-            "absolute",
-            "inset-0",
-            "translate-x-[calc(var(--ap-progress-percentage,0)*100%)]",
-            "transform-gpu",
-            "transition-transform",
-            "ease-linear",
-        );
-        this.playRangeTrack.append(this.playRangeTrackMarkerWrapper);
-
-        this.playRangeTrackMarker.classList.add(
-            "absolute",
-            "top-1/2",
-            "left-0",
-            "bg-gray-200",
-            "rounded-full",
-            "size-3",
-            "-translate-x-1/2",
-            "-translate-y-1/2",
-        );
-        this.playRangeTrackMarkerWrapper.append(this.playRangeTrackMarker);
-
-        this.playWrapper.classList.add("flex", "items-stretch", "justify-between", "size-full");
         this.playWrapper.append(this.playButton);
-        this.playWrapper.append(this.playRangeTrack);
+        this.playWrapper.append(this.audioTitle);
         this.append(this.playWrapper);
 
-        // title span
-        this.audioTitle.classList.add("bg-blue-500", "text-center");
-        this.append(this.audioTitle);
+        this.playRangeMarkerWrapper.append(this.playRangeMarker);
+        this.playRangeBar.append(this.playRangeMarkerWrapper);
+        this.playRangeBar.append(this.playRangeFill);
+        this.playRangeWrapper.append(this.playRangeBar);
+        this.append(this.playRangeWrapper);
+
+        // hidden audio element
+        // this.audioElement.addEventListener("loadeddata", () => {
+        // });
+        this.audioElement.addEventListener("timeupdate", () => {
+            this.playRangeWrapper.style.setProperty(
+                "--ap-progress-percentage",
+                (this.audioElement.currentTime / this.audioElement.duration).toString(),
+            );
+        });
+        this.append(this.audioElement);
     }
     connectedCallback() {
         // this.audio.src = this.getAttribute("source");
