@@ -3,6 +3,9 @@ import createElementWithProperties from "./createElementWithProperties";
 class AudioPlayer extends HTMLElement {
     static observedAttributes = ["source", "title"] as const;
 
+    static playIconTwClass = /* tw */ "before:[mask-image:url('../../public/images/triangle.svg')]";
+    static pauseIconTwClass = /* tw */ "before:[mask-image:url('../../public/images/twoRects.svg')]";
+
     // TODO clean up these wrt which are actually needed exposed, even if private - adding .innerHtml would be less of a hassle than .append() left and right
     private readonly audioElement = createElementWithProperties({
         element: { tagName: "audio" },
@@ -14,24 +17,21 @@ class AudioPlayer extends HTMLElement {
 
     private readonly playWrapper = createElementWithProperties({
         element: { tagName: "div" },
-        css: /* tw */ "flex items-stretch justify-between size-full",
+        css: /* tw */ "flex items-center justify-center relative flex-wrap h-[--ap-icon-size] overflow-hidden",
     });
 
     private readonly playButton = createElementWithProperties({
         element: { tagName: "button" },
-        css: /* tw */ "min-w-16 aspect-square before:block before:size-full before:[mask-repeat:no-repeat] before:[mask-position:left] before:[mask-size:contain] before:[mask-image:url('../../public/images/triangle.svg')] before:bg-gray-100 ml-[--ap-tracker-height] px-px py-3",
+        css: /* tw */ `h-full p-[calc(var(--ap-icon-size)/4)] before:block before:bg-gray-100 before:h-full before:aspect-square before:[mask-repeat:no-repeat] before:[mask-position:center] before:[mask-size:contain] ${AudioPlayer.playIconTwClass}`,
     });
+    private readonly audioTitle = createElementWithProperties({
+        element: { tagName: "div" },
+        css: /* tw */ "bg-gray-950 mx-auto text-white text-sm font-crimson-text italic min-w-[--ap-icon-size]",
+    });
+
     private readonly playRangeWrapper = createElementWithProperties({
         element: { tagName: "div" },
         css: /* tw */ "relative w-full min-h-[calc(var(--ap-tracker-height)*3)] mx-auto flex flex-col justify-center items-stretch group",
-        // "before:absolute",
-        // "before:top-1/2",
-        // "before:bg-purple-500",
-        // "before:w-full",
-        // "before:h-2",
-        // "before:left-0",
-        // "before:-translate-y-1",
-        // "before:rounded-sm",
         style: {
             "--ap-tracker-height": "0.3rem",
             "--ap-tracker-marker-size": "calc(var(--ap-tracker-height)*2)",
@@ -57,27 +57,22 @@ class AudioPlayer extends HTMLElement {
         css: /* tw */ "absolute top-1/2 left-0 bg-gray-200/60 border border-gray-200 h-[--ap-tracker-marker-size] w-[--ap-tracker-height] -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity group-active:opacity-100",
     });
 
-    private readonly audioTitle = createElementWithProperties({
-        element: { tagName: "div" },
-        css: /* tw */ "bg-gray-950 w-full shrink text-white text-center text-sm font-crimson-text italic",
-    });
+    /**
+     * root wrapper (this)
+     *   - playWrapper
+     *       - playButton
+     *       - audioTitle
+     *   - playRangeWrapper
+     *       - playRangeBar
+     *          - playRangeFill
+     *       - playRangeMarkerWrapper
+     *          - playRangeMarker
+     *
+     *   - audioElement
+     */
 
     constructor() {
         super();
-
-        /**
-         * root wrapper (this)
-         *   - playWrapper
-         *       - playButton
-         *       - audioTitle
-         *   - playRangeWrapper
-         *       - playRangeBar
-         *          - playRangeFill
-         *       - playRangeMarkerWrapper
-         *          - playRangeMarker
-         *
-         *   - audioElement
-         */
 
         // root wrapper
         this.classList.add(
@@ -88,11 +83,13 @@ class AudioPlayer extends HTMLElement {
             "justify-start",
             "rounded-sm",
             "items-stretch",
-            "w-56",
+            "w-full",
+            "min-w-[--ap-icon-size]",
+            "max-w-72",
             "bg-gray-950",
-            "px-[--ap-root-padding-x]",
         );
         this.style.setProperty("--ap-root-padding-x", "0.5rem");
+        this.style.setProperty("--ap-icon-size", "3.5rem");
 
         // play button
         this.playButton.addEventListener("click", () => {
@@ -100,18 +97,12 @@ class AudioPlayer extends HTMLElement {
                 this.audioElement
                     .play()
                     .then(() => {
-                        this.playButton.classList.replace(
-                            "before:[mask-image:url('../../public/images/triangle.svg')]",
-                            "before:[mask-image:url('../../public/images/twoRects.svg')]",
-                        );
+                        this.playButton.classList.replace(AudioPlayer.playIconTwClass, AudioPlayer.pauseIconTwClass);
                     })
                     .catch((err) => console.error(err));
             } else {
                 this.audioElement.pause();
-                this.playButton.classList.replace(
-                    "before:[mask-image:url('../../public/images/twoRects.svg')]",
-                    "before:[mask-image:url('../../public/images/triangle.svg')]",
-                );
+                this.playButton.classList.replace(AudioPlayer.pauseIconTwClass, AudioPlayer.playIconTwClass);
             }
         });
 
