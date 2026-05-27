@@ -23,7 +23,7 @@ class AudioPlayer extends HTMLElement {
     });
     private readonly playRangeWrapper = createElementWithProperties({
         element: { tagName: "div" },
-        css: /* tw */ "relative w-[calc(100%-var(--ap-tracker-marker-size))] min-h-8 mx-auto flex flex-col justify-center items-stretch group",
+        css: /* tw */ "relative w-full min-h-[calc(var(--ap-tracker-height)*3)] mx-auto flex flex-col justify-center items-stretch group",
         // "before:absolute",
         // "before:top-1/2",
         // "before:bg-purple-500",
@@ -33,6 +33,7 @@ class AudioPlayer extends HTMLElement {
         // "before:-translate-y-1",
         // "before:rounded-sm",
         style: {
+            "--ap-tracker-height": "0.3rem",
             "--ap-tracker-marker-size": "calc(var(--ap-tracker-height)*2)",
         },
     });
@@ -53,7 +54,7 @@ class AudioPlayer extends HTMLElement {
 
     private readonly playRangeMarker = createElementWithProperties({
         element: { tagName: "div" },
-        css: /* tw */ "absolute top-1/2 left-0 bg-gray-200/60 border border-gray-200 rounded-full size-[--ap-tracker-marker-size] -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity group-active:opacity-100",
+        css: /* tw */ "absolute top-1/2 left-0 bg-gray-200/60 border border-gray-200 h-[--ap-tracker-marker-size] w-[--ap-tracker-height] -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity group-active:opacity-100",
     });
 
     private readonly audioTitle = createElementWithProperties({
@@ -89,8 +90,9 @@ class AudioPlayer extends HTMLElement {
             "items-stretch",
             "w-56",
             "bg-gray-950",
+            "px-[--ap-root-padding-x]",
         );
-        this.style.setProperty("--ap-tracker-height", "0.3rem");
+        this.style.setProperty("--ap-root-padding-x", "0.5rem");
 
         // play button
         this.playButton.addEventListener("click", () => {
