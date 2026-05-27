@@ -9,7 +9,23 @@
             <include src="./partials/nav.html" locals='{"pathPrefix": "./", "active": "project"}'></include>
         </header>
 
-        <audio-player source="../../public/audio/DHN_01.mp3" title="ok lol yeah right"> </audio-player>
+        <div class="flex flex-col items-start justify-start gap-2">
+            <div class="w-full">
+                <audio-player source="../../public/audio/DHN_01.mp3" title="100% ok lol yeah right"> </audio-player>
+            </div>
+
+            <div class="w-48">
+                <audio-player source="../../public/audio/DHN_01.mp3" title="192px ok lol yeah right"> </audio-player>
+            </div>
+
+            <div class="w-32">
+                <audio-player source="../../public/audio/DHN_01.mp3" title="128px ok lol yeah right"> </audio-player>
+            </div>
+
+            <div class="w-16">
+                <audio-player source="../../public/audio/DHN_01.mp3" title="64px ok lol yeah right"> </audio-player>
+            </div>
+        </div>
 
         <main class="mb-24 flex flex-col items-center justify-start font-crimson-text text-lg font-semibold tracking-tight">
             <!-- 1. -->
