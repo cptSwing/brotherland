@@ -3,6 +3,7 @@ import { parser } from "posthtml-parser";
 import { render } from "posthtml-render";
 import PostHTML from "posthtml";
 
+/* HTML tag-name, attribute-name */
 const config = {
     "audio-player": ["source"],
 };
